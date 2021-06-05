@@ -38,3 +38,5 @@ embedding_vector_length = 128
 max_length=MAX_LENGTH
 batch_size=32
 epochs=50
+
+def model1()

@@ -2,7 +2,7 @@ from test import test_model, validate_model
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from model import MyModel_1, MyModel_2, train_model, evaluate
+from model import MyModel_2, train_model, evaluate
 from torchtext.legacy import data
 import numpy as np
 from utils import epoch_time
@@ -44,15 +44,18 @@ OUTPUT_DIM2 = len(NEG_SCOPE.vocab)
 N_LAYERS = 2
 BIDIRECTIONAL = False
 DROPOUT = 0.25
-PAD_IDX = TEXT.vocab.stoi[TEXT.pad_token]
+TEXT_PAD_IDX = TEXT.vocab.stoi[TEXT.pad_token]
+TAG_PAD_IDX = POS.vocab.stoi[POS.pad_token]
+NEG_PAD_IDX = NEG_SCOPE.vocab.stoi[NEG_SCOPE.pad_token]
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = MyModel_2(INPUT_DIM, EMBEDDING_DIM, HIDDEN_DIM, OUTPUT_DIM1, \
-                OUTPUT_DIM2, N_LAYERS, BIDIRECTIONAL, DROPOUT, PAD_IDX, INPUT_DIMA, INPUT_DIMB)
+                OUTPUT_DIM2, N_LAYERS, BIDIRECTIONAL, DROPOUT, INPUT_DIMA, INPUT_DIMB,\
+                    TEXT_PAD_IDX, TAG_PAD_IDX, NEG_PAD_IDX)
 model = model.to(device)
-model.load_state_dict(torch.load('training/try-model_2-mask_99.pt'))
+# model.load_state_dict(torch.load('training/try-model_2-mask_99.pt'))
 optimizer = optim.Adam(model.parameters())
-TAG_PAD_IDX = NEG_SCOPE.vocab.stoi[NEG_SCOPE.pad_token]
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, 1.0, gamma=0.95)
 criterion = nn.CrossEntropyLoss(ignore_index = TAG_PAD_IDX)
 
 
@@ -74,23 +77,36 @@ for epoch in range(N_EPOCHS):
 
     start_time = time.time()
     
-    train_loss, train_acc_pos, train_acc_neg = train_model(model, train_iterator, optimizer, criterion, TAG_PAD_IDX)
-    valid_loss, valid_acc_pos, valid_acc_neg = evaluate(model, valid_iterator, criterion, TAG_PAD_IDX)
+    train_loss, train_acc_pos, train_acc_neg = train_model(model, train_iterator, optimizer, criterion)
+    valid_loss, valid_acc_pos, valid_acc_neg = evaluate(model, valid_iterator, criterion)
     
     end_time = time.time()
 
     epoch_mins, epoch_secs = epoch_time(start_time, end_time)
     
-    # if valid_loss < best_valid_loss:
-    #     best_valid_loss = valid_loss
-    if(epoch%20==0):
-        torch.save(model.state_dict(), f'./training/try-model_2-mask_{99+epoch}.pt')
-    
+    if valid_loss < best_valid_loss:
+        best_valid_loss = valid_loss
+    # if(epoch%20==0):
+        torch.save(model.state_dict(), f'./training/try-model_2-pos-best.pt')
+    scheduler.step()
     print(f'Epoch: {epoch+1:02} | Epoch Time: {epoch_mins}m {epoch_secs}s')
     print(f'\tTrain Loss: {train_loss:.3f} | Train Acc POS: {train_acc_pos*100:.2f}% | Train Acc NEG: {train_acc_neg*100:.2f}%' )
     print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc POS: {valid_acc_pos*100:.2f}% | Val. Acc NEG: {valid_acc_neg*100:.2f}%')
 
-# # TESTING
+# TESTING
+
+# BATCH_SIZE = len(test)
+
+# train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
+#     (train, val, test), 
+#     batch_size = BATCH_SIZE,
+#     device = device,sort=False)
+
+# model.load_state_dict(torch.load('training/try-model_2-mask_239.pt'))
+# model = model.to(device)
+# TAG_NEG_IDX  = NEG_SCOPE.vocab.stoi['1']
+# test_loss, test_acc_pos, test_acc_neg = test_model(model, test_iterator, criterion, TAG_PAD_IDX, TAG_NEG_IDX)
+# print(f'\t Test. Loss: {test_loss:.3f} |  Test. Acc POS: {test_acc_pos*100:.2f}% | Test. Acc NEG: {test_acc_neg*100:.2f}%')
 
 # BATCH_SIZE = 1
 
@@ -99,11 +115,5 @@ for epoch in range(N_EPOCHS):
 #     batch_size = BATCH_SIZE,
 #     device = device,sort=False)
 
-# model.load_state_dict(torch.load('training/try-model_2-mask_99.pt'))
-# model = model.to(device)
-# TAG_NEG_IDX  = NEG_SCOPE.vocab.stoi['1']
-# # test_loss, test_acc_pos, test_acc_neg = validate_model(model, test_iterator, criterion, TAG_PAD_IDX, TAG_NEG_IDX)
-
-# # print(f'\t Test. Loss: {test_loss:.3f} |  Test. Acc POS: {test_acc_pos*100:.2f}% | Test. Acc NEG: {test_acc_neg*100:.2f}%')
 # test_acc_pos, test_acc_neg = validate_model(model, test_iterator, criterion, TAG_PAD_IDX, TAG_NEG_IDX)
 # print(f'\t Test. Acc POS: {test_acc_pos*100:.2f}% | Test. Acc NEG: {test_acc_neg*100:.2f}%')

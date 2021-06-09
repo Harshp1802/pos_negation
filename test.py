@@ -10,7 +10,6 @@ np.random.seed(SEED)
 torch.manual_seed(SEED)
 torch.backends.cudnn.deterministic = True
 from tqdm import tqdm
-# from utils import simple_eval
 
 def test_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
     model.eval()
@@ -55,9 +54,10 @@ def validate_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
             
             embedded_X = model.dropout(model.embedding(text))
             shared_output, (hidden, cell) = model.lstm(embedded_X)
+            shared_output = model.pos_encoding(shared_output)
             src_mask = model.T1.generate_square_subsequent_mask(len(shared_output)).to(shared_output.device)
             memory1 = model.T1.encoder(shared_output,src_key_padding_mask=src_pad_mask,mask=src_mask)
-            memory2 = model.T2.encoder(shared_output)
+            memory2 = model.T2.encoder(shared_output,src_key_padding_mask=src_pad_mask,mask=src_mask)
 
             y1_out_indexes = [1,]
             y2_out_indexes = [1,]
@@ -80,10 +80,10 @@ def validate_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
             y1s.append(pos)
             y2s.append(neg_scope)
 
-        preds1 = torch.Tensor(np.array(preds1).T).reshape(-1,1).to(torch.device('cuda'))
-        y1s = torch.cat(y1s, dim=1).view(-1).to(torch.device('cuda'))
-        preds2 = torch.Tensor(np.array(preds2).T).reshape(-1,1).to(torch.device('cuda'))
-        y2s = torch.cat(y2s, dim=1).view(-1).to(torch.device('cuda'))
+        preds1 = torch.Tensor(np.array(preds1)[:,1:].T).reshape(-1,1).to(torch.device('cuda'))
+        y1s = torch.cat(y1s, dim=1)[1:,:].view(-1).to(torch.device('cuda'))
+        preds2 = torch.Tensor(np.array(preds2)[:,1:].T).reshape(-1,1).to(torch.device('cuda'))
+        y2s = torch.cat(y2s, dim=1)[1:,:].view(-1).to(torch.device('cuda'))
         acc_pos = categorical_accuracy(preds1, y1s, tag_pad_idx,listed =True).item()
         acc_neg = f1(preds2, y2s, tag_pad_idx, tag_neg_idx,listed =True)
 

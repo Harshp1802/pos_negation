@@ -23,19 +23,25 @@ def test_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
             neg_scope = batch.Neg_Scope
             
             predictions1, predictions2 = model(text, pos[:-1,:], neg_scope[:-1,:])
-            
-            predictions1 = predictions1.view(-1, predictions1.shape[-1])
-            predictions2 = predictions2.view(-1, predictions2.shape[-1])
+            loss1 = -model.crf1(predictions1,pos[1:,:],mask = model.crf_mask(pos[1:,:],model.pos_pad))
+            loss2 = -model.crf2(predictions2,neg_scope[1:,:],mask = model.crf_mask(pos[1:,:],model.pos_pad))
+
+            predictions1 = torch.Tensor(np.array(model.crf1.decode(predictions1)).T).reshape(-1,1).to(torch.device('cuda'))
+            predictions2 = torch.Tensor(np.array(model.crf2.decode(predictions2)).T).reshape(-1,1).to(torch.device('cuda'))
+            # predictions1 = predictions1.view(-1, predictions1.shape[-1])
+            # predictions2 = predictions2.view(-1, predictions2.shape[-1])
             pos = pos[1:,:].view(-1)
             neg_scope = neg_scope[1:,:].view(-1)
             
-            loss1 = criterion(predictions1, pos) 
-            loss2 = criterion(predictions2, neg_scope)
+            # loss1 = criterion(predictions1, pos) 
+            # loss2 = criterion(predictions2, neg_scope)
 
             loss = loss1+loss2
 
-            acc_pos = categorical_accuracy(predictions1, pos, tag_pad_idx).item()
-            acc_neg = f1(predictions2, neg_scope, tag_pad_idx, tag_neg_idx)
+            acc_pos = categorical_accuracy(predictions1, pos, model.pos_pad,listed =True).item()
+            acc_neg = f1(predictions2, neg_scope, model.neg_pad,tag_neg_idx,listed =True)
+            # acc_pos = categorical_accuracy(predictions1, pos, tag_pad_idx).item()
+            # acc_neg = f1(predictions2, neg_scope, tag_pad_idx, tag_neg_idx)
 
     return loss / len(iterator), acc_pos / len(iterator), acc_neg / len(iterator)
 

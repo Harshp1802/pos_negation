@@ -84,10 +84,10 @@ for epoch in range(N_EPOCHS):
 
     epoch_mins, epoch_secs = epoch_time(start_time, end_time)
     
-    if valid_loss < best_valid_loss:
-        best_valid_loss = valid_loss
-    # if(epoch%20==0):
-        torch.save(model.state_dict(), f'./training/try-model_2-pos-best.pt')
+    # if valid_loss < best_valid_loss:
+    #     best_valid_loss = valid_loss
+    if(epoch%20==0):
+        torch.save(model.state_dict(), f'./training/with-crf-{epoch}.pt')
     scheduler.step()
     print(f'Epoch: {epoch+1:02} | Epoch Time: {epoch_mins}m {epoch_secs}s')
     print(f'\tTrain Loss: {train_loss:.3f} | Train Acc POS: {train_acc_pos*100:.2f}% | Train Acc NEG: {train_acc_neg*100:.2f}%' )

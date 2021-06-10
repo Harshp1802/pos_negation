@@ -1,0 +1,7 @@
+numpy==1.19.5
+torchtext==0.9.1
+tqdm==4.61.0
+torch==1.8.1
+pytorch_crf==0.7.2
+scikit_learn==0.24.2
+torchcrf==1.1.0

@@ -5,5 +5,5 @@ Work in progress!
 Current Progress:
 
 <p align = center>
-<img src = " .\arch.png" >
+<img src = ".\arch.png" >
 </p>

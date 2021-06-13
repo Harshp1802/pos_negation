@@ -1,6 +1,7 @@
 data/
 training/
 main.py
+dump/
 __pycache__/
-.vscode/
+vscode/
 *.pyc

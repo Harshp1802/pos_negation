@@ -144,6 +144,8 @@ class MyModel_2(nn.Module):
                             bidirectional = bidirectional,
                             dropout = dropout if n_layers > 1 else 0)
         self.pos_encoding = PositionalEncoding(hidden_dim, dropout)
+        self.pos_encoding_trg1 = PositionalEncoding(hidden_dim, dropout)
+        self.pos_encoding_trg2 = PositionalEncoding(hidden_dim, dropout)
         self.T1 = torch.nn.Transformer(d_model=hidden_dim,num_encoder_layers=3, num_decoder_layers=1)
         self.T2 = torch.nn.Transformer(d_model=hidden_dim,num_encoder_layers=3, num_decoder_layers=1)
         
@@ -169,8 +171,10 @@ class MyModel_2(nn.Module):
         trg_mask1 = self.T1.generate_square_subsequent_mask(len(embedded_y1)).to(embedded_y1.device)
         trg_mask2 = self.T2.generate_square_subsequent_mask(len(embedded_y2)).to(embedded_y2.device)
         shared_output = self.pos_encoding(shared_output)
-        out1 = self.T1(shared_output, embedded_y1, tgt_mask=trg_mask1,src_mask=src_mask,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask1, memory_key_padding_mask=src_pad_mask)
-        out2 = self.T2(shared_output, embedded_y2, tgt_mask=trg_mask2,src_mask=src_mask,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask2, memory_key_padding_mask=src_pad_mask)
+        embedded_y1 = self.pos_encoding_trg1(embedded_y1)
+        embedded_y2 = self.pos_encoding_trg2(embedded_y2)
+        out1 = self.T1(shared_output, embedded_y1, tgt_mask=trg_mask1,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask1, memory_key_padding_mask=src_pad_mask)#,src_mask=src_mask
+        out2 = self.T2(shared_output, embedded_y2, tgt_mask=trg_mask2,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask2, memory_key_padding_mask=src_pad_mask)#,src_mask=src_mask
         predictions_1 = self.fc1(self.dropout(out1))
         predictions_2 = self.fc2(self.dropout(out2))
         return predictions_1, predictions_2

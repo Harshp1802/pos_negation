@@ -1,0 +1,1201 @@
+Adjusting learning rate of group 0 to 1.0000e-03.
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 01 | Epoch Time: 0m 25s
+	Train Loss: 2404.359 | Train Acc POS: 28.56% | Train Acc NEG: 78.74%
+	 Val. Loss: 1583.517 |  Val. Acc POS: 38.85% | Val. Acc NEG: 82.68%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 02 | Epoch Time: 0m 26s
+	Train Loss: 2003.137 | Train Acc POS: 35.57% | Train Acc NEG: 82.14%
+	 Val. Loss: 1499.625 |  Val. Acc POS: 38.58% | Val. Acc NEG: 82.68%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 03 | Epoch Time: 0m 26s
+	Train Loss: 1920.198 | Train Acc POS: 38.01% | Train Acc NEG: 82.11%
+	 Val. Loss: 1452.483 |  Val. Acc POS: 39.56% | Val. Acc NEG: 82.68%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 04 | Epoch Time: 0m 27s
+	Train Loss: 1858.761 | Train Acc POS: 40.16% | Train Acc NEG: 82.34%
+	 Val. Loss: 1406.351 |  Val. Acc POS: 41.56% | Val. Acc NEG: 82.68%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 05 | Epoch Time: 0m 29s
+	Train Loss: 1811.615 | Train Acc POS: 42.04% | Train Acc NEG: 82.65%
+	 Val. Loss: 1379.931 |  Val. Acc POS: 43.08% | Val. Acc NEG: 83.33%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 06 | Epoch Time: 0m 31s
+	Train Loss: 1767.083 | Train Acc POS: 43.85% | Train Acc NEG: 82.75%
+	 Val. Loss: 1355.707 |  Val. Acc POS: 43.50% | Val. Acc NEG: 83.30%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 07 | Epoch Time: 0m 33s
+	Train Loss: 1723.783 | Train Acc POS: 44.62% | Train Acc NEG: 82.77%
+	 Val. Loss: 1324.635 |  Val. Acc POS: 44.34% | Val. Acc NEG: 83.36%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 08 | Epoch Time: 0m 43s
+	Train Loss: 1685.383 | Train Acc POS: 46.25% | Train Acc NEG: 83.07%
+	 Val. Loss: 1315.477 |  Val. Acc POS: 44.95% | Val. Acc NEG: 83.47%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 09 | Epoch Time: 0m 44s
+	Train Loss: 1652.086 | Train Acc POS: 46.84% | Train Acc NEG: 83.19%
+	 Val. Loss: 1277.627 |  Val. Acc POS: 46.08% | Val. Acc NEG: 83.63%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 10 | Epoch Time: 0m 41s
+	Train Loss: 1622.960 | Train Acc POS: 47.95% | Train Acc NEG: 82.99%
+	 Val. Loss: 1266.341 |  Val. Acc POS: 46.58% | Val. Acc NEG: 84.25%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 11 | Epoch Time: 0m 39s
+	Train Loss: 1598.085 | Train Acc POS: 49.31% | Train Acc NEG: 83.54%
+	 Val. Loss: 1244.629 |  Val. Acc POS: 49.38% | Val. Acc NEG: 84.03%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 12 | Epoch Time: 0m 39s
+	Train Loss: 1572.452 | Train Acc POS: 50.14% | Train Acc NEG: 83.72%
+	 Val. Loss: 1233.826 |  Val. Acc POS: 49.19% | Val. Acc NEG: 84.22%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 13 | Epoch Time: 0m 39s
+	Train Loss: 1544.804 | Train Acc POS: 51.01% | Train Acc NEG: 83.97%
+	 Val. Loss: 1226.149 |  Val. Acc POS: 49.48% | Val. Acc NEG: 84.13%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 14 | Epoch Time: 0m 40s
+	Train Loss: 1530.391 | Train Acc POS: 51.74% | Train Acc NEG: 83.90%
+	 Val. Loss: 1204.799 |  Val. Acc POS: 51.26% | Val. Acc NEG: 84.29%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 15 | Epoch Time: 0m 41s
+	Train Loss: 1502.998 | Train Acc POS: 52.47% | Train Acc NEG: 84.35%
+	 Val. Loss: 1195.582 |  Val. Acc POS: 50.46% | Val. Acc NEG: 84.42%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 16 | Epoch Time: 0m 41s
+	Train Loss: 1484.065 | Train Acc POS: 53.51% | Train Acc NEG: 84.47%
+	 Val. Loss: 1175.483 |  Val. Acc POS: 52.46% | Val. Acc NEG: 84.45%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 17 | Epoch Time: 0m 41s
+	Train Loss: 1463.782 | Train Acc POS: 54.28% | Train Acc NEG: 84.59%
+	 Val. Loss: 1157.626 |  Val. Acc POS: 54.01% | Val. Acc NEG: 84.56%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 18 | Epoch Time: 0m 41s
+	Train Loss: 1441.827 | Train Acc POS: 55.12% | Train Acc NEG: 84.44%
+	 Val. Loss: 1152.971 |  Val. Acc POS: 52.53% | Val. Acc NEG: 84.33%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 19 | Epoch Time: 0m 42s
+	Train Loss: 1425.430 | Train Acc POS: 55.16% | Train Acc NEG: 84.59%
+	 Val. Loss: 1135.842 |  Val. Acc POS: 55.58% | Val. Acc NEG: 84.56%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 20 | Epoch Time: 0m 44s
+	Train Loss: 1406.721 | Train Acc POS: 56.43% | Train Acc NEG: 84.78%
+	 Val. Loss: 1132.897 |  Val. Acc POS: 54.20% | Val. Acc NEG: 84.42%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 21 | Epoch Time: 0m 45s
+	Train Loss: 1390.300 | Train Acc POS: 56.66% | Train Acc NEG: 84.79%
+	 Val. Loss: 1127.073 |  Val. Acc POS: 55.93% | Val. Acc NEG: 84.68%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 22 | Epoch Time: 0m 45s
+	Train Loss: 1373.024 | Train Acc POS: 57.42% | Train Acc NEG: 84.58%
+	 Val. Loss: 1111.958 |  Val. Acc POS: 55.01% | Val. Acc NEG: 84.65%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 23 | Epoch Time: 0m 46s
+	Train Loss: 1352.697 | Train Acc POS: 58.07% | Train Acc NEG: 84.83%
+	 Val. Loss: 1100.215 |  Val. Acc POS: 56.73% | Val. Acc NEG: 84.52%
+Adjusting learning rate of group 0 to 1.0000e-03.
+Epoch: 24 | Epoch Time: 0m 45s
+	Train Loss: 1338.126 | Train Acc POS: 58.97% | Train Acc NEG: 84.82%
+	 Val. Loss: 1097.667 |  Val. Acc POS: 56.71% | Val. Acc NEG: 84.26%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 25 | Epoch Time: 0m 46s
+	Train Loss: 1327.054 | Train Acc POS: 58.29% | Train Acc NEG: 85.04%
+	 Val. Loss: 1088.326 |  Val. Acc POS: 56.85% | Val. Acc NEG: 84.43%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 26 | Epoch Time: 0m 46s
+	Train Loss: 1305.285 | Train Acc POS: 59.76% | Train Acc NEG: 84.86%
+	 Val. Loss: 1077.918 |  Val. Acc POS: 57.40% | Val. Acc NEG: 84.91%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 27 | Epoch Time: 0m 46s
+	Train Loss: 1282.428 | Train Acc POS: 60.24% | Train Acc NEG: 84.81%
+	 Val. Loss: 1069.837 |  Val. Acc POS: 57.05% | Val. Acc NEG: 84.88%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 28 | Epoch Time: 0m 46s
+	Train Loss: 1274.398 | Train Acc POS: 60.45% | Train Acc NEG: 84.94%
+	 Val. Loss: 1053.722 |  Val. Acc POS: 59.71% | Val. Acc NEG: 84.20%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 29 | Epoch Time: 0m 46s
+	Train Loss: 1254.977 | Train Acc POS: 61.01% | Train Acc NEG: 84.98%
+	 Val. Loss: 1055.307 |  Val. Acc POS: 58.69% | Val. Acc NEG: 84.26%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 30 | Epoch Time: 0m 49s
+	Train Loss: 1240.087 | Train Acc POS: 61.23% | Train Acc NEG: 84.97%
+	 Val. Loss: 1042.443 |  Val. Acc POS: 59.47% | Val. Acc NEG: 84.84%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 31 | Epoch Time: 0m 49s
+	Train Loss: 1227.658 | Train Acc POS: 61.92% | Train Acc NEG: 85.09%
+	 Val. Loss: 1036.025 |  Val. Acc POS: 59.43% | Val. Acc NEG: 83.32%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 32 | Epoch Time: 0m 50s
+	Train Loss: 1205.748 | Train Acc POS: 62.48% | Train Acc NEG: 84.93%
+	 Val. Loss: 1032.941 |  Val. Acc POS: 58.39% | Val. Acc NEG: 84.39%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 33 | Epoch Time: 0m 48s
+	Train Loss: 1199.359 | Train Acc POS: 62.79% | Train Acc NEG: 84.97%
+	 Val. Loss: 1027.461 |  Val. Acc POS: 59.58% | Val. Acc NEG: 82.97%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 34 | Epoch Time: 0m 51s
+	Train Loss: 1188.278 | Train Acc POS: 62.49% | Train Acc NEG: 85.09%
+	 Val. Loss: 1022.820 |  Val. Acc POS: 58.64% | Val. Acc NEG: 84.10%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 35 | Epoch Time: 0m 52s
+	Train Loss: 1175.109 | Train Acc POS: 62.97% | Train Acc NEG: 85.01%
+	 Val. Loss: 998.537 |  Val. Acc POS: 61.07% | Val. Acc NEG: 83.71%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 36 | Epoch Time: 0m 51s
+	Train Loss: 1158.431 | Train Acc POS: 63.72% | Train Acc NEG: 84.99%
+	 Val. Loss: 1009.810 |  Val. Acc POS: 60.63% | Val. Acc NEG: 82.58%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 37 | Epoch Time: 0m 53s
+	Train Loss: 1139.549 | Train Acc POS: 64.23% | Train Acc NEG: 85.10%
+	 Val. Loss: 1003.893 |  Val. Acc POS: 60.35% | Val. Acc NEG: 84.45%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 38 | Epoch Time: 0m 52s
+	Train Loss: 1127.924 | Train Acc POS: 64.73% | Train Acc NEG: 85.03%
+	 Val. Loss: 1006.370 |  Val. Acc POS: 59.17% | Val. Acc NEG: 83.90%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 39 | Epoch Time: 0m 52s
+	Train Loss: 1113.279 | Train Acc POS: 65.08% | Train Acc NEG: 85.10%
+	 Val. Loss: 997.978 |  Val. Acc POS: 60.64% | Val. Acc NEG: 82.19%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 40 | Epoch Time: 0m 55s
+	Train Loss: 1103.602 | Train Acc POS: 65.07% | Train Acc NEG: 85.20%
+	 Val. Loss: 984.339 |  Val. Acc POS: 61.57% | Val. Acc NEG: 84.16%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 41 | Epoch Time: 0m 52s
+	Train Loss: 1089.215 | Train Acc POS: 65.28% | Train Acc NEG: 85.32%
+	 Val. Loss: 986.811 |  Val. Acc POS: 60.61% | Val. Acc NEG: 82.48%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 42 | Epoch Time: 0m 55s
+	Train Loss: 1077.890 | Train Acc POS: 65.70% | Train Acc NEG: 85.12%
+	 Val. Loss: 988.212 |  Val. Acc POS: 62.22% | Val. Acc NEG: 82.65%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 43 | Epoch Time: 0m 53s
+	Train Loss: 1067.088 | Train Acc POS: 66.26% | Train Acc NEG: 85.13%
+	 Val. Loss: 974.602 |  Val. Acc POS: 62.77% | Val. Acc NEG: 84.49%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 44 | Epoch Time: 0m 55s
+	Train Loss: 1060.243 | Train Acc POS: 65.88% | Train Acc NEG: 85.02%
+	 Val. Loss: 969.169 |  Val. Acc POS: 61.38% | Val. Acc NEG: 84.42%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 45 | Epoch Time: 0m 54s
+	Train Loss: 1040.036 | Train Acc POS: 66.90% | Train Acc NEG: 85.21%
+	 Val. Loss: 977.744 |  Val. Acc POS: 62.81% | Val. Acc NEG: 83.65%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 46 | Epoch Time: 0m 55s
+	Train Loss: 1027.708 | Train Acc POS: 66.93% | Train Acc NEG: 85.06%
+	 Val. Loss: 969.789 |  Val. Acc POS: 62.52% | Val. Acc NEG: 84.42%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 47 | Epoch Time: 0m 55s
+	Train Loss: 1015.474 | Train Acc POS: 67.54% | Train Acc NEG: 85.18%
+	 Val. Loss: 963.041 |  Val. Acc POS: 61.59% | Val. Acc NEG: 83.80%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 48 | Epoch Time: 0m 57s
+	Train Loss: 1007.751 | Train Acc POS: 67.50% | Train Acc NEG: 85.27%
+	 Val. Loss: 977.154 |  Val. Acc POS: 62.55% | Val. Acc NEG: 81.43%
+Adjusting learning rate of group 0 to 9.5000e-04.
+Epoch: 49 | Epoch Time: 0m 56s
+	Train Loss: 991.463 | Train Acc POS: 67.78% | Train Acc NEG: 85.19%
+	 Val. Loss: 956.345 |  Val. Acc POS: 63.61% | Val. Acc NEG: 81.64%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 50 | Epoch Time: 0m 59s
+	Train Loss: 976.674 | Train Acc POS: 68.47% | Train Acc NEG: 84.83%
+	 Val. Loss: 974.387 |  Val. Acc POS: 62.24% | Val. Acc NEG: 80.92%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 51 | Epoch Time: 0m 56s
+	Train Loss: 968.091 | Train Acc POS: 68.73% | Train Acc NEG: 84.89%
+	 Val. Loss: 960.976 |  Val. Acc POS: 62.57% | Val. Acc NEG: 81.89%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 52 | Epoch Time: 0m 56s
+	Train Loss: 953.196 | Train Acc POS: 68.73% | Train Acc NEG: 85.19%
+	 Val. Loss: 962.823 |  Val. Acc POS: 64.18% | Val. Acc NEG: 80.82%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 53 | Epoch Time: 0m 58s
+	Train Loss: 943.011 | Train Acc POS: 68.73% | Train Acc NEG: 85.18%
+	 Val. Loss: 953.013 |  Val. Acc POS: 63.29% | Val. Acc NEG: 82.54%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 54 | Epoch Time: 0m 59s
+	Train Loss: 935.344 | Train Acc POS: 68.76% | Train Acc NEG: 85.30%
+	 Val. Loss: 972.003 |  Val. Acc POS: 63.50% | Val. Acc NEG: 80.38%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 55 | Epoch Time: 0m 58s
+	Train Loss: 925.246 | Train Acc POS: 69.37% | Train Acc NEG: 84.77%
+	 Val. Loss: 949.730 |  Val. Acc POS: 63.81% | Val. Acc NEG: 83.38%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 56 | Epoch Time: 0m 57s
+	Train Loss: 919.966 | Train Acc POS: 69.45% | Train Acc NEG: 84.98%
+	 Val. Loss: 953.037 |  Val. Acc POS: 63.96% | Val. Acc NEG: 84.13%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 57 | Epoch Time: 0m 57s
+	Train Loss: 904.976 | Train Acc POS: 70.57% | Train Acc NEG: 84.96%
+	 Val. Loss: 959.248 |  Val. Acc POS: 63.13% | Val. Acc NEG: 83.33%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 58 | Epoch Time: 1m 1s
+	Train Loss: 892.375 | Train Acc POS: 70.41% | Train Acc NEG: 84.88%
+	 Val. Loss: 955.195 |  Val. Acc POS: 63.86% | Val. Acc NEG: 79.46%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 59 | Epoch Time: 0m 58s
+	Train Loss: 883.276 | Train Acc POS: 70.75% | Train Acc NEG: 84.92%
+	 Val. Loss: 954.867 |  Val. Acc POS: 65.14% | Val. Acc NEG: 80.82%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 60 | Epoch Time: 0m 59s
+	Train Loss: 870.931 | Train Acc POS: 71.24% | Train Acc NEG: 84.73%
+	 Val. Loss: 944.300 |  Val. Acc POS: 64.24% | Val. Acc NEG: 80.37%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 61 | Epoch Time: 1m 3s
+	Train Loss: 855.619 | Train Acc POS: 71.44% | Train Acc NEG: 85.15%
+	 Val. Loss: 955.028 |  Val. Acc POS: 63.28% | Val. Acc NEG: 81.32%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 62 | Epoch Time: 0m 56s
+	Train Loss: 850.175 | Train Acc POS: 71.65% | Train Acc NEG: 85.26%
+	 Val. Loss: 969.732 |  Val. Acc POS: 63.11% | Val. Acc NEG: 78.94%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 63 | Epoch Time: 1m 2s
+	Train Loss: 837.813 | Train Acc POS: 71.85% | Train Acc NEG: 85.24%
+	 Val. Loss: 952.487 |  Val. Acc POS: 63.75% | Val. Acc NEG: 80.69%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 64 | Epoch Time: 1m 2s
+	Train Loss: 829.513 | Train Acc POS: 71.92% | Train Acc NEG: 85.27%
+	 Val. Loss: 970.410 |  Val. Acc POS: 64.88% | Val. Acc NEG: 78.61%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 65 | Epoch Time: 0m 58s
+	Train Loss: 820.900 | Train Acc POS: 72.28% | Train Acc NEG: 85.36%
+	 Val. Loss: 942.327 |  Val. Acc POS: 64.52% | Val. Acc NEG: 81.28%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 66 | Epoch Time: 1m 0s
+	Train Loss: 810.598 | Train Acc POS: 72.56% | Train Acc NEG: 85.08%
+	 Val. Loss: 947.200 |  Val. Acc POS: 65.23% | Val. Acc NEG: 80.86%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 67 | Epoch Time: 1m 3s
+	Train Loss: 798.454 | Train Acc POS: 72.90% | Train Acc NEG: 85.25%
+	 Val. Loss: 957.280 |  Val. Acc POS: 64.88% | Val. Acc NEG: 79.01%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 68 | Epoch Time: 1m 2s
+	Train Loss: 784.326 | Train Acc POS: 73.29% | Train Acc NEG: 85.61%
+	 Val. Loss: 959.942 |  Val. Acc POS: 64.12% | Val. Acc NEG: 81.97%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 69 | Epoch Time: 1m 3s
+	Train Loss: 779.002 | Train Acc POS: 73.43% | Train Acc NEG: 85.69%
+	 Val. Loss: 963.234 |  Val. Acc POS: 65.36% | Val. Acc NEG: 80.48%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 70 | Epoch Time: 1m 2s
+	Train Loss: 777.947 | Train Acc POS: 73.62% | Train Acc NEG: 85.20%
+	 Val. Loss: 940.606 |  Val. Acc POS: 64.90% | Val. Acc NEG: 81.52%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 71 | Epoch Time: 1m 1s
+	Train Loss: 762.414 | Train Acc POS: 73.64% | Train Acc NEG: 85.31%
+	 Val. Loss: 938.996 |  Val. Acc POS: 65.69% | Val. Acc NEG: 79.89%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 72 | Epoch Time: 0m 59s
+	Train Loss: 751.263 | Train Acc POS: 74.71% | Train Acc NEG: 85.35%
+	 Val. Loss: 977.989 |  Val. Acc POS: 64.60% | Val. Acc NEG: 79.81%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 73 | Epoch Time: 1m 6s
+	Train Loss: 754.832 | Train Acc POS: 74.07% | Train Acc NEG: 85.46%
+	 Val. Loss: 948.561 |  Val. Acc POS: 67.01% | Val. Acc NEG: 80.84%
+Adjusting learning rate of group 0 to 9.0250e-04.
+Epoch: 74 | Epoch Time: 1m 5s
+	Train Loss: 733.682 | Train Acc POS: 74.50% | Train Acc NEG: 85.51%
+	 Val. Loss: 955.175 |  Val. Acc POS: 64.96% | Val. Acc NEG: 79.17%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 75 | Epoch Time: 1m 1s
+	Train Loss: 727.307 | Train Acc POS: 74.93% | Train Acc NEG: 85.61%
+	 Val. Loss: 974.063 |  Val. Acc POS: 64.47% | Val. Acc NEG: 80.90%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 76 | Epoch Time: 1m 2s
+	Train Loss: 718.006 | Train Acc POS: 75.02% | Train Acc NEG: 85.43%
+	 Val. Loss: 941.954 |  Val. Acc POS: 65.76% | Val. Acc NEG: 83.47%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 77 | Epoch Time: 1m 3s
+	Train Loss: 707.171 | Train Acc POS: 75.70% | Train Acc NEG: 85.58%
+	 Val. Loss: 985.532 |  Val. Acc POS: 65.08% | Val. Acc NEG: 79.54%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 78 | Epoch Time: 1m 2s
+	Train Loss: 699.982 | Train Acc POS: 75.84% | Train Acc NEG: 85.70%
+	 Val. Loss: 971.114 |  Val. Acc POS: 65.55% | Val. Acc NEG: 79.11%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 79 | Epoch Time: 1m 6s
+	Train Loss: 698.976 | Train Acc POS: 75.89% | Train Acc NEG: 85.61%
+	 Val. Loss: 968.134 |  Val. Acc POS: 66.11% | Val. Acc NEG: 80.10%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 80 | Epoch Time: 1m 2s
+	Train Loss: 690.609 | Train Acc POS: 76.42% | Train Acc NEG: 85.42%
+	 Val. Loss: 968.927 |  Val. Acc POS: 65.22% | Val. Acc NEG: 80.41%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 81 | Epoch Time: 1m 4s
+	Train Loss: 673.938 | Train Acc POS: 76.64% | Train Acc NEG: 85.59%
+	 Val. Loss: 971.161 |  Val. Acc POS: 64.56% | Val. Acc NEG: 79.76%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 82 | Epoch Time: 1m 2s
+	Train Loss: 670.369 | Train Acc POS: 76.78% | Train Acc NEG: 85.41%
+	 Val. Loss: 985.071 |  Val. Acc POS: 65.88% | Val. Acc NEG: 80.51%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 83 | Epoch Time: 1m 2s
+	Train Loss: 666.013 | Train Acc POS: 77.00% | Train Acc NEG: 85.92%
+	 Val. Loss: 983.817 |  Val. Acc POS: 66.75% | Val. Acc NEG: 79.74%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 84 | Epoch Time: 1m 7s
+	Train Loss: 661.587 | Train Acc POS: 76.47% | Train Acc NEG: 85.64%
+	 Val. Loss: 963.690 |  Val. Acc POS: 65.29% | Val. Acc NEG: 81.85%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 85 | Epoch Time: 1m 4s
+	Train Loss: 650.930 | Train Acc POS: 77.08% | Train Acc NEG: 86.05%
+	 Val. Loss: 1006.508 |  Val. Acc POS: 64.89% | Val. Acc NEG: 79.88%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 86 | Epoch Time: 1m 4s
+	Train Loss: 639.269 | Train Acc POS: 77.84% | Train Acc NEG: 85.73%
+	 Val. Loss: 976.393 |  Val. Acc POS: 65.15% | Val. Acc NEG: 81.97%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 87 | Epoch Time: 1m 4s
+	Train Loss: 631.741 | Train Acc POS: 77.85% | Train Acc NEG: 85.82%
+	 Val. Loss: 1006.910 |  Val. Acc POS: 66.40% | Val. Acc NEG: 80.65%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 88 | Epoch Time: 1m 3s
+	Train Loss: 639.651 | Train Acc POS: 77.92% | Train Acc NEG: 85.58%
+	 Val. Loss: 945.373 |  Val. Acc POS: 67.36% | Val. Acc NEG: 83.89%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 89 | Epoch Time: 1m 6s
+	Train Loss: 626.496 | Train Acc POS: 78.18% | Train Acc NEG: 85.84%
+	 Val. Loss: 973.133 |  Val. Acc POS: 67.47% | Val. Acc NEG: 82.23%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 90 | Epoch Time: 1m 5s
+	Train Loss: 622.488 | Train Acc POS: 78.16% | Train Acc NEG: 85.73%
+	 Val. Loss: 969.049 |  Val. Acc POS: 66.00% | Val. Acc NEG: 79.96%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 91 | Epoch Time: 1m 2s
+	Train Loss: 606.926 | Train Acc POS: 78.61% | Train Acc NEG: 85.99%
+	 Val. Loss: 980.651 |  Val. Acc POS: 66.51% | Val. Acc NEG: 82.17%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 92 | Epoch Time: 1m 7s
+	Train Loss: 599.790 | Train Acc POS: 78.95% | Train Acc NEG: 86.04%
+	 Val. Loss: 964.612 |  Val. Acc POS: 65.87% | Val. Acc NEG: 79.81%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 93 | Epoch Time: 1m 4s
+	Train Loss: 603.813 | Train Acc POS: 78.79% | Train Acc NEG: 85.92%
+	 Val. Loss: 966.058 |  Val. Acc POS: 66.97% | Val. Acc NEG: 81.97%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 94 | Epoch Time: 1m 6s
+	Train Loss: 590.813 | Train Acc POS: 79.14% | Train Acc NEG: 85.90%
+	 Val. Loss: 999.521 |  Val. Acc POS: 66.32% | Val. Acc NEG: 81.35%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 95 | Epoch Time: 1m 3s
+	Train Loss: 581.843 | Train Acc POS: 79.34% | Train Acc NEG: 86.03%
+	 Val. Loss: 963.327 |  Val. Acc POS: 67.06% | Val. Acc NEG: 84.28%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 96 | Epoch Time: 1m 7s
+	Train Loss: 586.874 | Train Acc POS: 79.10% | Train Acc NEG: 85.82%
+	 Val. Loss: 1020.567 |  Val. Acc POS: 65.84% | Val. Acc NEG: 79.10%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 97 | Epoch Time: 1m 6s
+	Train Loss: 572.503 | Train Acc POS: 79.29% | Train Acc NEG: 86.33%
+	 Val. Loss: 992.845 |  Val. Acc POS: 65.31% | Val. Acc NEG: 81.58%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 98 | Epoch Time: 1m 7s
+	Train Loss: 574.410 | Train Acc POS: 79.34% | Train Acc NEG: 86.15%
+	 Val. Loss: 984.650 |  Val. Acc POS: 65.06% | Val. Acc NEG: 82.26%
+Adjusting learning rate of group 0 to 8.5737e-04.
+Epoch: 99 | Epoch Time: 1m 6s
+	Train Loss: 571.344 | Train Acc POS: 79.77% | Train Acc NEG: 85.94%
+	 Val. Loss: 993.251 |  Val. Acc POS: 66.65% | Val. Acc NEG: 80.45%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 100 | Epoch Time: 1m 6s
+	Train Loss: 563.295 | Train Acc POS: 80.13% | Train Acc NEG: 86.23%
+	 Val. Loss: 1015.200 |  Val. Acc POS: 65.71% | Val. Acc NEG: 80.78%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 101 | Epoch Time: 1m 7s
+	Train Loss: 554.425 | Train Acc POS: 80.32% | Train Acc NEG: 85.95%
+	 Val. Loss: 982.373 |  Val. Acc POS: 67.02% | Val. Acc NEG: 83.59%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 102 | Epoch Time: 1m 6s
+	Train Loss: 553.983 | Train Acc POS: 80.67% | Train Acc NEG: 85.75%
+	 Val. Loss: 982.354 |  Val. Acc POS: 66.63% | Val. Acc NEG: 83.86%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 103 | Epoch Time: 1m 5s
+	Train Loss: 537.685 | Train Acc POS: 81.12% | Train Acc NEG: 86.02%
+	 Val. Loss: 1011.485 |  Val. Acc POS: 67.16% | Val. Acc NEG: 79.35%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 104 | Epoch Time: 1m 7s
+	Train Loss: 535.373 | Train Acc POS: 80.69% | Train Acc NEG: 86.29%
+	 Val. Loss: 1013.015 |  Val. Acc POS: 66.05% | Val. Acc NEG: 81.13%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 105 | Epoch Time: 1m 6s
+	Train Loss: 526.205 | Train Acc POS: 81.27% | Train Acc NEG: 86.28%
+	 Val. Loss: 1021.486 |  Val. Acc POS: 66.14% | Val. Acc NEG: 79.95%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 106 | Epoch Time: 1m 9s
+	Train Loss: 527.425 | Train Acc POS: 81.51% | Train Acc NEG: 86.15%
+	 Val. Loss: 989.444 |  Val. Acc POS: 64.73% | Val. Acc NEG: 83.95%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 107 | Epoch Time: 1m 6s
+	Train Loss: 527.317 | Train Acc POS: 81.45% | Train Acc NEG: 86.29%
+	 Val. Loss: 1052.838 |  Val. Acc POS: 66.77% | Val. Acc NEG: 81.67%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 108 | Epoch Time: 1m 7s
+	Train Loss: 525.547 | Train Acc POS: 81.21% | Train Acc NEG: 86.27%
+	 Val. Loss: 994.125 |  Val. Acc POS: 67.41% | Val. Acc NEG: 82.86%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 109 | Epoch Time: 1m 8s
+	Train Loss: 514.029 | Train Acc POS: 81.86% | Train Acc NEG: 86.28%
+	 Val. Loss: 996.261 |  Val. Acc POS: 66.56% | Val. Acc NEG: 82.35%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 110 | Epoch Time: 1m 7s
+	Train Loss: 503.476 | Train Acc POS: 81.92% | Train Acc NEG: 86.49%
+	 Val. Loss: 1006.227 |  Val. Acc POS: 67.54% | Val. Acc NEG: 82.56%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 111 | Epoch Time: 1m 12s
+	Train Loss: 497.399 | Train Acc POS: 82.25% | Train Acc NEG: 86.50%
+	 Val. Loss: 1037.417 |  Val. Acc POS: 66.86% | Val. Acc NEG: 80.80%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 112 | Epoch Time: 1m 4s
+	Train Loss: 497.728 | Train Acc POS: 81.99% | Train Acc NEG: 86.45%
+	 Val. Loss: 1018.133 |  Val. Acc POS: 65.79% | Val. Acc NEG: 81.28%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 113 | Epoch Time: 1m 8s
+	Train Loss: 495.890 | Train Acc POS: 82.36% | Train Acc NEG: 86.51%
+	 Val. Loss: 996.151 |  Val. Acc POS: 69.16% | Val. Acc NEG: 82.27%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 114 | Epoch Time: 1m 10s
+	Train Loss: 484.379 | Train Acc POS: 82.84% | Train Acc NEG: 86.59%
+	 Val. Loss: 1028.722 |  Val. Acc POS: 65.96% | Val. Acc NEG: 79.34%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 115 | Epoch Time: 1m 9s
+	Train Loss: 490.520 | Train Acc POS: 82.44% | Train Acc NEG: 86.37%
+	 Val. Loss: 1022.496 |  Val. Acc POS: 66.33% | Val. Acc NEG: 81.11%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 116 | Epoch Time: 1m 6s
+	Train Loss: 486.325 | Train Acc POS: 82.54% | Train Acc NEG: 86.48%
+	 Val. Loss: 1035.916 |  Val. Acc POS: 65.40% | Val. Acc NEG: 80.81%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 117 | Epoch Time: 1m 9s
+	Train Loss: 484.139 | Train Acc POS: 82.68% | Train Acc NEG: 86.56%
+	 Val. Loss: 1034.927 |  Val. Acc POS: 66.37% | Val. Acc NEG: 80.98%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 118 | Epoch Time: 1m 9s
+	Train Loss: 482.138 | Train Acc POS: 83.00% | Train Acc NEG: 86.24%
+	 Val. Loss: 1024.567 |  Val. Acc POS: 66.18% | Val. Acc NEG: 80.65%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 119 | Epoch Time: 1m 7s
+	Train Loss: 468.255 | Train Acc POS: 83.43% | Train Acc NEG: 86.29%
+	 Val. Loss: 1018.586 |  Val. Acc POS: 66.17% | Val. Acc NEG: 82.52%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 120 | Epoch Time: 1m 10s
+	Train Loss: 472.887 | Train Acc POS: 82.91% | Train Acc NEG: 86.17%
+	 Val. Loss: 995.252 |  Val. Acc POS: 65.57% | Val. Acc NEG: 81.98%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 121 | Epoch Time: 1m 5s
+	Train Loss: 463.372 | Train Acc POS: 83.55% | Train Acc NEG: 86.27%
+	 Val. Loss: 1019.447 |  Val. Acc POS: 65.44% | Val. Acc NEG: 81.12%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 122 | Epoch Time: 1m 11s
+	Train Loss: 458.279 | Train Acc POS: 83.51% | Train Acc NEG: 86.62%
+	 Val. Loss: 1035.553 |  Val. Acc POS: 66.13% | Val. Acc NEG: 82.83%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 123 | Epoch Time: 1m 9s
+	Train Loss: 460.433 | Train Acc POS: 83.62% | Train Acc NEG: 86.31%
+	 Val. Loss: 1054.473 |  Val. Acc POS: 66.75% | Val. Acc NEG: 79.05%
+Adjusting learning rate of group 0 to 8.1451e-04.
+Epoch: 124 | Epoch Time: 1m 9s
+	Train Loss: 465.255 | Train Acc POS: 83.27% | Train Acc NEG: 86.22%
+	 Val. Loss: 1035.925 |  Val. Acc POS: 66.54% | Val. Acc NEG: 79.90%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 125 | Epoch Time: 1m 8s
+	Train Loss: 454.237 | Train Acc POS: 84.07% | Train Acc NEG: 86.68%
+	 Val. Loss: 1068.114 |  Val. Acc POS: 64.41% | Val. Acc NEG: 78.99%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 126 | Epoch Time: 1m 9s
+	Train Loss: 456.771 | Train Acc POS: 84.17% | Train Acc NEG: 86.26%
+	 Val. Loss: 1033.273 |  Val. Acc POS: 65.73% | Val. Acc NEG: 81.77%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 127 | Epoch Time: 1m 9s
+	Train Loss: 442.491 | Train Acc POS: 84.19% | Train Acc NEG: 86.59%
+	 Val. Loss: 1033.876 |  Val. Acc POS: 66.57% | Val. Acc NEG: 81.60%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 128 | Epoch Time: 1m 7s
+	Train Loss: 443.454 | Train Acc POS: 83.68% | Train Acc NEG: 86.75%
+	 Val. Loss: 1045.584 |  Val. Acc POS: 65.25% | Val. Acc NEG: 80.64%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 129 | Epoch Time: 1m 6s
+	Train Loss: 433.060 | Train Acc POS: 84.69% | Train Acc NEG: 86.54%
+	 Val. Loss: 1027.390 |  Val. Acc POS: 65.27% | Val. Acc NEG: 82.39%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 130 | Epoch Time: 1m 10s
+	Train Loss: 428.900 | Train Acc POS: 84.61% | Train Acc NEG: 86.48%
+	 Val. Loss: 1040.610 |  Val. Acc POS: 67.28% | Val. Acc NEG: 82.70%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 131 | Epoch Time: 1m 9s
+	Train Loss: 431.338 | Train Acc POS: 84.66% | Train Acc NEG: 86.69%
+	 Val. Loss: 1067.967 |  Val. Acc POS: 63.92% | Val. Acc NEG: 81.88%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 132 | Epoch Time: 1m 7s
+	Train Loss: 425.912 | Train Acc POS: 84.48% | Train Acc NEG: 86.69%
+	 Val. Loss: 1047.335 |  Val. Acc POS: 67.06% | Val. Acc NEG: 81.82%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 133 | Epoch Time: 1m 9s
+	Train Loss: 431.841 | Train Acc POS: 84.47% | Train Acc NEG: 86.60%
+	 Val. Loss: 1054.797 |  Val. Acc POS: 65.99% | Val. Acc NEG: 82.24%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 134 | Epoch Time: 1m 11s
+	Train Loss: 418.419 | Train Acc POS: 85.47% | Train Acc NEG: 86.78%
+	 Val. Loss: 1062.147 |  Val. Acc POS: 66.48% | Val. Acc NEG: 80.60%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 135 | Epoch Time: 1m 9s
+	Train Loss: 420.175 | Train Acc POS: 85.36% | Train Acc NEG: 86.73%
+	 Val. Loss: 1038.902 |  Val. Acc POS: 65.08% | Val. Acc NEG: 84.11%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 136 | Epoch Time: 1m 8s
+	Train Loss: 423.900 | Train Acc POS: 84.71% | Train Acc NEG: 86.48%
+	 Val. Loss: 1051.118 |  Val. Acc POS: 66.81% | Val. Acc NEG: 82.37%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 137 | Epoch Time: 1m 10s
+	Train Loss: 418.360 | Train Acc POS: 85.33% | Train Acc NEG: 86.58%
+	 Val. Loss: 1078.788 |  Val. Acc POS: 65.80% | Val. Acc NEG: 80.00%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 138 | Epoch Time: 1m 13s
+	Train Loss: 411.320 | Train Acc POS: 84.99% | Train Acc NEG: 86.80%
+	 Val. Loss: 1087.485 |  Val. Acc POS: 66.00% | Val. Acc NEG: 80.11%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 139 | Epoch Time: 1m 7s
+	Train Loss: 408.686 | Train Acc POS: 85.71% | Train Acc NEG: 86.57%
+	 Val. Loss: 1082.884 |  Val. Acc POS: 66.82% | Val. Acc NEG: 80.99%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 140 | Epoch Time: 1m 10s
+	Train Loss: 407.190 | Train Acc POS: 85.27% | Train Acc NEG: 86.66%
+	 Val. Loss: 1051.818 |  Val. Acc POS: 66.16% | Val. Acc NEG: 83.13%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 141 | Epoch Time: 1m 11s
+	Train Loss: 408.415 | Train Acc POS: 85.23% | Train Acc NEG: 86.76%
+	 Val. Loss: 1088.483 |  Val. Acc POS: 65.03% | Val. Acc NEG: 83.40%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 142 | Epoch Time: 1m 10s
+	Train Loss: 403.474 | Train Acc POS: 85.64% | Train Acc NEG: 86.73%
+	 Val. Loss: 1077.601 |  Val. Acc POS: 66.68% | Val. Acc NEG: 80.18%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 143 | Epoch Time: 1m 11s
+	Train Loss: 403.196 | Train Acc POS: 85.62% | Train Acc NEG: 86.65%
+	 Val. Loss: 1068.371 |  Val. Acc POS: 66.72% | Val. Acc NEG: 82.37%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 144 | Epoch Time: 1m 10s
+	Train Loss: 402.078 | Train Acc POS: 85.30% | Train Acc NEG: 86.56%
+	 Val. Loss: 1069.505 |  Val. Acc POS: 66.38% | Val. Acc NEG: 81.48%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 145 | Epoch Time: 1m 12s
+	Train Loss: 396.940 | Train Acc POS: 85.96% | Train Acc NEG: 86.66%
+	 Val. Loss: 1086.877 |  Val. Acc POS: 66.67% | Val. Acc NEG: 81.26%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 146 | Epoch Time: 1m 10s
+	Train Loss: 397.665 | Train Acc POS: 85.91% | Train Acc NEG: 86.56%
+	 Val. Loss: 1078.372 |  Val. Acc POS: 66.87% | Val. Acc NEG: 81.72%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 147 | Epoch Time: 1m 8s
+	Train Loss: 400.871 | Train Acc POS: 85.79% | Train Acc NEG: 86.48%
+	 Val. Loss: 1101.244 |  Val. Acc POS: 65.50% | Val. Acc NEG: 80.90%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 148 | Epoch Time: 1m 11s
+	Train Loss: 396.530 | Train Acc POS: 85.75% | Train Acc NEG: 86.68%
+	 Val. Loss: 1086.465 |  Val. Acc POS: 66.56% | Val. Acc NEG: 79.72%
+Adjusting learning rate of group 0 to 7.7378e-04.
+Epoch: 149 | Epoch Time: 1m 12s
+	Train Loss: 387.461 | Train Acc POS: 85.86% | Train Acc NEG: 86.78%
+	 Val. Loss: 1082.301 |  Val. Acc POS: 67.21% | Val. Acc NEG: 81.47%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 150 | Epoch Time: 1m 10s
+	Train Loss: 382.712 | Train Acc POS: 86.34% | Train Acc NEG: 86.90%
+	 Val. Loss: 1059.923 |  Val. Acc POS: 67.62% | Val. Acc NEG: 83.21%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 151 | Epoch Time: 1m 10s
+	Train Loss: 386.642 | Train Acc POS: 86.27% | Train Acc NEG: 86.73%
+	 Val. Loss: 1054.953 |  Val. Acc POS: 65.79% | Val. Acc NEG: 82.22%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 152 | Epoch Time: 1m 10s
+	Train Loss: 378.803 | Train Acc POS: 86.36% | Train Acc NEG: 86.81%
+	 Val. Loss: 1072.152 |  Val. Acc POS: 65.63% | Val. Acc NEG: 81.81%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 153 | Epoch Time: 1m 11s
+	Train Loss: 372.057 | Train Acc POS: 87.00% | Train Acc NEG: 87.23%
+	 Val. Loss: 1080.316 |  Val. Acc POS: 65.99% | Val. Acc NEG: 83.05%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 154 | Epoch Time: 1m 9s
+	Train Loss: 377.406 | Train Acc POS: 86.55% | Train Acc NEG: 86.75%
+	 Val. Loss: 1099.127 |  Val. Acc POS: 65.86% | Val. Acc NEG: 81.36%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 155 | Epoch Time: 1m 11s
+	Train Loss: 370.936 | Train Acc POS: 86.96% | Train Acc NEG: 86.68%
+	 Val. Loss: 1092.579 |  Val. Acc POS: 64.34% | Val. Acc NEG: 81.85%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 156 | Epoch Time: 1m 11s
+	Train Loss: 373.339 | Train Acc POS: 86.84% | Train Acc NEG: 86.76%
+	 Val. Loss: 1125.599 |  Val. Acc POS: 65.57% | Val. Acc NEG: 81.05%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 157 | Epoch Time: 1m 9s
+	Train Loss: 374.699 | Train Acc POS: 86.64% | Train Acc NEG: 86.86%
+	 Val. Loss: 1078.290 |  Val. Acc POS: 67.78% | Val. Acc NEG: 83.64%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 158 | Epoch Time: 1m 10s
+	Train Loss: 376.068 | Train Acc POS: 86.99% | Train Acc NEG: 86.72%
+	 Val. Loss: 1070.125 |  Val. Acc POS: 66.09% | Val. Acc NEG: 80.27%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 159 | Epoch Time: 1m 15s
+	Train Loss: 364.845 | Train Acc POS: 86.80% | Train Acc NEG: 87.04%
+	 Val. Loss: 1089.196 |  Val. Acc POS: 64.93% | Val. Acc NEG: 82.93%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 160 | Epoch Time: 1m 11s
+	Train Loss: 361.681 | Train Acc POS: 87.47% | Train Acc NEG: 87.02%
+	 Val. Loss: 1101.841 |  Val. Acc POS: 64.81% | Val. Acc NEG: 80.90%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 161 | Epoch Time: 1m 9s
+	Train Loss: 366.264 | Train Acc POS: 86.81% | Train Acc NEG: 86.84%
+	 Val. Loss: 1075.871 |  Val. Acc POS: 64.38% | Val. Acc NEG: 83.22%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 162 | Epoch Time: 1m 8s
+	Train Loss: 358.768 | Train Acc POS: 87.41% | Train Acc NEG: 86.90%
+	 Val. Loss: 1081.233 |  Val. Acc POS: 64.61% | Val. Acc NEG: 82.59%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 163 | Epoch Time: 1m 15s
+	Train Loss: 359.924 | Train Acc POS: 87.29% | Train Acc NEG: 86.91%
+	 Val. Loss: 1110.706 |  Val. Acc POS: 66.13% | Val. Acc NEG: 81.48%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 164 | Epoch Time: 1m 7s
+	Train Loss: 353.732 | Train Acc POS: 87.38% | Train Acc NEG: 86.98%
+	 Val. Loss: 1086.026 |  Val. Acc POS: 65.80% | Val. Acc NEG: 82.71%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 165 | Epoch Time: 1m 13s
+	Train Loss: 355.336 | Train Acc POS: 87.38% | Train Acc NEG: 86.85%
+	 Val. Loss: 1104.040 |  Val. Acc POS: 63.75% | Val. Acc NEG: 80.75%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 166 | Epoch Time: 1m 10s
+	Train Loss: 352.832 | Train Acc POS: 87.36% | Train Acc NEG: 87.16%
+	 Val. Loss: 1088.201 |  Val. Acc POS: 64.81% | Val. Acc NEG: 82.54%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 167 | Epoch Time: 1m 10s
+	Train Loss: 350.804 | Train Acc POS: 87.37% | Train Acc NEG: 87.17%
+	 Val. Loss: 1094.950 |  Val. Acc POS: 65.82% | Val. Acc NEG: 80.97%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 168 | Epoch Time: 1m 10s
+	Train Loss: 348.628 | Train Acc POS: 87.95% | Train Acc NEG: 87.12%
+	 Val. Loss: 1104.548 |  Val. Acc POS: 65.46% | Val. Acc NEG: 83.08%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 169 | Epoch Time: 1m 11s
+	Train Loss: 344.689 | Train Acc POS: 87.72% | Train Acc NEG: 87.14%
+	 Val. Loss: 1111.290 |  Val. Acc POS: 66.19% | Val. Acc NEG: 81.28%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 170 | Epoch Time: 1m 8s
+	Train Loss: 342.974 | Train Acc POS: 87.53% | Train Acc NEG: 87.09%
+	 Val. Loss: 1119.778 |  Val. Acc POS: 66.59% | Val. Acc NEG: 81.56%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 171 | Epoch Time: 1m 14s
+	Train Loss: 341.025 | Train Acc POS: 87.88% | Train Acc NEG: 86.93%
+	 Val. Loss: 1090.486 |  Val. Acc POS: 67.35% | Val. Acc NEG: 83.15%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 172 | Epoch Time: 1m 12s
+	Train Loss: 338.434 | Train Acc POS: 87.90% | Train Acc NEG: 87.21%
+	 Val. Loss: 1110.810 |  Val. Acc POS: 66.52% | Val. Acc NEG: 81.72%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 173 | Epoch Time: 1m 10s
+	Train Loss: 340.745 | Train Acc POS: 87.92% | Train Acc NEG: 87.29%
+	 Val. Loss: 1119.306 |  Val. Acc POS: 66.99% | Val. Acc NEG: 81.16%
+Adjusting learning rate of group 0 to 7.3509e-04.
+Epoch: 174 | Epoch Time: 1m 10s
+	Train Loss: 342.427 | Train Acc POS: 87.39% | Train Acc NEG: 87.15%
+	 Val. Loss: 1135.311 |  Val. Acc POS: 65.96% | Val. Acc NEG: 81.90%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 175 | Epoch Time: 1m 13s
+	Train Loss: 340.152 | Train Acc POS: 87.83% | Train Acc NEG: 86.84%
+	 Val. Loss: 1108.363 |  Val. Acc POS: 66.25% | Val. Acc NEG: 82.50%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 176 | Epoch Time: 1m 11s
+	Train Loss: 335.261 | Train Acc POS: 88.01% | Train Acc NEG: 86.86%
+	 Val. Loss: 1106.584 |  Val. Acc POS: 65.13% | Val. Acc NEG: 81.78%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 177 | Epoch Time: 1m 12s
+	Train Loss: 334.218 | Train Acc POS: 88.20% | Train Acc NEG: 87.12%
+	 Val. Loss: 1141.085 |  Val. Acc POS: 64.62% | Val. Acc NEG: 82.11%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 178 | Epoch Time: 1m 10s
+	Train Loss: 330.072 | Train Acc POS: 88.22% | Train Acc NEG: 87.10%
+	 Val. Loss: 1145.702 |  Val. Acc POS: 64.97% | Val. Acc NEG: 81.98%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 179 | Epoch Time: 1m 14s
+	Train Loss: 328.960 | Train Acc POS: 88.85% | Train Acc NEG: 87.06%
+	 Val. Loss: 1093.702 |  Val. Acc POS: 64.81% | Val. Acc NEG: 84.48%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 180 | Epoch Time: 1m 8s
+	Train Loss: 336.190 | Train Acc POS: 88.40% | Train Acc NEG: 87.04%
+	 Val. Loss: 1107.744 |  Val. Acc POS: 65.90% | Val. Acc NEG: 81.85%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 181 | Epoch Time: 1m 12s
+	Train Loss: 332.481 | Train Acc POS: 88.03% | Train Acc NEG: 86.87%
+	 Val. Loss: 1113.808 |  Val. Acc POS: 65.50% | Val. Acc NEG: 82.86%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 182 | Epoch Time: 1m 15s
+	Train Loss: 325.340 | Train Acc POS: 88.51% | Train Acc NEG: 87.24%
+	 Val. Loss: 1095.711 |  Val. Acc POS: 66.15% | Val. Acc NEG: 82.96%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 183 | Epoch Time: 1m 8s
+	Train Loss: 329.645 | Train Acc POS: 88.49% | Train Acc NEG: 87.24%
+	 Val. Loss: 1151.024 |  Val. Acc POS: 65.33% | Val. Acc NEG: 81.59%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 184 | Epoch Time: 1m 12s
+	Train Loss: 327.634 | Train Acc POS: 88.37% | Train Acc NEG: 86.94%
+	 Val. Loss: 1118.133 |  Val. Acc POS: 65.37% | Val. Acc NEG: 82.11%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 185 | Epoch Time: 1m 11s
+	Train Loss: 327.560 | Train Acc POS: 88.54% | Train Acc NEG: 86.91%
+	 Val. Loss: 1117.070 |  Val. Acc POS: 65.37% | Val. Acc NEG: 83.51%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 186 | Epoch Time: 1m 13s
+	Train Loss: 323.027 | Train Acc POS: 88.64% | Train Acc NEG: 87.12%
+	 Val. Loss: 1125.994 |  Val. Acc POS: 64.15% | Val. Acc NEG: 82.93%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 187 | Epoch Time: 1m 11s
+	Train Loss: 320.861 | Train Acc POS: 88.80% | Train Acc NEG: 87.19%
+	 Val. Loss: 1137.580 |  Val. Acc POS: 65.23% | Val. Acc NEG: 82.60%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 188 | Epoch Time: 1m 11s
+	Train Loss: 314.385 | Train Acc POS: 88.73% | Train Acc NEG: 87.25%
+	 Val. Loss: 1137.172 |  Val. Acc POS: 65.40% | Val. Acc NEG: 81.39%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 189 | Epoch Time: 1m 12s
+	Train Loss: 312.728 | Train Acc POS: 89.05% | Train Acc NEG: 87.25%
+	 Val. Loss: 1160.760 |  Val. Acc POS: 66.13% | Val. Acc NEG: 81.60%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 190 | Epoch Time: 1m 13s
+	Train Loss: 314.350 | Train Acc POS: 88.74% | Train Acc NEG: 87.22%
+	 Val. Loss: 1128.527 |  Val. Acc POS: 65.87% | Val. Acc NEG: 81.95%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 191 | Epoch Time: 1m 12s
+	Train Loss: 314.233 | Train Acc POS: 88.66% | Train Acc NEG: 87.37%
+	 Val. Loss: 1174.071 |  Val. Acc POS: 64.96% | Val. Acc NEG: 81.47%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 192 | Epoch Time: 1m 11s
+	Train Loss: 312.861 | Train Acc POS: 89.12% | Train Acc NEG: 87.36%
+	 Val. Loss: 1163.344 |  Val. Acc POS: 65.83% | Val. Acc NEG: 80.62%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 193 | Epoch Time: 1m 10s
+	Train Loss: 314.660 | Train Acc POS: 88.53% | Train Acc NEG: 87.27%
+	 Val. Loss: 1141.554 |  Val. Acc POS: 65.23% | Val. Acc NEG: 82.03%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 194 | Epoch Time: 1m 14s
+	Train Loss: 314.259 | Train Acc POS: 88.84% | Train Acc NEG: 87.11%
+	 Val. Loss: 1165.184 |  Val. Acc POS: 64.67% | Val. Acc NEG: 82.60%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 195 | Epoch Time: 1m 10s
+	Train Loss: 313.758 | Train Acc POS: 89.06% | Train Acc NEG: 87.30%
+	 Val. Loss: 1130.228 |  Val. Acc POS: 65.90% | Val. Acc NEG: 83.42%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 196 | Epoch Time: 1m 12s
+	Train Loss: 305.766 | Train Acc POS: 89.33% | Train Acc NEG: 87.48%
+	 Val. Loss: 1144.629 |  Val. Acc POS: 65.84% | Val. Acc NEG: 81.82%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 197 | Epoch Time: 1m 15s
+	Train Loss: 308.412 | Train Acc POS: 89.36% | Train Acc NEG: 87.18%
+	 Val. Loss: 1178.534 |  Val. Acc POS: 64.14% | Val. Acc NEG: 80.68%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 198 | Epoch Time: 1m 13s
+	Train Loss: 307.336 | Train Acc POS: 88.96% | Train Acc NEG: 87.55%
+	 Val. Loss: 1142.623 |  Val. Acc POS: 65.51% | Val. Acc NEG: 83.03%
+Adjusting learning rate of group 0 to 6.9834e-04.
+Epoch: 199 | Epoch Time: 1m 10s
+	Train Loss: 307.507 | Train Acc POS: 89.16% | Train Acc NEG: 87.33%
+	 Val. Loss: 1157.864 |  Val. Acc POS: 65.60% | Val. Acc NEG: 81.69%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 200 | Epoch Time: 1m 13s
+	Train Loss: 299.692 | Train Acc POS: 89.48% | Train Acc NEG: 87.56%
+	 Val. Loss: 1159.909 |  Val. Acc POS: 64.34% | Val. Acc NEG: 82.40%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 201 | Epoch Time: 1m 13s
+	Train Loss: 306.581 | Train Acc POS: 89.08% | Train Acc NEG: 87.00%
+	 Val. Loss: 1109.573 |  Val. Acc POS: 64.28% | Val. Acc NEG: 85.32%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 202 | Epoch Time: 1m 9s
+	Train Loss: 302.300 | Train Acc POS: 89.89% | Train Acc NEG: 87.05%
+	 Val. Loss: 1129.674 |  Val. Acc POS: 65.59% | Val. Acc NEG: 83.41%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 203 | Epoch Time: 1m 11s
+	Train Loss: 303.678 | Train Acc POS: 89.44% | Train Acc NEG: 87.40%
+	 Val. Loss: 1127.202 |  Val. Acc POS: 62.96% | Val. Acc NEG: 83.35%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 204 | Epoch Time: 1m 12s
+	Train Loss: 300.009 | Train Acc POS: 89.25% | Train Acc NEG: 87.29%
+	 Val. Loss: 1134.942 |  Val. Acc POS: 64.64% | Val. Acc NEG: 82.32%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 205 | Epoch Time: 1m 10s
+	Train Loss: 294.920 | Train Acc POS: 89.36% | Train Acc NEG: 87.38%
+	 Val. Loss: 1149.600 |  Val. Acc POS: 64.17% | Val. Acc NEG: 82.66%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 206 | Epoch Time: 1m 13s
+	Train Loss: 295.617 | Train Acc POS: 89.53% | Train Acc NEG: 87.25%
+	 Val. Loss: 1135.885 |  Val. Acc POS: 63.58% | Val. Acc NEG: 83.41%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 207 | Epoch Time: 1m 14s
+	Train Loss: 294.965 | Train Acc POS: 89.71% | Train Acc NEG: 87.35%
+	 Val. Loss: 1146.030 |  Val. Acc POS: 64.58% | Val. Acc NEG: 83.30%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 208 | Epoch Time: 1m 10s
+	Train Loss: 293.332 | Train Acc POS: 89.35% | Train Acc NEG: 87.32%
+	 Val. Loss: 1154.013 |  Val. Acc POS: 65.00% | Val. Acc NEG: 83.13%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 209 | Epoch Time: 1m 11s
+	Train Loss: 294.480 | Train Acc POS: 89.54% | Train Acc NEG: 87.23%
+	 Val. Loss: 1140.239 |  Val. Acc POS: 65.17% | Val. Acc NEG: 82.34%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 210 | Epoch Time: 1m 13s
+	Train Loss: 296.457 | Train Acc POS: 89.70% | Train Acc NEG: 87.35%
+	 Val. Loss: 1152.404 |  Val. Acc POS: 64.57% | Val. Acc NEG: 82.22%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 211 | Epoch Time: 1m 14s
+	Train Loss: 293.945 | Train Acc POS: 89.59% | Train Acc NEG: 87.22%
+	 Val. Loss: 1138.456 |  Val. Acc POS: 64.93% | Val. Acc NEG: 82.94%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 212 | Epoch Time: 1m 12s
+	Train Loss: 291.138 | Train Acc POS: 89.55% | Train Acc NEG: 87.48%
+	 Val. Loss: 1157.531 |  Val. Acc POS: 65.30% | Val. Acc NEG: 82.25%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 213 | Epoch Time: 1m 11s
+	Train Loss: 289.381 | Train Acc POS: 89.98% | Train Acc NEG: 87.49%
+	 Val. Loss: 1172.179 |  Val. Acc POS: 64.73% | Val. Acc NEG: 81.89%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 214 | Epoch Time: 1m 12s
+	Train Loss: 298.714 | Train Acc POS: 89.77% | Train Acc NEG: 87.14%
+	 Val. Loss: 1161.453 |  Val. Acc POS: 65.98% | Val. Acc NEG: 82.51%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 215 | Epoch Time: 1m 14s
+	Train Loss: 289.266 | Train Acc POS: 89.82% | Train Acc NEG: 87.33%
+	 Val. Loss: 1158.213 |  Val. Acc POS: 64.58% | Val. Acc NEG: 82.31%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 216 | Epoch Time: 1m 12s
+	Train Loss: 284.327 | Train Acc POS: 89.80% | Train Acc NEG: 87.23%
+	 Val. Loss: 1169.575 |  Val. Acc POS: 65.36% | Val. Acc NEG: 82.25%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 217 | Epoch Time: 1m 11s
+	Train Loss: 278.651 | Train Acc POS: 90.41% | Train Acc NEG: 87.55%
+	 Val. Loss: 1170.544 |  Val. Acc POS: 65.49% | Val. Acc NEG: 81.92%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 218 | Epoch Time: 1m 11s
+	Train Loss: 286.976 | Train Acc POS: 90.09% | Train Acc NEG: 87.49%
+	 Val. Loss: 1160.716 |  Val. Acc POS: 66.65% | Val. Acc NEG: 82.86%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 219 | Epoch Time: 1m 10s
+	Train Loss: 284.027 | Train Acc POS: 90.32% | Train Acc NEG: 87.22%
+	 Val. Loss: 1172.814 |  Val. Acc POS: 65.09% | Val. Acc NEG: 82.19%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 220 | Epoch Time: 1m 15s
+	Train Loss: 286.385 | Train Acc POS: 89.96% | Train Acc NEG: 87.34%
+	 Val. Loss: 1154.531 |  Val. Acc POS: 66.02% | Val. Acc NEG: 83.25%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 221 | Epoch Time: 1m 11s
+	Train Loss: 275.905 | Train Acc POS: 90.56% | Train Acc NEG: 87.45%
+	 Val. Loss: 1157.134 |  Val. Acc POS: 64.23% | Val. Acc NEG: 82.37%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 222 | Epoch Time: 1m 11s
+	Train Loss: 273.861 | Train Acc POS: 89.99% | Train Acc NEG: 87.62%
+	 Val. Loss: 1164.516 |  Val. Acc POS: 66.39% | Val. Acc NEG: 82.40%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 223 | Epoch Time: 1m 12s
+	Train Loss: 280.440 | Train Acc POS: 90.14% | Train Acc NEG: 87.48%
+	 Val. Loss: 1177.192 |  Val. Acc POS: 66.22% | Val. Acc NEG: 82.54%
+Adjusting learning rate of group 0 to 6.6342e-04.
+Epoch: 224 | Epoch Time: 1m 11s
+	Train Loss: 274.668 | Train Acc POS: 90.48% | Train Acc NEG: 87.82%
+	 Val. Loss: 1149.502 |  Val. Acc POS: 65.32% | Val. Acc NEG: 83.05%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 225 | Epoch Time: 1m 13s
+	Train Loss: 280.951 | Train Acc POS: 90.36% | Train Acc NEG: 87.38%
+	 Val. Loss: 1197.750 |  Val. Acc POS: 65.36% | Val. Acc NEG: 80.25%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 226 | Epoch Time: 1m 10s
+	Train Loss: 279.295 | Train Acc POS: 90.47% | Train Acc NEG: 87.37%
+	 Val. Loss: 1175.260 |  Val. Acc POS: 64.74% | Val. Acc NEG: 81.92%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 227 | Epoch Time: 1m 15s
+	Train Loss: 277.507 | Train Acc POS: 90.18% | Train Acc NEG: 87.51%
+	 Val. Loss: 1193.469 |  Val. Acc POS: 65.20% | Val. Acc NEG: 80.47%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 228 | Epoch Time: 1m 11s
+	Train Loss: 274.603 | Train Acc POS: 90.20% | Train Acc NEG: 87.62%
+	 Val. Loss: 1167.266 |  Val. Acc POS: 63.47% | Val. Acc NEG: 83.09%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 229 | Epoch Time: 1m 9s
+	Train Loss: 276.702 | Train Acc POS: 90.10% | Train Acc NEG: 87.48%
+	 Val. Loss: 1159.547 |  Val. Acc POS: 64.14% | Val. Acc NEG: 82.99%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 230 | Epoch Time: 1m 11s
+	Train Loss: 269.434 | Train Acc POS: 90.69% | Train Acc NEG: 87.72%
+	 Val. Loss: 1172.052 |  Val. Acc POS: 64.70% | Val. Acc NEG: 82.70%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 231 | Epoch Time: 1m 16s
+	Train Loss: 274.461 | Train Acc POS: 90.48% | Train Acc NEG: 87.53%
+	 Val. Loss: 1174.964 |  Val. Acc POS: 64.75% | Val. Acc NEG: 82.53%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 232 | Epoch Time: 1m 12s
+	Train Loss: 264.559 | Train Acc POS: 91.02% | Train Acc NEG: 87.71%
+	 Val. Loss: 1184.063 |  Val. Acc POS: 65.49% | Val. Acc NEG: 83.45%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 233 | Epoch Time: 1m 10s
+	Train Loss: 268.882 | Train Acc POS: 90.35% | Train Acc NEG: 87.61%
+	 Val. Loss: 1194.538 |  Val. Acc POS: 64.80% | Val. Acc NEG: 82.38%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 234 | Epoch Time: 1m 12s
+	Train Loss: 271.113 | Train Acc POS: 90.62% | Train Acc NEG: 87.58%
+	 Val. Loss: 1157.158 |  Val. Acc POS: 66.58% | Val. Acc NEG: 83.89%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 235 | Epoch Time: 1m 13s
+	Train Loss: 277.252 | Train Acc POS: 90.25% | Train Acc NEG: 87.31%
+	 Val. Loss: 1156.550 |  Val. Acc POS: 66.29% | Val. Acc NEG: 83.12%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 236 | Epoch Time: 1m 11s
+	Train Loss: 273.749 | Train Acc POS: 90.49% | Train Acc NEG: 87.32%
+	 Val. Loss: 1168.324 |  Val. Acc POS: 66.19% | Val. Acc NEG: 81.81%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 237 | Epoch Time: 1m 14s
+	Train Loss: 264.728 | Train Acc POS: 90.66% | Train Acc NEG: 87.58%
+	 Val. Loss: 1166.428 |  Val. Acc POS: 65.20% | Val. Acc NEG: 82.27%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 238 | Epoch Time: 1m 13s
+	Train Loss: 264.936 | Train Acc POS: 90.32% | Train Acc NEG: 87.63%
+	 Val. Loss: 1179.670 |  Val. Acc POS: 63.91% | Val. Acc NEG: 82.30%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 239 | Epoch Time: 1m 14s
+	Train Loss: 272.244 | Train Acc POS: 90.34% | Train Acc NEG: 87.60%
+	 Val. Loss: 1175.724 |  Val. Acc POS: 65.17% | Val. Acc NEG: 82.37%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 240 | Epoch Time: 1m 11s
+	Train Loss: 273.141 | Train Acc POS: 90.35% | Train Acc NEG: 87.62%
+	 Val. Loss: 1191.866 |  Val. Acc POS: 64.76% | Val. Acc NEG: 82.08%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 241 | Epoch Time: 1m 12s
+	Train Loss: 258.668 | Train Acc POS: 90.98% | Train Acc NEG: 87.59%
+	 Val. Loss: 1176.478 |  Val. Acc POS: 64.86% | Val. Acc NEG: 83.32%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 242 | Epoch Time: 1m 13s
+	Train Loss: 265.680 | Train Acc POS: 90.60% | Train Acc NEG: 87.94%
+	 Val. Loss: 1169.591 |  Val. Acc POS: 63.65% | Val. Acc NEG: 83.60%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 243 | Epoch Time: 1m 12s
+	Train Loss: 261.244 | Train Acc POS: 90.66% | Train Acc NEG: 87.60%
+	 Val. Loss: 1184.590 |  Val. Acc POS: 65.39% | Val. Acc NEG: 82.79%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 244 | Epoch Time: 1m 11s
+	Train Loss: 262.575 | Train Acc POS: 90.64% | Train Acc NEG: 87.57%
+	 Val. Loss: 1197.723 |  Val. Acc POS: 66.02% | Val. Acc NEG: 82.57%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 245 | Epoch Time: 1m 11s
+	Train Loss: 260.010 | Train Acc POS: 90.45% | Train Acc NEG: 87.87%
+	 Val. Loss: 1203.391 |  Val. Acc POS: 64.70% | Val. Acc NEG: 82.34%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 246 | Epoch Time: 1m 15s
+	Train Loss: 260.720 | Train Acc POS: 90.51% | Train Acc NEG: 87.86%
+	 Val. Loss: 1202.047 |  Val. Acc POS: 65.31% | Val. Acc NEG: 82.80%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 247 | Epoch Time: 1m 8s
+	Train Loss: 259.769 | Train Acc POS: 90.52% | Train Acc NEG: 87.89%
+	 Val. Loss: 1204.188 |  Val. Acc POS: 65.52% | Val. Acc NEG: 81.82%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 248 | Epoch Time: 1m 15s
+	Train Loss: 259.617 | Train Acc POS: 90.68% | Train Acc NEG: 87.70%
+	 Val. Loss: 1204.961 |  Val. Acc POS: 63.78% | Val. Acc NEG: 83.09%
+Adjusting learning rate of group 0 to 6.3025e-04.
+Epoch: 249 | Epoch Time: 1m 10s
+	Train Loss: 259.028 | Train Acc POS: 90.66% | Train Acc NEG: 88.07%
+	 Val. Loss: 1225.883 |  Val. Acc POS: 64.57% | Val. Acc NEG: 81.82%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 250 | Epoch Time: 1m 12s
+	Train Loss: 256.608 | Train Acc POS: 90.66% | Train Acc NEG: 87.98%
+	 Val. Loss: 1196.276 |  Val. Acc POS: 64.54% | Val. Acc NEG: 82.93%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 251 | Epoch Time: 1m 15s
+	Train Loss: 251.187 | Train Acc POS: 90.67% | Train Acc NEG: 87.74%
+	 Val. Loss: 1211.967 |  Val. Acc POS: 64.81% | Val. Acc NEG: 81.68%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 252 | Epoch Time: 1m 10s
+	Train Loss: 248.002 | Train Acc POS: 91.10% | Train Acc NEG: 87.89%
+	 Val. Loss: 1223.018 |  Val. Acc POS: 64.00% | Val. Acc NEG: 81.88%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 253 | Epoch Time: 1m 13s
+	Train Loss: 249.913 | Train Acc POS: 91.42% | Train Acc NEG: 87.77%
+	 Val. Loss: 1195.650 |  Val. Acc POS: 62.78% | Val. Acc NEG: 82.73%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 254 | Epoch Time: 1m 10s
+	Train Loss: 256.351 | Train Acc POS: 90.44% | Train Acc NEG: 87.75%
+	 Val. Loss: 1221.518 |  Val. Acc POS: 63.48% | Val. Acc NEG: 80.75%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 255 | Epoch Time: 1m 12s
+	Train Loss: 252.184 | Train Acc POS: 90.74% | Train Acc NEG: 87.95%
+	 Val. Loss: 1213.617 |  Val. Acc POS: 64.80% | Val. Acc NEG: 82.54%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 256 | Epoch Time: 1m 14s
+	Train Loss: 250.699 | Train Acc POS: 91.07% | Train Acc NEG: 87.93%
+	 Val. Loss: 1217.230 |  Val. Acc POS: 63.74% | Val. Acc NEG: 82.83%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 257 | Epoch Time: 1m 15s
+	Train Loss: 253.594 | Train Acc POS: 90.77% | Train Acc NEG: 87.88%
+	 Val. Loss: 1214.667 |  Val. Acc POS: 64.70% | Val. Acc NEG: 83.00%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 258 | Epoch Time: 1m 9s
+	Train Loss: 251.235 | Train Acc POS: 90.99% | Train Acc NEG: 87.90%
+	 Val. Loss: 1216.996 |  Val. Acc POS: 63.19% | Val. Acc NEG: 81.34%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 259 | Epoch Time: 1m 14s
+	Train Loss: 247.583 | Train Acc POS: 90.75% | Train Acc NEG: 87.87%
+	 Val. Loss: 1216.771 |  Val. Acc POS: 63.54% | Val. Acc NEG: 82.10%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 260 | Epoch Time: 1m 13s
+	Train Loss: 251.582 | Train Acc POS: 91.14% | Train Acc NEG: 87.85%
+	 Val. Loss: 1210.403 |  Val. Acc POS: 64.18% | Val. Acc NEG: 82.13%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 261 | Epoch Time: 1m 10s
+	Train Loss: 244.424 | Train Acc POS: 91.17% | Train Acc NEG: 87.91%
+	 Val. Loss: 1246.510 |  Val. Acc POS: 64.48% | Val. Acc NEG: 81.73%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 262 | Epoch Time: 1m 13s
+	Train Loss: 247.048 | Train Acc POS: 91.16% | Train Acc NEG: 87.76%
+	 Val. Loss: 1229.677 |  Val. Acc POS: 63.58% | Val. Acc NEG: 81.41%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 263 | Epoch Time: 1m 13s
+	Train Loss: 246.629 | Train Acc POS: 91.26% | Train Acc NEG: 87.83%
+	 Val. Loss: 1230.115 |  Val. Acc POS: 65.39% | Val. Acc NEG: 81.12%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 264 | Epoch Time: 1m 13s
+	Train Loss: 244.609 | Train Acc POS: 90.99% | Train Acc NEG: 87.94%
+	 Val. Loss: 1222.373 |  Val. Acc POS: 65.53% | Val. Acc NEG: 81.22%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 265 | Epoch Time: 1m 13s
+	Train Loss: 246.609 | Train Acc POS: 91.16% | Train Acc NEG: 87.83%
+	 Val. Loss: 1236.532 |  Val. Acc POS: 63.91% | Val. Acc NEG: 82.27%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 266 | Epoch Time: 1m 11s
+	Train Loss: 242.820 | Train Acc POS: 91.09% | Train Acc NEG: 87.74%
+	 Val. Loss: 1245.244 |  Val. Acc POS: 65.06% | Val. Acc NEG: 82.18%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 267 | Epoch Time: 1m 14s
+	Train Loss: 247.910 | Train Acc POS: 90.94% | Train Acc NEG: 87.89%
+	 Val. Loss: 1240.725 |  Val. Acc POS: 64.33% | Val. Acc NEG: 82.41%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 268 | Epoch Time: 1m 11s
+	Train Loss: 241.227 | Train Acc POS: 91.26% | Train Acc NEG: 87.84%
+	 Val. Loss: 1260.898 |  Val. Acc POS: 62.83% | Val. Acc NEG: 81.82%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 269 | Epoch Time: 1m 14s
+	Train Loss: 241.053 | Train Acc POS: 91.10% | Train Acc NEG: 88.22%
+	 Val. Loss: 1259.320 |  Val. Acc POS: 62.82% | Val. Acc NEG: 82.21%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 270 | Epoch Time: 1m 13s
+	Train Loss: 244.602 | Train Acc POS: 91.40% | Train Acc NEG: 87.73%
+	 Val. Loss: 1209.554 |  Val. Acc POS: 64.36% | Val. Acc NEG: 82.15%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 271 | Epoch Time: 1m 12s
+	Train Loss: 242.131 | Train Acc POS: 91.27% | Train Acc NEG: 88.05%
+	 Val. Loss: 1229.304 |  Val. Acc POS: 64.35% | Val. Acc NEG: 81.41%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 272 | Epoch Time: 1m 13s
+	Train Loss: 242.610 | Train Acc POS: 90.83% | Train Acc NEG: 87.95%
+	 Val. Loss: 1219.501 |  Val. Acc POS: 63.06% | Val. Acc NEG: 82.79%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 273 | Epoch Time: 1m 12s
+	Train Loss: 243.838 | Train Acc POS: 91.13% | Train Acc NEG: 87.83%
+	 Val. Loss: 1225.779 |  Val. Acc POS: 63.81% | Val. Acc NEG: 82.53%
+Adjusting learning rate of group 0 to 5.9874e-04.
+Epoch: 274 | Epoch Time: 1m 14s
+	Train Loss: 240.959 | Train Acc POS: 91.58% | Train Acc NEG: 87.77%
+	 Val. Loss: 1277.074 |  Val. Acc POS: 63.68% | Val. Acc NEG: 81.39%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 275 | Epoch Time: 1m 15s
+	Train Loss: 236.793 | Train Acc POS: 91.44% | Train Acc NEG: 87.75%
+	 Val. Loss: 1308.961 |  Val. Acc POS: 65.03% | Val. Acc NEG: 82.02%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 276 | Epoch Time: 1m 9s
+	Train Loss: 235.374 | Train Acc POS: 91.40% | Train Acc NEG: 87.99%
+	 Val. Loss: 1233.447 |  Val. Acc POS: 62.19% | Val. Acc NEG: 82.91%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 277 | Epoch Time: 1m 12s
+	Train Loss: 237.426 | Train Acc POS: 91.29% | Train Acc NEG: 87.98%
+	 Val. Loss: 1251.285 |  Val. Acc POS: 62.79% | Val. Acc NEG: 82.47%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 278 | Epoch Time: 1m 12s
+	Train Loss: 236.131 | Train Acc POS: 90.92% | Train Acc NEG: 88.17%
+	 Val. Loss: 1231.519 |  Val. Acc POS: 64.37% | Val. Acc NEG: 82.93%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 279 | Epoch Time: 1m 13s
+	Train Loss: 233.245 | Train Acc POS: 91.63% | Train Acc NEG: 88.02%
+	 Val. Loss: 1270.215 |  Val. Acc POS: 62.81% | Val. Acc NEG: 80.86%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 280 | Epoch Time: 1m 11s
+	Train Loss: 238.235 | Train Acc POS: 91.37% | Train Acc NEG: 87.98%
+	 Val. Loss: 1221.572 |  Val. Acc POS: 63.64% | Val. Acc NEG: 82.96%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 281 | Epoch Time: 1m 13s
+	Train Loss: 238.054 | Train Acc POS: 91.18% | Train Acc NEG: 87.92%
+	 Val. Loss: 1229.987 |  Val. Acc POS: 63.90% | Val. Acc NEG: 82.16%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 282 | Epoch Time: 1m 12s
+	Train Loss: 233.426 | Train Acc POS: 91.45% | Train Acc NEG: 88.13%
+	 Val. Loss: 1233.577 |  Val. Acc POS: 64.49% | Val. Acc NEG: 82.50%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 283 | Epoch Time: 1m 13s
+	Train Loss: 229.889 | Train Acc POS: 91.80% | Train Acc NEG: 88.19%
+	 Val. Loss: 1266.550 |  Val. Acc POS: 64.40% | Val. Acc NEG: 82.04%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 284 | Epoch Time: 1m 13s
+	Train Loss: 231.583 | Train Acc POS: 91.42% | Train Acc NEG: 88.21%
+	 Val. Loss: 1227.719 |  Val. Acc POS: 64.68% | Val. Acc NEG: 82.75%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 285 | Epoch Time: 1m 11s
+	Train Loss: 226.771 | Train Acc POS: 91.68% | Train Acc NEG: 88.27%
+	 Val. Loss: 1303.892 |  Val. Acc POS: 63.96% | Val. Acc NEG: 81.79%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 286 | Epoch Time: 1m 14s
+	Train Loss: 230.324 | Train Acc POS: 91.45% | Train Acc NEG: 88.28%
+	 Val. Loss: 1310.005 |  Val. Acc POS: 64.50% | Val. Acc NEG: 81.07%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 287 | Epoch Time: 1m 14s
+	Train Loss: 230.331 | Train Acc POS: 91.76% | Train Acc NEG: 88.11%
+	 Val. Loss: 1279.269 |  Val. Acc POS: 63.48% | Val. Acc NEG: 81.53%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 288 | Epoch Time: 1m 12s
+	Train Loss: 230.170 | Train Acc POS: 91.80% | Train Acc NEG: 88.11%
+	 Val. Loss: 1259.978 |  Val. Acc POS: 64.47% | Val. Acc NEG: 82.20%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 289 | Epoch Time: 1m 12s
+	Train Loss: 226.199 | Train Acc POS: 91.85% | Train Acc NEG: 87.97%
+	 Val. Loss: 1279.418 |  Val. Acc POS: 64.18% | Val. Acc NEG: 81.10%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 290 | Epoch Time: 1m 14s
+	Train Loss: 232.211 | Train Acc POS: 91.40% | Train Acc NEG: 88.06%
+	 Val. Loss: 1246.444 |  Val. Acc POS: 64.80% | Val. Acc NEG: 81.97%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 291 | Epoch Time: 1m 11s
+	Train Loss: 236.090 | Train Acc POS: 91.54% | Train Acc NEG: 88.10%
+	 Val. Loss: 1273.754 |  Val. Acc POS: 62.42% | Val. Acc NEG: 81.75%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 292 | Epoch Time: 1m 13s
+	Train Loss: 233.107 | Train Acc POS: 91.69% | Train Acc NEG: 88.20%
+	 Val. Loss: 1304.837 |  Val. Acc POS: 62.09% | Val. Acc NEG: 82.67%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 293 | Epoch Time: 1m 13s
+	Train Loss: 224.631 | Train Acc POS: 91.88% | Train Acc NEG: 88.10%
+	 Val. Loss: 1290.336 |  Val. Acc POS: 62.42% | Val. Acc NEG: 81.65%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 294 | Epoch Time: 1m 13s
+	Train Loss: 228.040 | Train Acc POS: 91.50% | Train Acc NEG: 88.13%
+	 Val. Loss: 1305.189 |  Val. Acc POS: 64.11% | Val. Acc NEG: 81.72%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 295 | Epoch Time: 1m 13s
+	Train Loss: 226.493 | Train Acc POS: 91.25% | Train Acc NEG: 88.34%
+	 Val. Loss: 1302.195 |  Val. Acc POS: 63.85% | Val. Acc NEG: 81.78%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 296 | Epoch Time: 1m 12s
+	Train Loss: 222.456 | Train Acc POS: 91.76% | Train Acc NEG: 88.28%
+	 Val. Loss: 1284.894 |  Val. Acc POS: 62.46% | Val. Acc NEG: 82.24%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 297 | Epoch Time: 1m 12s
+	Train Loss: 225.340 | Train Acc POS: 91.64% | Train Acc NEG: 88.13%
+	 Val. Loss: 1298.759 |  Val. Acc POS: 64.67% | Val. Acc NEG: 81.89%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 298 | Epoch Time: 1m 17s
+	Train Loss: 223.920 | Train Acc POS: 91.65% | Train Acc NEG: 88.24%
+	 Val. Loss: 1274.499 |  Val. Acc POS: 63.72% | Val. Acc NEG: 82.37%
+Adjusting learning rate of group 0 to 5.6880e-04.
+Epoch: 299 | Epoch Time: 1m 12s
+	Train Loss: 224.490 | Train Acc POS: 91.60% | Train Acc NEG: 88.31%
+	 Val. Loss: 1259.916 |  Val. Acc POS: 63.31% | Val. Acc NEG: 83.42%
+Adjusting learning rate of group 0 to 5.4036e-04.
+Epoch: 300 | Epoch Time: 1m 13s
+	Train Loss: 226.915 | Train Acc POS: 91.42% | Train Acc NEG: 88.07%
+	 Val. Loss: 1306.360 |  Val. Acc POS: 62.06% | Val. Acc NEG: 81.62%

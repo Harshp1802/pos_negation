@@ -62,8 +62,8 @@ def validate_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
             shared_output, (hidden, cell) = model.lstm(embedded_X)
             shared_output = model.pos_encoding(shared_output)
             src_mask = model.T1.generate_square_subsequent_mask(len(shared_output)).to(shared_output.device)
-            memory1 = model.T1.encoder(shared_output,src_key_padding_mask=src_pad_mask,mask=src_mask)
-            memory2 = model.T2.encoder(shared_output,src_key_padding_mask=src_pad_mask,mask=src_mask)
+            memory1 = model.T1.encoder(shared_output,src_key_padding_mask=src_pad_mask)#,mask=src_mask
+            memory2 = model.T2.encoder(shared_output,src_key_padding_mask=src_pad_mask)#,mask=src_mask
 
             y1_out_indexes = [1,]
             y2_out_indexes = [1,]
@@ -75,8 +75,10 @@ def validate_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
                 trg_pad_mask2 = model.make_len_mask(trg_tensor2, model.neg_pad)
                 trg_mask1 = model.T1.generate_square_subsequent_mask(len(trg_tensor1)).to(trg_tensor1.device)
                 trg_mask2 = model.T2.generate_square_subsequent_mask(len(trg_tensor2)).to(trg_tensor2.device)
-                output1 = model.fc1(model.dropout(model.T1.decoder(model.dropout(model.embeddingA(trg_tensor1)), memory1, tgt_key_padding_mask=trg_pad_mask1,memory_key_padding_mask=src_pad_mask,tgt_mask=trg_mask1)))
-                output2 = model.fc2(model.dropout(model.T2.decoder(model.dropout(model.embeddingB(trg_tensor2)), memory2, tgt_key_padding_mask=trg_pad_mask2,memory_key_padding_mask=src_pad_mask,tgt_mask=trg_mask2)))
+                trg_tensor1 = model.pos_encoding_trg1( model.dropout(model.embeddingA(trg_tensor1)) )
+                trg_tensor2 = model.pos_encoding_trg2( model.dropout(model.embeddingB(trg_tensor2)) )
+                output1 = model.fc1(model.dropout(model.T1.decoder(trg_tensor1, memory1, tgt_key_padding_mask=trg_pad_mask1,memory_key_padding_mask=src_pad_mask,tgt_mask=trg_mask1)))
+                output2 = model.fc2(model.dropout(model.T2.decoder(trg_tensor2, memory2, tgt_key_padding_mask=trg_pad_mask2,memory_key_padding_mask=src_pad_mask,tgt_mask=trg_mask2)))
                 output1 = torch.Tensor(np.array(model.crf1.decode(output1)).T).to(torch.device('cuda'))
                 output2 = torch.Tensor(np.array(model.crf2.decode(output2)).T).to(torch.device('cuda'))
                 out_token1 = output1[-1].item()

@@ -143,14 +143,14 @@ class MyModel_2(nn.Module):
                             num_layers = n_layers, 
                             bidirectional = bidirectional,
                             dropout = dropout if n_layers > 1 else 0)
-        self.pos_encoding = PositionalEncoding(hidden_dim, dropout)
-        self.pos_encoding_trg1 = PositionalEncoding(hidden_dim, dropout)
-        self.pos_encoding_trg2 = PositionalEncoding(hidden_dim, dropout)
-        self.T1 = torch.nn.Transformer(d_model=hidden_dim,num_encoder_layers=3, num_decoder_layers=1)
-        self.T2 = torch.nn.Transformer(d_model=hidden_dim,num_encoder_layers=3, num_decoder_layers=1)
+        self.pos_encoding = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
+        self.pos_encoding_trg1 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
+        self.pos_encoding_trg2 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
+        self.T1 = torch.nn.Transformer(d_model=hidden_dim * 2 if bidirectional else hidden_dim,num_encoder_layers=3, num_decoder_layers=1)
+        self.T2 = torch.nn.Transformer(d_model=hidden_dim * 2 if bidirectional else hidden_dim,num_encoder_layers=3, num_decoder_layers=1)
         
-        self.fc1 = nn.Linear(hidden_dim, output_dim1)
-        self.fc2 = nn.Linear(hidden_dim, output_dim2)
+        self.fc1 = nn.Linear(hidden_dim * 2 if bidirectional else hidden_dim, output_dim1)
+        self.fc2 = nn.Linear(hidden_dim * 2 if bidirectional else hidden_dim, output_dim2)
         self.crf1 = CRF(output_dim1)
         self.crf2 = CRF(output_dim2)
         self.dropout = nn.Dropout(dropout)

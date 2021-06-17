@@ -5,3 +5,5 @@ dump/
 __pycache__/
 vscode/
 *.pyc
+*.out
+trial*

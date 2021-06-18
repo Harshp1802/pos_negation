@@ -77,8 +77,8 @@ def validate_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
                 trg_mask2 = model.T2.generate_square_subsequent_mask(len(trg_tensor2)).to(trg_tensor2.device)
                 trg_tensor1 = model.pos_encoding_trg1( model.dropout(model.embeddingA(trg_tensor1)) )
                 trg_tensor2 = model.pos_encoding_trg2( model.dropout(model.embeddingB(trg_tensor2)) )
-                output1 = model.fc1(model.dropout(model.T1.decoder(trg_tensor1, memory1, tgt_key_padding_mask=trg_pad_mask1,memory_key_padding_mask=src_pad_mask,tgt_mask=trg_mask1)))
-                output2 = model.fc2(model.dropout(model.T2.decoder(trg_tensor2, memory2, tgt_key_padding_mask=trg_pad_mask2,memory_key_padding_mask=src_pad_mask,tgt_mask=trg_mask2)))
+                output1 = model.fc1(model.dropout(model.T1.decoder(trg_tensor1, memory1, tgt_key_padding_mask=trg_pad_mask1,tgt_mask=trg_mask1)))#memory_key_padding_mask=src_pad_mask,
+                output2 = model.fc2(model.dropout(model.T2.decoder(trg_tensor2, memory2, tgt_key_padding_mask=trg_pad_mask2,tgt_mask=trg_mask2)))#memory_key_padding_mask=src_pad_mask,
                 output1 = torch.Tensor(np.array(model.crf1.decode(output1)).T).to(torch.device('cuda'))
                 output2 = torch.Tensor(np.array(model.crf2.decode(output2)).T).to(torch.device('cuda'))
                 out_token1 = output1[-1].item()

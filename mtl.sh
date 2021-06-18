@@ -1,3 +1,2 @@
 #!/bin/bash
-nvidia-smi
-python train.py > mtl1.txt
+python train.py > mtl2_up_test.txt

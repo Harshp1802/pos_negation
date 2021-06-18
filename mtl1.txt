@@ -127,3 +127,570 @@ Epoch: 42 | Epoch Time: 0m 9s
 Epoch: 43 | Epoch Time: 0m 9s
 	Train Loss: 8575.842 | Train Acc POS: 49.66% | Train Acc NEG: 84.76%
 	 Val. Loss: 4774.820 |  Val. Acc POS: 51.26% | Val. Acc NEG: 84.75%
+Epoch: 44 | Epoch Time: 0m 9s
+	Train Loss: 8479.845 | Train Acc POS: 50.74% | Train Acc NEG: 84.75%
+	 Val. Loss: 4744.912 |  Val. Acc POS: 51.09% | Val. Acc NEG: 86.02%
+Epoch: 45 | Epoch Time: 0m 9s
+	Train Loss: 8420.511 | Train Acc POS: 50.92% | Train Acc NEG: 84.96%
+	 Val. Loss: 4753.449 |  Val. Acc POS: 51.85% | Val. Acc NEG: 85.94%
+Epoch: 46 | Epoch Time: 0m 9s
+	Train Loss: 8405.549 | Train Acc POS: 50.83% | Train Acc NEG: 85.00%
+	 Val. Loss: 4713.667 |  Val. Acc POS: 52.15% | Val. Acc NEG: 85.13%
+Epoch: 47 | Epoch Time: 0m 9s
+	Train Loss: 8376.790 | Train Acc POS: 51.27% | Train Acc NEG: 84.65%
+	 Val. Loss: 4671.178 |  Val. Acc POS: 51.90% | Val. Acc NEG: 86.02%
+Epoch: 48 | Epoch Time: 0m 8s
+	Train Loss: 8328.796 | Train Acc POS: 51.66% | Train Acc NEG: 85.05%
+	 Val. Loss: 4667.368 |  Val. Acc POS: 52.49% | Val. Acc NEG: 86.11%
+Epoch: 49 | Epoch Time: 0m 9s
+	Train Loss: 8264.677 | Train Acc POS: 51.68% | Train Acc NEG: 85.27%
+	 Val. Loss: 4632.653 |  Val. Acc POS: 52.54% | Val. Acc NEG: 86.07%
+Epoch: 50 | Epoch Time: 0m 9s
+	Train Loss: 8214.502 | Train Acc POS: 52.12% | Train Acc NEG: 85.11%
+	 Val. Loss: 4654.416 |  Val. Acc POS: 52.49% | Val. Acc NEG: 85.98%
+Epoch: 51 | Epoch Time: 0m 8s
+	Train Loss: 8173.930 | Train Acc POS: 52.37% | Train Acc NEG: 85.04%
+	 Val. Loss: 4626.116 |  Val. Acc POS: 52.49% | Val. Acc NEG: 86.20%
+Epoch: 52 | Epoch Time: 0m 8s
+	Train Loss: 8100.717 | Train Acc POS: 52.22% | Train Acc NEG: 85.43%
+	 Val. Loss: 4586.360 |  Val. Acc POS: 52.92% | Val. Acc NEG: 86.32%
+Epoch: 53 | Epoch Time: 0m 8s
+	Train Loss: 8077.187 | Train Acc POS: 52.99% | Train Acc NEG: 85.44%
+	 Val. Loss: 4595.454 |  Val. Acc POS: 53.13% | Val. Acc NEG: 85.77%
+Epoch: 54 | Epoch Time: 0m 8s
+	Train Loss: 8039.040 | Train Acc POS: 53.21% | Train Acc NEG: 85.55%
+	 Val. Loss: 4546.944 |  Val. Acc POS: 53.39% | Val. Acc NEG: 86.75%
+Epoch: 55 | Epoch Time: 0m 9s
+	Train Loss: 7976.640 | Train Acc POS: 53.35% | Train Acc NEG: 85.31%
+	 Val. Loss: 4546.662 |  Val. Acc POS: 54.03% | Val. Acc NEG: 86.49%
+Epoch: 56 | Epoch Time: 0m 9s
+	Train Loss: 7952.229 | Train Acc POS: 53.59% | Train Acc NEG: 85.53%
+	 Val. Loss: 4537.755 |  Val. Acc POS: 53.60% | Val. Acc NEG: 86.88%
+Epoch: 57 | Epoch Time: 0m 9s
+	Train Loss: 7935.174 | Train Acc POS: 53.28% | Train Acc NEG: 85.69%
+	 Val. Loss: 4523.032 |  Val. Acc POS: 54.58% | Val. Acc NEG: 85.22%
+Epoch: 58 | Epoch Time: 0m 9s
+	Train Loss: 7899.521 | Train Acc POS: 54.09% | Train Acc NEG: 85.40%
+	 Val. Loss: 4536.549 |  Val. Acc POS: 53.69% | Val. Acc NEG: 85.81%
+Epoch: 59 | Epoch Time: 0m 9s
+	Train Loss: 7867.371 | Train Acc POS: 53.88% | Train Acc NEG: 85.26%
+	 Val. Loss: 4478.565 |  Val. Acc POS: 54.32% | Val. Acc NEG: 86.32%
+Epoch: 60 | Epoch Time: 0m 9s
+	Train Loss: 7779.096 | Train Acc POS: 54.72% | Train Acc NEG: 85.70%
+	 Val. Loss: 4462.515 |  Val. Acc POS: 54.92% | Val. Acc NEG: 86.71%
+Epoch: 61 | Epoch Time: 0m 9s
+	Train Loss: 7738.741 | Train Acc POS: 55.19% | Train Acc NEG: 85.66%
+	 Val. Loss: 4460.614 |  Val. Acc POS: 54.75% | Val. Acc NEG: 85.60%
+Epoch: 62 | Epoch Time: 0m 9s
+	Train Loss: 7683.538 | Train Acc POS: 54.97% | Train Acc NEG: 85.37%
+	 Val. Loss: 4405.428 |  Val. Acc POS: 55.26% | Val. Acc NEG: 86.02%
+Epoch: 63 | Epoch Time: 0m 9s
+	Train Loss: 7643.883 | Train Acc POS: 55.20% | Train Acc NEG: 85.88%
+	 Val. Loss: 4406.961 |  Val. Acc POS: 55.05% | Val. Acc NEG: 86.62%
+Epoch: 64 | Epoch Time: 0m 9s
+	Train Loss: 7572.321 | Train Acc POS: 55.83% | Train Acc NEG: 86.13%
+	 Val. Loss: 4387.923 |  Val. Acc POS: 54.75% | Val. Acc NEG: 86.11%
+Epoch: 65 | Epoch Time: 0m 9s
+	Train Loss: 7557.075 | Train Acc POS: 55.93% | Train Acc NEG: 85.95%
+	 Val. Loss: 4375.896 |  Val. Acc POS: 55.52% | Val. Acc NEG: 87.09%
+Epoch: 66 | Epoch Time: 0m 9s
+	Train Loss: 7471.683 | Train Acc POS: 56.51% | Train Acc NEG: 86.10%
+	 Val. Loss: 4339.379 |  Val. Acc POS: 56.28% | Val. Acc NEG: 87.00%
+Epoch: 67 | Epoch Time: 0m 9s
+	Train Loss: 7445.371 | Train Acc POS: 56.51% | Train Acc NEG: 86.02%
+	 Val. Loss: 4342.215 |  Val. Acc POS: 55.99% | Val. Acc NEG: 86.11%
+Epoch: 68 | Epoch Time: 0m 9s
+	Train Loss: 7365.467 | Train Acc POS: 57.17% | Train Acc NEG: 86.18%
+	 Val. Loss: 4298.128 |  Val. Acc POS: 56.84% | Val. Acc NEG: 86.88%
+Epoch: 69 | Epoch Time: 0m 9s
+	Train Loss: 7318.476 | Train Acc POS: 57.07% | Train Acc NEG: 86.14%
+	 Val. Loss: 4310.490 |  Val. Acc POS: 56.37% | Val. Acc NEG: 86.07%
+Epoch: 70 | Epoch Time: 0m 9s
+	Train Loss: 7275.308 | Train Acc POS: 57.18% | Train Acc NEG: 86.17%
+	 Val. Loss: 4261.240 |  Val. Acc POS: 57.61% | Val. Acc NEG: 86.92%
+Epoch: 71 | Epoch Time: 0m 8s
+	Train Loss: 7227.162 | Train Acc POS: 58.02% | Train Acc NEG: 86.39%
+	 Val. Loss: 4297.650 |  Val. Acc POS: 56.41% | Val. Acc NEG: 87.26%
+Epoch: 72 | Epoch Time: 0m 8s
+	Train Loss: 7188.248 | Train Acc POS: 57.88% | Train Acc NEG: 86.42%
+	 Val. Loss: 4255.528 |  Val. Acc POS: 57.26% | Val. Acc NEG: 86.66%
+Epoch: 73 | Epoch Time: 0m 9s
+	Train Loss: 7137.156 | Train Acc POS: 58.26% | Train Acc NEG: 86.45%
+	 Val. Loss: 4239.363 |  Val. Acc POS: 56.88% | Val. Acc NEG: 87.56%
+Epoch: 74 | Epoch Time: 0m 9s
+	Train Loss: 7105.883 | Train Acc POS: 58.62% | Train Acc NEG: 86.38%
+	 Val. Loss: 4227.235 |  Val. Acc POS: 58.03% | Val. Acc NEG: 86.20%
+Epoch: 75 | Epoch Time: 0m 8s
+	Train Loss: 7039.127 | Train Acc POS: 59.01% | Train Acc NEG: 86.23%
+	 Val. Loss: 4229.544 |  Val. Acc POS: 57.86% | Val. Acc NEG: 85.68%
+Epoch: 76 | Epoch Time: 0m 8s
+	Train Loss: 6989.899 | Train Acc POS: 59.22% | Train Acc NEG: 86.44%
+	 Val. Loss: 4207.445 |  Val. Acc POS: 57.73% | Val. Acc NEG: 85.30%
+Epoch: 77 | Epoch Time: 0m 9s
+	Train Loss: 6946.876 | Train Acc POS: 59.68% | Train Acc NEG: 86.39%
+	 Val. Loss: 4210.052 |  Val. Acc POS: 57.69% | Val. Acc NEG: 85.39%
+Epoch: 78 | Epoch Time: 0m 9s
+	Train Loss: 6863.173 | Train Acc POS: 60.26% | Train Acc NEG: 86.60%
+	 Val. Loss: 4150.357 |  Val. Acc POS: 59.01% | Val. Acc NEG: 85.94%
+Epoch: 79 | Epoch Time: 0m 9s
+	Train Loss: 6819.442 | Train Acc POS: 60.26% | Train Acc NEG: 86.45%
+	 Val. Loss: 4104.448 |  Val. Acc POS: 59.18% | Val. Acc NEG: 85.56%
+Epoch: 80 | Epoch Time: 0m 9s
+	Train Loss: 6735.799 | Train Acc POS: 60.60% | Train Acc NEG: 86.84%
+	 Val. Loss: 4102.825 |  Val. Acc POS: 58.63% | Val. Acc NEG: 86.79%
+Epoch: 81 | Epoch Time: 0m 9s
+	Train Loss: 6694.645 | Train Acc POS: 60.59% | Train Acc NEG: 86.87%
+	 Val. Loss: 4083.995 |  Val. Acc POS: 58.41% | Val. Acc NEG: 87.30%
+Epoch: 82 | Epoch Time: 0m 9s
+	Train Loss: 6663.408 | Train Acc POS: 60.64% | Train Acc NEG: 86.86%
+	 Val. Loss: 4071.522 |  Val. Acc POS: 59.44% | Val. Acc NEG: 87.56%
+Epoch: 83 | Epoch Time: 0m 9s
+	Train Loss: 6583.224 | Train Acc POS: 61.86% | Train Acc NEG: 87.05%
+	 Val. Loss: 4013.749 |  Val. Acc POS: 60.72% | Val. Acc NEG: 86.79%
+Epoch: 84 | Epoch Time: 0m 9s
+	Train Loss: 6532.331 | Train Acc POS: 61.97% | Train Acc NEG: 86.82%
+	 Val. Loss: 3994.688 |  Val. Acc POS: 60.16% | Val. Acc NEG: 87.60%
+Epoch: 85 | Epoch Time: 0m 9s
+	Train Loss: 6484.877 | Train Acc POS: 62.01% | Train Acc NEG: 87.26%
+	 Val. Loss: 3989.690 |  Val. Acc POS: 59.69% | Val. Acc NEG: 87.69%
+Epoch: 86 | Epoch Time: 0m 9s
+	Train Loss: 6407.970 | Train Acc POS: 62.20% | Train Acc NEG: 87.31%
+	 Val. Loss: 3962.114 |  Val. Acc POS: 60.67% | Val. Acc NEG: 86.58%
+Epoch: 87 | Epoch Time: 0m 9s
+	Train Loss: 6376.430 | Train Acc POS: 62.57% | Train Acc NEG: 87.28%
+	 Val. Loss: 3937.617 |  Val. Acc POS: 60.93% | Val. Acc NEG: 86.58%
+Epoch: 88 | Epoch Time: 0m 9s
+	Train Loss: 6257.246 | Train Acc POS: 63.67% | Train Acc NEG: 87.09%
+	 Val. Loss: 3894.717 |  Val. Acc POS: 60.89% | Val. Acc NEG: 87.94%
+Epoch: 89 | Epoch Time: 0m 9s
+	Train Loss: 6248.852 | Train Acc POS: 63.39% | Train Acc NEG: 87.47%
+	 Val. Loss: 3875.260 |  Val. Acc POS: 61.40% | Val. Acc NEG: 87.39%
+Epoch: 90 | Epoch Time: 0m 9s
+	Train Loss: 6128.691 | Train Acc POS: 63.95% | Train Acc NEG: 87.19%
+	 Val. Loss: 3871.846 |  Val. Acc POS: 60.89% | Val. Acc NEG: 86.37%
+Epoch: 91 | Epoch Time: 0m 9s
+	Train Loss: 6009.910 | Train Acc POS: 64.83% | Train Acc NEG: 87.32%
+	 Val. Loss: 3824.030 |  Val. Acc POS: 61.23% | Val. Acc NEG: 86.49%
+Epoch: 92 | Epoch Time: 0m 9s
+	Train Loss: 5987.076 | Train Acc POS: 65.33% | Train Acc NEG: 87.07%
+	 Val. Loss: 3790.949 |  Val. Acc POS: 62.76% | Val. Acc NEG: 87.47%
+Epoch: 93 | Epoch Time: 0m 9s
+	Train Loss: 5908.055 | Train Acc POS: 65.56% | Train Acc NEG: 87.43%
+	 Val. Loss: 3806.494 |  Val. Acc POS: 62.21% | Val. Acc NEG: 88.07%
+Epoch: 94 | Epoch Time: 0m 8s
+	Train Loss: 5862.643 | Train Acc POS: 65.76% | Train Acc NEG: 87.64%
+	 Val. Loss: 3790.817 |  Val. Acc POS: 63.27% | Val. Acc NEG: 86.11%
+Epoch: 95 | Epoch Time: 0m 9s
+	Train Loss: 5800.981 | Train Acc POS: 66.45% | Train Acc NEG: 87.12%
+	 Val. Loss: 3743.758 |  Val. Acc POS: 64.04% | Val. Acc NEG: 86.37%
+Epoch: 96 | Epoch Time: 0m 9s
+	Train Loss: 5755.022 | Train Acc POS: 66.32% | Train Acc NEG: 87.23%
+	 Val. Loss: 3747.110 |  Val. Acc POS: 63.66% | Val. Acc NEG: 87.05%
+Epoch: 97 | Epoch Time: 0m 9s
+	Train Loss: 5642.545 | Train Acc POS: 67.50% | Train Acc NEG: 87.28%
+	 Val. Loss: 3692.636 |  Val. Acc POS: 64.25% | Val. Acc NEG: 86.83%
+Epoch: 98 | Epoch Time: 0m 9s
+	Train Loss: 5553.517 | Train Acc POS: 67.80% | Train Acc NEG: 87.68%
+	 Val. Loss: 3669.324 |  Val. Acc POS: 64.98% | Val. Acc NEG: 87.26%
+Epoch: 99 | Epoch Time: 0m 8s
+	Train Loss: 5500.824 | Train Acc POS: 68.01% | Train Acc NEG: 87.66%
+	 Val. Loss: 3649.306 |  Val. Acc POS: 66.25% | Val. Acc NEG: 88.28%
+Epoch: 100 | Epoch Time: 0m 9s
+	Train Loss: 5451.469 | Train Acc POS: 68.47% | Train Acc NEG: 87.66%
+	 Val. Loss: 3660.525 |  Val. Acc POS: 65.53% | Val. Acc NEG: 87.90%
+Epoch: 101 | Epoch Time: 0m 8s
+	Train Loss: 5397.754 | Train Acc POS: 68.51% | Train Acc NEG: 87.55%
+	 Val. Loss: 3634.587 |  Val. Acc POS: 66.17% | Val. Acc NEG: 87.90%
+Epoch: 102 | Epoch Time: 0m 9s
+	Train Loss: 5310.493 | Train Acc POS: 69.32% | Train Acc NEG: 87.70%
+	 Val. Loss: 3683.054 |  Val. Acc POS: 65.27% | Val. Acc NEG: 87.81%
+Epoch: 103 | Epoch Time: 0m 8s
+	Train Loss: 5263.628 | Train Acc POS: 69.58% | Train Acc NEG: 87.83%
+	 Val. Loss: 3582.119 |  Val. Acc POS: 66.25% | Val. Acc NEG: 87.64%
+Epoch: 104 | Epoch Time: 0m 8s
+	Train Loss: 5187.554 | Train Acc POS: 70.40% | Train Acc NEG: 87.72%
+	 Val. Loss: 3538.470 |  Val. Acc POS: 67.15% | Val. Acc NEG: 86.96%
+Epoch: 105 | Epoch Time: 0m 8s
+	Train Loss: 5091.233 | Train Acc POS: 70.37% | Train Acc NEG: 88.12%
+	 Val. Loss: 3477.490 |  Val. Acc POS: 67.49% | Val. Acc NEG: 87.73%
+Epoch: 106 | Epoch Time: 0m 8s
+	Train Loss: 5028.041 | Train Acc POS: 71.19% | Train Acc NEG: 88.19%
+	 Val. Loss: 3482.343 |  Val. Acc POS: 67.02% | Val. Acc NEG: 87.64%
+Epoch: 107 | Epoch Time: 0m 9s
+	Train Loss: 4972.105 | Train Acc POS: 71.44% | Train Acc NEG: 88.22%
+	 Val. Loss: 3487.901 |  Val. Acc POS: 66.64% | Val. Acc NEG: 88.24%
+Epoch: 108 | Epoch Time: 0m 9s
+	Train Loss: 4898.365 | Train Acc POS: 71.80% | Train Acc NEG: 88.02%
+	 Val. Loss: 3411.225 |  Val. Acc POS: 68.04% | Val. Acc NEG: 88.79%
+Epoch: 109 | Epoch Time: 0m 9s
+	Train Loss: 4820.972 | Train Acc POS: 72.07% | Train Acc NEG: 88.39%
+	 Val. Loss: 3387.420 |  Val. Acc POS: 68.51% | Val. Acc NEG: 88.67%
+Epoch: 110 | Epoch Time: 0m 9s
+	Train Loss: 4761.066 | Train Acc POS: 72.37% | Train Acc NEG: 88.34%
+	 Val. Loss: 3361.819 |  Val. Acc POS: 68.51% | Val. Acc NEG: 88.28%
+Epoch: 111 | Epoch Time: 0m 9s
+	Train Loss: 4685.226 | Train Acc POS: 73.33% | Train Acc NEG: 88.41%
+	 Val. Loss: 3334.453 |  Val. Acc POS: 69.58% | Val. Acc NEG: 88.11%
+Epoch: 112 | Epoch Time: 0m 9s
+	Train Loss: 4648.754 | Train Acc POS: 73.52% | Train Acc NEG: 88.20%
+	 Val. Loss: 3317.732 |  Val. Acc POS: 69.28% | Val. Acc NEG: 88.11%
+Epoch: 113 | Epoch Time: 0m 9s
+	Train Loss: 4592.439 | Train Acc POS: 73.75% | Train Acc NEG: 88.30%
+	 Val. Loss: 3292.736 |  Val. Acc POS: 69.15% | Val. Acc NEG: 87.18%
+Epoch: 114 | Epoch Time: 0m 9s
+	Train Loss: 4499.212 | Train Acc POS: 74.67% | Train Acc NEG: 88.36%
+	 Val. Loss: 3323.208 |  Val. Acc POS: 69.96% | Val. Acc NEG: 88.03%
+Epoch: 115 | Epoch Time: 0m 9s
+	Train Loss: 4481.531 | Train Acc POS: 74.35% | Train Acc NEG: 88.35%
+	 Val. Loss: 3274.442 |  Val. Acc POS: 69.41% | Val. Acc NEG: 87.73%
+Epoch: 116 | Epoch Time: 0m 9s
+	Train Loss: 4392.456 | Train Acc POS: 74.99% | Train Acc NEG: 88.31%
+	 Val. Loss: 3259.163 |  Val. Acc POS: 70.09% | Val. Acc NEG: 88.58%
+Epoch: 117 | Epoch Time: 0m 9s
+	Train Loss: 4307.071 | Train Acc POS: 75.60% | Train Acc NEG: 88.27%
+	 Val. Loss: 3283.105 |  Val. Acc POS: 70.39% | Val. Acc NEG: 88.37%
+Epoch: 118 | Epoch Time: 0m 9s
+	Train Loss: 4232.357 | Train Acc POS: 75.94% | Train Acc NEG: 88.53%
+	 Val. Loss: 3235.474 |  Val. Acc POS: 69.75% | Val. Acc NEG: 88.45%
+Epoch: 119 | Epoch Time: 0m 9s
+	Train Loss: 4178.265 | Train Acc POS: 76.29% | Train Acc NEG: 88.27%
+	 Val. Loss: 3255.895 |  Val. Acc POS: 71.24% | Val. Acc NEG: 88.96%
+Epoch: 120 | Epoch Time: 0m 9s
+	Train Loss: 4116.269 | Train Acc POS: 76.63% | Train Acc NEG: 88.29%
+	 Val. Loss: 3211.566 |  Val. Acc POS: 70.64% | Val. Acc NEG: 89.05%
+Epoch: 121 | Epoch Time: 0m 9s
+	Train Loss: 4098.115 | Train Acc POS: 76.44% | Train Acc NEG: 88.49%
+	 Val. Loss: 3275.542 |  Val. Acc POS: 70.39% | Val. Acc NEG: 88.28%
+Epoch: 122 | Epoch Time: 0m 9s
+	Train Loss: 4061.888 | Train Acc POS: 76.72% | Train Acc NEG: 88.74%
+	 Val. Loss: 3215.443 |  Val. Acc POS: 71.92% | Val. Acc NEG: 87.98%
+Epoch: 123 | Epoch Time: 0m 9s
+	Train Loss: 3961.733 | Train Acc POS: 77.76% | Train Acc NEG: 88.88%
+	 Val. Loss: 3173.552 |  Val. Acc POS: 71.92% | Val. Acc NEG: 89.31%
+Epoch: 124 | Epoch Time: 0m 9s
+	Train Loss: 3888.761 | Train Acc POS: 78.13% | Train Acc NEG: 88.59%
+	 Val. Loss: 3166.566 |  Val. Acc POS: 72.09% | Val. Acc NEG: 89.01%
+Epoch: 125 | Epoch Time: 0m 9s
+	Train Loss: 3839.830 | Train Acc POS: 78.01% | Train Acc NEG: 88.78%
+	 Val. Loss: 3143.628 |  Val. Acc POS: 72.86% | Val. Acc NEG: 88.88%
+Epoch: 126 | Epoch Time: 0m 9s
+	Train Loss: 3746.793 | Train Acc POS: 79.12% | Train Acc NEG: 88.92%
+	 Val. Loss: 3181.828 |  Val. Acc POS: 72.09% | Val. Acc NEG: 88.45%
+Epoch: 127 | Epoch Time: 0m 9s
+	Train Loss: 3697.724 | Train Acc POS: 79.29% | Train Acc NEG: 88.99%
+	 Val. Loss: 3112.594 |  Val. Acc POS: 72.56% | Val. Acc NEG: 88.88%
+Epoch: 128 | Epoch Time: 0m 8s
+	Train Loss: 3658.903 | Train Acc POS: 79.59% | Train Acc NEG: 89.05%
+	 Val. Loss: 3090.665 |  Val. Acc POS: 73.46% | Val. Acc NEG: 88.54%
+Epoch: 129 | Epoch Time: 0m 9s
+	Train Loss: 3585.266 | Train Acc POS: 80.35% | Train Acc NEG: 88.97%
+	 Val. Loss: 3044.286 |  Val. Acc POS: 73.41% | Val. Acc NEG: 89.26%
+Epoch: 130 | Epoch Time: 0m 9s
+	Train Loss: 3548.717 | Train Acc POS: 80.42% | Train Acc NEG: 89.15%
+	 Val. Loss: 3119.314 |  Val. Acc POS: 72.99% | Val. Acc NEG: 88.62%
+Epoch: 131 | Epoch Time: 0m 8s
+	Train Loss: 3484.281 | Train Acc POS: 80.67% | Train Acc NEG: 88.99%
+	 Val. Loss: 3122.797 |  Val. Acc POS: 73.58% | Val. Acc NEG: 88.07%
+Epoch: 132 | Epoch Time: 0m 8s
+	Train Loss: 3465.387 | Train Acc POS: 81.05% | Train Acc NEG: 88.65%
+	 Val. Loss: 3106.839 |  Val. Acc POS: 73.67% | Val. Acc NEG: 86.83%
+Epoch: 133 | Epoch Time: 0m 9s
+	Train Loss: 3381.528 | Train Acc POS: 81.55% | Train Acc NEG: 89.01%
+	 Val. Loss: 3100.712 |  Val. Acc POS: 73.88% | Val. Acc NEG: 87.98%
+Epoch: 134 | Epoch Time: 0m 9s
+	Train Loss: 3371.045 | Train Acc POS: 81.46% | Train Acc NEG: 89.08%
+	 Val. Loss: 3050.702 |  Val. Acc POS: 74.27% | Val. Acc NEG: 88.07%
+Epoch: 135 | Epoch Time: 0m 9s
+	Train Loss: 3332.786 | Train Acc POS: 81.75% | Train Acc NEG: 89.00%
+	 Val. Loss: 3106.247 |  Val. Acc POS: 74.14% | Val. Acc NEG: 87.18%
+Epoch: 136 | Epoch Time: 0m 8s
+	Train Loss: 3236.106 | Train Acc POS: 82.46% | Train Acc NEG: 89.22%
+	 Val. Loss: 3044.824 |  Val. Acc POS: 74.52% | Val. Acc NEG: 87.90%
+Epoch: 137 | Epoch Time: 0m 9s
+	Train Loss: 3217.636 | Train Acc POS: 82.43% | Train Acc NEG: 89.15%
+	 Val. Loss: 3040.538 |  Val. Acc POS: 74.61% | Val. Acc NEG: 88.79%
+Epoch: 138 | Epoch Time: 0m 9s
+	Train Loss: 3174.269 | Train Acc POS: 82.58% | Train Acc NEG: 89.21%
+	 Val. Loss: 3066.940 |  Val. Acc POS: 74.73% | Val. Acc NEG: 88.07%
+Epoch: 139 | Epoch Time: 0m 9s
+	Train Loss: 3128.686 | Train Acc POS: 82.81% | Train Acc NEG: 89.65%
+	 Val. Loss: 3042.189 |  Val. Acc POS: 74.99% | Val. Acc NEG: 87.56%
+Epoch: 140 | Epoch Time: 0m 9s
+	Train Loss: 3086.558 | Train Acc POS: 83.15% | Train Acc NEG: 89.21%
+	 Val. Loss: 3019.664 |  Val. Acc POS: 75.16% | Val. Acc NEG: 88.67%
+Epoch: 141 | Epoch Time: 0m 8s
+	Train Loss: 3065.308 | Train Acc POS: 83.16% | Train Acc NEG: 89.75%
+	 Val. Loss: 3027.053 |  Val. Acc POS: 75.42% | Val. Acc NEG: 88.33%
+Epoch: 142 | Epoch Time: 0m 9s
+	Train Loss: 3000.288 | Train Acc POS: 84.05% | Train Acc NEG: 89.58%
+	 Val. Loss: 3036.208 |  Val. Acc POS: 75.16% | Val. Acc NEG: 89.18%
+Epoch: 143 | Epoch Time: 0m 8s
+	Train Loss: 2899.761 | Train Acc POS: 84.63% | Train Acc NEG: 89.84%
+	 Val. Loss: 3037.993 |  Val. Acc POS: 75.54% | Val. Acc NEG: 88.54%
+Epoch: 144 | Epoch Time: 0m 9s
+	Train Loss: 2939.648 | Train Acc POS: 83.99% | Train Acc NEG: 89.67%
+	 Val. Loss: 3014.253 |  Val. Acc POS: 75.16% | Val. Acc NEG: 88.79%
+Epoch: 145 | Epoch Time: 0m 9s
+	Train Loss: 2866.517 | Train Acc POS: 84.29% | Train Acc NEG: 90.02%
+	 Val. Loss: 3032.805 |  Val. Acc POS: 75.24% | Val. Acc NEG: 86.96%
+Epoch: 146 | Epoch Time: 0m 8s
+	Train Loss: 2809.175 | Train Acc POS: 85.04% | Train Acc NEG: 89.77%
+	 Val. Loss: 3006.577 |  Val. Acc POS: 75.59% | Val. Acc NEG: 88.67%
+Epoch: 147 | Epoch Time: 0m 9s
+	Train Loss: 2791.058 | Train Acc POS: 84.85% | Train Acc NEG: 89.62%
+	 Val. Loss: 2951.879 |  Val. Acc POS: 76.10% | Val. Acc NEG: 88.92%
+Epoch: 148 | Epoch Time: 0m 9s
+	Train Loss: 2752.823 | Train Acc POS: 85.00% | Train Acc NEG: 90.05%
+	 Val. Loss: 3006.517 |  Val. Acc POS: 76.31% | Val. Acc NEG: 88.33%
+Epoch: 149 | Epoch Time: 0m 9s
+	Train Loss: 2730.532 | Train Acc POS: 85.42% | Train Acc NEG: 89.70%
+	 Val. Loss: 3014.284 |  Val. Acc POS: 76.18% | Val. Acc NEG: 87.77%
+Epoch: 150 | Epoch Time: 0m 9s
+	Train Loss: 2689.298 | Train Acc POS: 85.53% | Train Acc NEG: 90.09%
+	 Val. Loss: 3016.152 |  Val. Acc POS: 75.93% | Val. Acc NEG: 88.33%
+Epoch: 151 | Epoch Time: 0m 9s
+	Train Loss: 2683.099 | Train Acc POS: 85.60% | Train Acc NEG: 90.03%
+	 Val. Loss: 3017.105 |  Val. Acc POS: 75.97% | Val. Acc NEG: 88.11%
+Epoch: 152 | Epoch Time: 0m 9s
+	Train Loss: 2584.022 | Train Acc POS: 86.57% | Train Acc NEG: 89.90%
+	 Val. Loss: 3066.082 |  Val. Acc POS: 75.93% | Val. Acc NEG: 87.52%
+Epoch: 153 | Epoch Time: 0m 9s
+	Train Loss: 2556.251 | Train Acc POS: 86.48% | Train Acc NEG: 90.15%
+	 Val. Loss: 2990.091 |  Val. Acc POS: 76.69% | Val. Acc NEG: 87.73%
+Epoch: 154 | Epoch Time: 0m 9s
+	Train Loss: 2538.406 | Train Acc POS: 86.38% | Train Acc NEG: 90.15%
+	 Val. Loss: 3048.974 |  Val. Acc POS: 76.27% | Val. Acc NEG: 86.58%
+Epoch: 155 | Epoch Time: 0m 9s
+	Train Loss: 2509.066 | Train Acc POS: 87.00% | Train Acc NEG: 90.19%
+	 Val. Loss: 2985.339 |  Val. Acc POS: 76.69% | Val. Acc NEG: 86.32%
+Epoch: 156 | Epoch Time: 0m 9s
+	Train Loss: 2482.088 | Train Acc POS: 87.18% | Train Acc NEG: 89.77%
+	 Val. Loss: 2926.890 |  Val. Acc POS: 77.46% | Val. Acc NEG: 89.14%
+Epoch: 157 | Epoch Time: 0m 9s
+	Train Loss: 2455.786 | Train Acc POS: 87.47% | Train Acc NEG: 89.81%
+	 Val. Loss: 2961.855 |  Val. Acc POS: 77.16% | Val. Acc NEG: 89.22%
+Epoch: 158 | Epoch Time: 0m 9s
+	Train Loss: 2408.850 | Train Acc POS: 87.57% | Train Acc NEG: 90.17%
+	 Val. Loss: 2964.253 |  Val. Acc POS: 76.48% | Val. Acc NEG: 88.54%
+Epoch: 159 | Epoch Time: 0m 9s
+	Train Loss: 2379.141 | Train Acc POS: 88.05% | Train Acc NEG: 90.40%
+	 Val. Loss: 3008.752 |  Val. Acc POS: 77.03% | Val. Acc NEG: 87.26%
+Epoch: 160 | Epoch Time: 0m 9s
+	Train Loss: 2368.158 | Train Acc POS: 87.66% | Train Acc NEG: 90.22%
+	 Val. Loss: 3025.159 |  Val. Acc POS: 76.99% | Val. Acc NEG: 87.60%
+Epoch: 161 | Epoch Time: 0m 9s
+	Train Loss: 2358.363 | Train Acc POS: 87.83% | Train Acc NEG: 90.15%
+	 Val. Loss: 3017.200 |  Val. Acc POS: 77.20% | Val. Acc NEG: 88.84%
+Epoch: 162 | Epoch Time: 0m 9s
+	Train Loss: 2283.203 | Train Acc POS: 88.52% | Train Acc NEG: 90.24%
+	 Val. Loss: 2996.488 |  Val. Acc POS: 77.42% | Val. Acc NEG: 87.73%
+Epoch: 163 | Epoch Time: 0m 9s
+	Train Loss: 2267.106 | Train Acc POS: 88.44% | Train Acc NEG: 90.24%
+	 Val. Loss: 3005.437 |  Val. Acc POS: 76.86% | Val. Acc NEG: 88.16%
+Epoch: 164 | Epoch Time: 0m 8s
+	Train Loss: 2276.053 | Train Acc POS: 88.34% | Train Acc NEG: 90.53%
+	 Val. Loss: 3034.401 |  Val. Acc POS: 77.38% | Val. Acc NEG: 87.35%
+Epoch: 165 | Epoch Time: 0m 9s
+	Train Loss: 2204.748 | Train Acc POS: 88.82% | Train Acc NEG: 90.49%
+	 Val. Loss: 2980.981 |  Val. Acc POS: 77.16% | Val. Acc NEG: 87.98%
+Epoch: 166 | Epoch Time: 0m 8s
+	Train Loss: 2172.480 | Train Acc POS: 88.85% | Train Acc NEG: 90.68%
+	 Val. Loss: 3067.612 |  Val. Acc POS: 77.20% | Val. Acc NEG: 87.77%
+Epoch: 167 | Epoch Time: 0m 9s
+	Train Loss: 2153.104 | Train Acc POS: 89.07% | Train Acc NEG: 90.73%
+	 Val. Loss: 2993.622 |  Val. Acc POS: 77.84% | Val. Acc NEG: 88.41%
+Epoch: 168 | Epoch Time: 0m 9s
+	Train Loss: 2169.263 | Train Acc POS: 89.06% | Train Acc NEG: 90.42%
+	 Val. Loss: 2987.184 |  Val. Acc POS: 77.38% | Val. Acc NEG: 88.58%
+Epoch: 169 | Epoch Time: 0m 9s
+	Train Loss: 2109.595 | Train Acc POS: 89.45% | Train Acc NEG: 90.74%
+	 Val. Loss: 3002.647 |  Val. Acc POS: 76.95% | Val. Acc NEG: 88.28%
+Epoch: 170 | Epoch Time: 0m 9s
+	Train Loss: 2084.880 | Train Acc POS: 89.65% | Train Acc NEG: 90.74%
+	 Val. Loss: 3033.867 |  Val. Acc POS: 76.99% | Val. Acc NEG: 88.03%
+Epoch: 171 | Epoch Time: 0m 8s
+	Train Loss: 2076.742 | Train Acc POS: 89.62% | Train Acc NEG: 90.61%
+	 Val. Loss: 3053.742 |  Val. Acc POS: 77.46% | Val. Acc NEG: 87.56%
+Epoch: 172 | Epoch Time: 0m 9s
+	Train Loss: 2058.005 | Train Acc POS: 89.46% | Train Acc NEG: 90.98%
+	 Val. Loss: 3083.567 |  Val. Acc POS: 78.31% | Val. Acc NEG: 87.00%
+Epoch: 173 | Epoch Time: 0m 9s
+	Train Loss: 2025.033 | Train Acc POS: 89.96% | Train Acc NEG: 91.05%
+	 Val. Loss: 3025.591 |  Val. Acc POS: 78.31% | Val. Acc NEG: 87.22%
+Epoch: 174 | Epoch Time: 0m 9s
+	Train Loss: 1993.200 | Train Acc POS: 90.33% | Train Acc NEG: 90.87%
+	 Val. Loss: 3055.111 |  Val. Acc POS: 77.97% | Val. Acc NEG: 88.11%
+Epoch: 175 | Epoch Time: 0m 9s
+	Train Loss: 1979.101 | Train Acc POS: 90.05% | Train Acc NEG: 91.07%
+	 Val. Loss: 3076.200 |  Val. Acc POS: 77.46% | Val. Acc NEG: 87.43%
+Epoch: 176 | Epoch Time: 0m 9s
+	Train Loss: 1977.758 | Train Acc POS: 90.26% | Train Acc NEG: 90.87%
+	 Val. Loss: 3036.803 |  Val. Acc POS: 78.18% | Val. Acc NEG: 87.52%
+Epoch: 177 | Epoch Time: 0m 9s
+	Train Loss: 1946.699 | Train Acc POS: 90.36% | Train Acc NEG: 90.96%
+	 Val. Loss: 3051.287 |  Val. Acc POS: 77.63% | Val. Acc NEG: 87.56%
+Epoch: 178 | Epoch Time: 0m 9s
+	Train Loss: 1903.870 | Train Acc POS: 90.83% | Train Acc NEG: 91.16%
+	 Val. Loss: 3091.149 |  Val. Acc POS: 77.46% | Val. Acc NEG: 86.07%
+Epoch: 179 | Epoch Time: 0m 8s
+	Train Loss: 1901.143 | Train Acc POS: 90.84% | Train Acc NEG: 90.85%
+	 Val. Loss: 3024.475 |  Val. Acc POS: 78.01% | Val. Acc NEG: 87.60%
+Epoch: 180 | Epoch Time: 0m 9s
+	Train Loss: 1847.360 | Train Acc POS: 90.93% | Train Acc NEG: 91.12%
+	 Val. Loss: 3062.330 |  Val. Acc POS: 78.31% | Val. Acc NEG: 87.69%
+Epoch: 181 | Epoch Time: 0m 9s
+	Train Loss: 1830.013 | Train Acc POS: 91.18% | Train Acc NEG: 91.41%
+	 Val. Loss: 3110.015 |  Val. Acc POS: 77.50% | Val. Acc NEG: 86.66%
+Epoch: 182 | Epoch Time: 0m 9s
+	Train Loss: 1820.726 | Train Acc POS: 91.06% | Train Acc NEG: 91.39%
+	 Val. Loss: 3054.825 |  Val. Acc POS: 77.76% | Val. Acc NEG: 87.26%
+Epoch: 183 | Epoch Time: 0m 9s
+	Train Loss: 1769.062 | Train Acc POS: 91.79% | Train Acc NEG: 91.47%
+	 Val. Loss: 3087.873 |  Val. Acc POS: 77.25% | Val. Acc NEG: 88.54%
+Epoch: 184 | Epoch Time: 0m 9s
+	Train Loss: 1789.816 | Train Acc POS: 91.56% | Train Acc NEG: 91.35%
+	 Val. Loss: 3111.620 |  Val. Acc POS: 77.55% | Val. Acc NEG: 86.62%
+Epoch: 185 | Epoch Time: 0m 9s
+	Train Loss: 1772.721 | Train Acc POS: 91.63% | Train Acc NEG: 91.59%
+	 Val. Loss: 3107.154 |  Val. Acc POS: 78.53% | Val. Acc NEG: 85.81%
+Epoch: 186 | Epoch Time: 0m 9s
+	Train Loss: 1782.016 | Train Acc POS: 91.46% | Train Acc NEG: 91.31%
+	 Val. Loss: 3072.694 |  Val. Acc POS: 78.06% | Val. Acc NEG: 87.98%
+Epoch: 187 | Epoch Time: 0m 9s
+	Train Loss: 1739.274 | Train Acc POS: 91.66% | Train Acc NEG: 91.80%
+	 Val. Loss: 3165.078 |  Val. Acc POS: 77.67% | Val. Acc NEG: 87.09%
+Epoch: 188 | Epoch Time: 0m 9s
+	Train Loss: 1725.154 | Train Acc POS: 91.52% | Train Acc NEG: 91.38%
+	 Val. Loss: 3118.850 |  Val. Acc POS: 78.06% | Val. Acc NEG: 87.26%
+Epoch: 189 | Epoch Time: 0m 9s
+	Train Loss: 1728.760 | Train Acc POS: 91.80% | Train Acc NEG: 91.73%
+	 Val. Loss: 3158.183 |  Val. Acc POS: 78.57% | Val. Acc NEG: 87.09%
+Epoch: 190 | Epoch Time: 0m 9s
+	Train Loss: 1709.518 | Train Acc POS: 92.00% | Train Acc NEG: 91.41%
+	 Val. Loss: 3168.164 |  Val. Acc POS: 78.48% | Val. Acc NEG: 86.96%
+Epoch: 191 | Epoch Time: 0m 9s
+	Train Loss: 1654.761 | Train Acc POS: 92.35% | Train Acc NEG: 91.55%
+	 Val. Loss: 3085.636 |  Val. Acc POS: 78.48% | Val. Acc NEG: 87.39%
+Epoch: 192 | Epoch Time: 0m 9s
+	Train Loss: 1641.685 | Train Acc POS: 92.23% | Train Acc NEG: 91.92%
+	 Val. Loss: 3097.490 |  Val. Acc POS: 78.65% | Val. Acc NEG: 87.47%
+Epoch: 193 | Epoch Time: 0m 9s
+	Train Loss: 1629.890 | Train Acc POS: 92.29% | Train Acc NEG: 91.67%
+	 Val. Loss: 3136.062 |  Val. Acc POS: 78.06% | Val. Acc NEG: 87.98%
+Epoch: 194 | Epoch Time: 0m 10s
+	Train Loss: 1608.858 | Train Acc POS: 92.34% | Train Acc NEG: 92.08%
+	 Val. Loss: 3085.277 |  Val. Acc POS: 78.23% | Val. Acc NEG: 87.98%
+Epoch: 195 | Epoch Time: 0m 10s
+	Train Loss: 1589.749 | Train Acc POS: 92.52% | Train Acc NEG: 92.13%
+	 Val. Loss: 3107.646 |  Val. Acc POS: 78.53% | Val. Acc NEG: 87.94%
+Epoch: 196 | Epoch Time: 0m 10s
+	Train Loss: 1575.839 | Train Acc POS: 92.46% | Train Acc NEG: 92.24%
+	 Val. Loss: 3126.655 |  Val. Acc POS: 78.10% | Val. Acc NEG: 86.92%
+Epoch: 197 | Epoch Time: 0m 11s
+	Train Loss: 1570.621 | Train Acc POS: 92.56% | Train Acc NEG: 92.23%
+	 Val. Loss: 3136.785 |  Val. Acc POS: 78.31% | Val. Acc NEG: 88.50%
+Epoch: 198 | Epoch Time: 0m 11s
+	Train Loss: 1548.087 | Train Acc POS: 92.59% | Train Acc NEG: 91.91%
+	 Val. Loss: 3142.540 |  Val. Acc POS: 78.53% | Val. Acc NEG: 88.45%
+Epoch: 199 | Epoch Time: 0m 10s
+	Train Loss: 1535.797 | Train Acc POS: 92.51% | Train Acc NEG: 92.45%
+	 Val. Loss: 3189.035 |  Val. Acc POS: 78.40% | Val. Acc NEG: 87.13%
+Epoch: 200 | Epoch Time: 0m 10s
+	Train Loss: 1516.775 | Train Acc POS: 92.96% | Train Acc NEG: 92.25%
+	 Val. Loss: 3141.940 |  Val. Acc POS: 77.59% | Val. Acc NEG: 87.94%
+Epoch: 201 | Epoch Time: 0m 10s
+	Train Loss: 1514.548 | Train Acc POS: 92.98% | Train Acc NEG: 92.49%
+	 Val. Loss: 3196.112 |  Val. Acc POS: 78.61% | Val. Acc NEG: 88.37%
+Epoch: 202 | Epoch Time: 0m 10s
+	Train Loss: 1495.936 | Train Acc POS: 92.87% | Train Acc NEG: 92.35%
+	 Val. Loss: 3149.761 |  Val. Acc POS: 78.06% | Val. Acc NEG: 88.24%
+Epoch: 203 | Epoch Time: 0m 10s
+	Train Loss: 1481.400 | Train Acc POS: 92.95% | Train Acc NEG: 92.63%
+	 Val. Loss: 3173.699 |  Val. Acc POS: 78.10% | Val. Acc NEG: 88.79%
+Epoch: 204 | Epoch Time: 0m 10s
+	Train Loss: 1462.737 | Train Acc POS: 93.30% | Train Acc NEG: 92.45%
+	 Val. Loss: 3157.085 |  Val. Acc POS: 78.06% | Val. Acc NEG: 87.60%
+Epoch: 205 | Epoch Time: 0m 10s
+	Train Loss: 1464.898 | Train Acc POS: 93.33% | Train Acc NEG: 92.38%
+	 Val. Loss: 3179.380 |  Val. Acc POS: 79.16% | Val. Acc NEG: 87.56%
+Epoch: 206 | Epoch Time: 0m 10s
+	Train Loss: 1421.884 | Train Acc POS: 93.31% | Train Acc NEG: 92.67%
+	 Val. Loss: 3167.631 |  Val. Acc POS: 78.91% | Val. Acc NEG: 86.02%
+Epoch: 207 | Epoch Time: 0m 10s
+	Train Loss: 1408.183 | Train Acc POS: 93.64% | Train Acc NEG: 92.76%
+	 Val. Loss: 3197.268 |  Val. Acc POS: 78.18% | Val. Acc NEG: 87.94%
+Epoch: 208 | Epoch Time: 0m 10s
+	Train Loss: 1419.747 | Train Acc POS: 93.64% | Train Acc NEG: 92.68%
+	 Val. Loss: 3175.678 |  Val. Acc POS: 78.70% | Val. Acc NEG: 87.47%
+Epoch: 209 | Epoch Time: 0m 10s
+	Train Loss: 1400.907 | Train Acc POS: 93.67% | Train Acc NEG: 92.69%
+	 Val. Loss: 3143.592 |  Val. Acc POS: 78.95% | Val. Acc NEG: 88.67%
+Epoch: 210 | Epoch Time: 0m 10s
+	Train Loss: 1392.525 | Train Acc POS: 93.72% | Train Acc NEG: 92.95%
+	 Val. Loss: 3154.632 |  Val. Acc POS: 78.78% | Val. Acc NEG: 88.20%
+Epoch: 211 | Epoch Time: 0m 10s
+	Train Loss: 1379.164 | Train Acc POS: 93.82% | Train Acc NEG: 93.16%
+	 Val. Loss: 3191.152 |  Val. Acc POS: 78.91% | Val. Acc NEG: 87.64%
+Epoch: 212 | Epoch Time: 0m 10s
+	Train Loss: 1360.752 | Train Acc POS: 93.64% | Train Acc NEG: 92.90%
+	 Val. Loss: 3255.254 |  Val. Acc POS: 78.65% | Val. Acc NEG: 87.26%
+Epoch: 213 | Epoch Time: 0m 10s
+	Train Loss: 1366.433 | Train Acc POS: 93.97% | Train Acc NEG: 92.86%
+	 Val. Loss: 3180.980 |  Val. Acc POS: 79.21% | Val. Acc NEG: 87.90%
+Epoch: 214 | Epoch Time: 0m 10s
+	Train Loss: 1376.055 | Train Acc POS: 93.90% | Train Acc NEG: 92.48%
+	 Val. Loss: 3205.192 |  Val. Acc POS: 79.29% | Val. Acc NEG: 87.43%
+Epoch: 215 | Epoch Time: 0m 10s
+	Train Loss: 1407.757 | Train Acc POS: 93.66% | Train Acc NEG: 92.73%
+	 Val. Loss: 3197.326 |  Val. Acc POS: 79.12% | Val. Acc NEG: 87.39%
+Epoch: 216 | Epoch Time: 0m 10s
+	Train Loss: 1352.163 | Train Acc POS: 94.04% | Train Acc NEG: 92.91%
+	 Val. Loss: 3201.209 |  Val. Acc POS: 78.57% | Val. Acc NEG: 88.11%
+Epoch: 217 | Epoch Time: 0m 10s
+	Train Loss: 1315.160 | Train Acc POS: 94.06% | Train Acc NEG: 93.17%
+	 Val. Loss: 3235.093 |  Val. Acc POS: 78.78% | Val. Acc NEG: 87.60%
+Epoch: 218 | Epoch Time: 0m 10s
+	Train Loss: 1312.614 | Train Acc POS: 94.01% | Train Acc NEG: 93.11%
+	 Val. Loss: 3229.660 |  Val. Acc POS: 78.53% | Val. Acc NEG: 88.16%
+Epoch: 219 | Epoch Time: 0m 10s
+	Train Loss: 1282.413 | Train Acc POS: 94.09% | Train Acc NEG: 93.15%
+	 Val. Loss: 3286.707 |  Val. Acc POS: 79.29% | Val. Acc NEG: 87.43%
+Epoch: 220 | Epoch Time: 0m 10s
+	Train Loss: 1290.708 | Train Acc POS: 94.29% | Train Acc NEG: 93.26%
+	 Val. Loss: 3223.598 |  Val. Acc POS: 79.08% | Val. Acc NEG: 88.41%
+Epoch: 221 | Epoch Time: 0m 10s
+	Train Loss: 1308.419 | Train Acc POS: 94.20% | Train Acc NEG: 92.86%
+	 Val. Loss: 3288.428 |  Val. Acc POS: 78.91% | Val. Acc NEG: 88.45%
+Epoch: 222 | Epoch Time: 0m 10s
+	Train Loss: 1269.272 | Train Acc POS: 94.44% | Train Acc NEG: 93.09%
+	 Val. Loss: 3249.245 |  Val. Acc POS: 78.74% | Val. Acc NEG: 88.16%
+Epoch: 223 | Epoch Time: 0m 10s
+	Train Loss: 1261.253 | Train Acc POS: 94.39% | Train Acc NEG: 93.45%
+	 Val. Loss: 3279.700 |  Val. Acc POS: 79.34% | Val. Acc NEG: 87.47%
+Epoch: 224 | Epoch Time: 0m 10s
+	Train Loss: 1267.869 | Train Acc POS: 94.28% | Train Acc NEG: 93.18%
+	 Val. Loss: 3271.586 |  Val. Acc POS: 78.78% | Val. Acc NEG: 87.56%
+Epoch: 225 | Epoch Time: 0m 10s
+	Train Loss: 1273.246 | Train Acc POS: 94.29% | Train Acc NEG: 93.31%
+	 Val. Loss: 3263.152 |  Val. Acc POS: 78.95% | Val. Acc NEG: 87.30%
+Epoch: 226 | Epoch Time: 0m 10s
+	Train Loss: 1232.988 | Train Acc POS: 94.56% | Train Acc NEG: 93.33%
+	 Val. Loss: 3265.662 |  Val. Acc POS: 79.25% | Val. Acc NEG: 88.71%
+Epoch: 227 | Epoch Time: 0m 10s
+	Train Loss: 1235.893 | Train Acc POS: 94.62% | Train Acc NEG: 93.17%
+	 Val. Loss: 3250.351 |  Val. Acc POS: 79.12% | Val. Acc NEG: 87.56%
+Epoch: 228 | Epoch Time: 0m 10s
+	Train Loss: 1206.302 | Train Acc POS: 94.83% | Train Acc NEG: 93.33%
+	 Val. Loss: 3332.513 |  Val. Acc POS: 79.55% | Val. Acc NEG: 86.49%
+Epoch: 229 | Epoch Time: 0m 10s
+	Train Loss: 1212.570 | Train Acc POS: 94.75% | Train Acc NEG: 93.36%
+	 Val. Loss: 3239.271 |  Val. Acc POS: 79.12% | Val. Acc NEG: 87.98%
+Epoch: 230 | Epoch Time: 0m 10s
+	Train Loss: 1173.211 | Train Acc POS: 94.98% | Train Acc NEG: 93.61%
+	 Val. Loss: 3273.173 |  Val. Acc POS: 79.25% | Val. Acc NEG: 87.60%
+Epoch: 231 | Epoch Time: 0m 10s
+	Train Loss: 1131.814 | Train Acc POS: 95.18% | Train Acc NEG: 93.68%
+	 Val. Loss: 3217.422 |  Val. Acc POS: 80.02% | Val. Acc NEG: 87.52%
+Epoch: 232 | Epoch Time: 0m 10s
+	Train Loss: 1177.534 | Train Acc POS: 94.95% | Train Acc NEG: 93.51%
+	 Val. Loss: 3288.687 |  Val. Acc POS: 79.34% | Val. Acc NEG: 87.35%

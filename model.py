@@ -23,7 +23,7 @@ def print_graph(g, level=0):
 
 # Source: https://pytorch.org/tutorials/beginner/transformer_tutorial.html
 class PositionalEncoding(nn.Module):
-    def __init__(self, d_model, dropout=0.1, max_len=85):
+    def __init__(self, d_model, dropout=0.2, max_len=85):
         super(PositionalEncoding, self).__init__()
         self.dropout = nn.Dropout(p=dropout)
 

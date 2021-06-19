@@ -95,7 +95,7 @@ def evaluate(model, iterator, criterion):
             
             predictions1, predictions2 = model(text, pos[:-1,:], neg_scope[:-1,:])
             loss1 = -model.crf1(predictions1,pos[1:,:],mask = model.crf_mask(pos[1:,:],model.pos_pad))
-            loss2 = -model.crf2(predictions2,neg_scope[1:,:],mask = model.crf_mask(pos[1:,:],model.pos_pad))
+            loss2 = -model.crf2(predictions2,neg_scope[1:,:],mask = model.crf_mask(neg_scope[1:,:],model.neg_pad))
 
             predictions1 = torch.Tensor(np.array(model.crf1.decode(predictions1)).T).reshape(-1,1).to(torch.device('cuda'))
             predictions2 = torch.Tensor(np.array(model.crf2.decode(predictions2)).T).reshape(-1,1).to(torch.device('cuda'))

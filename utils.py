@@ -88,7 +88,7 @@ def f1(preds, y, tag_pad_idx, cls,listed=False):
             P = len(y_real[(y_real == y_hat)  & (y_real == cls) & (y_hat == cls)])/counter[cls]
     except:
         P = 0.001
-        print(P)
+        print("P",P)
         pass
     counter = dict(zip(*torch.unique(y_real,return_counts=True)))
     for k,v in list(counter.items()):
@@ -99,7 +99,7 @@ def f1(preds, y, tag_pad_idx, cls,listed=False):
             R = len(y_real[(y_real == y_hat)  & (y_real == cls) & (y_hat == cls)])/counter[cls]
     except:
         R = 0.001
-        print(R)
+        print("R",R)
         pass
     
     return 2*P*R/(P+R)

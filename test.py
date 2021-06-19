@@ -23,15 +23,15 @@ def test_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
             neg_scope = batch.Neg_Scope
             
             predictions1, predictions2 = model(text, pos[:-1,:], neg_scope[:-1,:])
-            loss1 = -model.crf1(predictions1,pos[1:,:],mask = model.crf_mask(pos[1:,:],model.pos_pad))
-            loss2 = -model.crf2(predictions2,neg_scope[1:,:],mask = model.crf_mask(neg_scope[1:,:],model.neg_pad))
+            loss1 = -model.crf1(predictions1,pos,mask = model.crf_mask(pos,model.pos_pad))
+            loss2 = -model.crf2(predictions2,neg_scope,mask = model.crf_mask(neg_scope,model.neg_pad))
 
             predictions1 = torch.Tensor(np.array(model.crf1.decode(predictions1)).T).reshape(-1,1).to(torch.device('cuda'))
             predictions2 = torch.Tensor(np.array(model.crf2.decode(predictions2)).T).reshape(-1,1).to(torch.device('cuda'))
             # predictions1 = predictions1.view(-1, predictions1.shape[-1])
             # predictions2 = predictions2.view(-1, predictions2.shape[-1])
-            pos = pos[1:,:].view(-1)
-            neg_scope = neg_scope[1:,:].view(-1)
+            pos = pos.view(-1)
+            neg_scope = neg_scope.view(-1)
             
             # loss1 = criterion(predictions1, pos) 
             # loss2 = criterion(predictions2, neg_scope)
@@ -45,56 +45,56 @@ def test_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
 
     return loss / len(iterator), acc_pos / len(iterator), acc_neg / len(iterator)
 
-def validate_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
-    model.eval()
-    with torch.no_grad():
-        preds1 = []
-        preds2 = []
-        y1s = []
-        y2s = []
-        for batch in tqdm(iterator):
-            text = batch.Sentence
-            pos = batch.POS
-            neg_scope = batch.Neg_Scope
-            src_pad_mask = model.make_len_mask(text,model.text_pad)
+# def validate_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
+#     model.eval()
+#     with torch.no_grad():
+#         preds1 = []
+#         preds2 = []
+#         y1s = []
+#         y2s = []
+#         for batch in tqdm(iterator):
+#             text = batch.Sentence
+#             pos = batch.POS
+#             neg_scope = batch.Neg_Scope
+#             src_pad_mask = model.make_len_mask(text,model.text_pad)
             
-            embedded_X = model.dropout(model.embedding(text))
-            shared_output, (hidden, cell) = model.lstm(embedded_X)
-            shared_output = model.pos_encoding(shared_output)
-            src_mask = model.T1.generate_square_subsequent_mask(len(shared_output)).to(shared_output.device)
-            memory1 = model.T1.encoder(shared_output,src_key_padding_mask=src_pad_mask)#,mask=src_mask
-            memory2 = model.T2.encoder(shared_output,src_key_padding_mask=src_pad_mask)#,mask=src_mask
+#             embedded_X = model.dropout(model.embedding(text))
+#             shared_output, (hidden, cell) = model.lstm(embedded_X)
+#             shared_output = model.pos_encoding(shared_output)
+#             src_mask = model.T1.generate_square_subsequent_mask(len(shared_output)).to(shared_output.device)
+#             memory1 = model.T1.encoder(shared_output,src_key_padding_mask=src_pad_mask)#,mask=src_mask
+#             memory2 = model.T2.encoder(shared_output,src_key_padding_mask=src_pad_mask)#,mask=src_mask
 
-            y1_out_indexes = [1,]
-            y2_out_indexes = [1,]
+#             y1_out_indexes = [1,]
+#             y2_out_indexes = [1,]
 
-            for i in range(pos.shape[0]-1):
-                trg_tensor1 = torch.LongTensor(y1_out_indexes).unsqueeze(1).to(memory1.device)
-                trg_tensor2 = torch.LongTensor(y2_out_indexes).unsqueeze(1).to(memory2.device)
-                trg_pad_mask1 = model.make_len_mask(trg_tensor1, model.pos_pad)
-                trg_pad_mask2 = model.make_len_mask(trg_tensor2, model.neg_pad)
-                trg_mask1 = model.T1.generate_square_subsequent_mask(len(trg_tensor1)).to(trg_tensor1.device)
-                trg_mask2 = model.T2.generate_square_subsequent_mask(len(trg_tensor2)).to(trg_tensor2.device)
-                trg_tensor1 = model.pos_encoding_trg1( model.dropout(model.embeddingA(trg_tensor1)) )
-                trg_tensor2 = model.pos_encoding_trg2( model.dropout(model.embeddingB(trg_tensor2)) )
-                output1 = model.fc1(model.dropout(model.T1.decoder(trg_tensor1, memory1, tgt_key_padding_mask=trg_pad_mask1)))#memory_key_padding_mask=src_pad_mask,,tgt_mask=trg_mask1
-                output2 = model.fc2(model.dropout(model.T2.decoder(trg_tensor2, memory2, tgt_key_padding_mask=trg_pad_mask2)))#memory_key_padding_mask=src_pad_mask,,tgt_mask=trg_mask2
-                output1 = torch.Tensor(np.array(model.crf1.decode(output1)).T).to(torch.device('cuda'))
-                output2 = torch.Tensor(np.array(model.crf2.decode(output2)).T).to(torch.device('cuda'))
-                out_token1 = output1[-1].item()
-                out_token2 = output2[-1].item()
-                y1_out_indexes.append(out_token1)
-                y2_out_indexes.append(out_token2)
-            preds1.append(y1_out_indexes)
-            preds2.append(y2_out_indexes)
-            y1s.append(pos)
-            y2s.append(neg_scope)
+#             for i in range(pos.shape[0]-1):
+#                 trg_tensor1 = torch.LongTensor(y1_out_indexes).unsqueeze(1).to(memory1.device)
+#                 trg_tensor2 = torch.LongTensor(y2_out_indexes).unsqueeze(1).to(memory2.device)
+#                 trg_pad_mask1 = model.make_len_mask(trg_tensor1, model.pos_pad)
+#                 trg_pad_mask2 = model.make_len_mask(trg_tensor2, model.neg_pad)
+#                 trg_mask1 = model.T1.generate_square_subsequent_mask(len(trg_tensor1)).to(trg_tensor1.device)
+#                 trg_mask2 = model.T2.generate_square_subsequent_mask(len(trg_tensor2)).to(trg_tensor2.device)
+#                 trg_tensor1 = model.pos_encoding_trg1( model.dropout(model.embeddingA(trg_tensor1)) )
+#                 trg_tensor2 = model.pos_encoding_trg2( model.dropout(model.embeddingB(trg_tensor2)) )
+#                 output1 = model.fc1(model.dropout(model.T1.decoder(trg_tensor1, memory1, tgt_key_padding_mask=trg_pad_mask1)))#memory_key_padding_mask=src_pad_mask,,tgt_mask=trg_mask1
+#                 output2 = model.fc2(model.dropout(model.T2.decoder(trg_tensor2, memory2, tgt_key_padding_mask=trg_pad_mask2)))#memory_key_padding_mask=src_pad_mask,,tgt_mask=trg_mask2
+#                 output1 = torch.Tensor(np.array(model.crf1.decode(output1)).T).to(torch.device('cuda'))
+#                 output2 = torch.Tensor(np.array(model.crf2.decode(output2)).T).to(torch.device('cuda'))
+#                 out_token1 = output1[-1].item()
+#                 out_token2 = output2[-1].item()
+#                 y1_out_indexes.append(out_token1)
+#                 y2_out_indexes.append(out_token2)
+#             preds1.append(y1_out_indexes)
+#             preds2.append(y2_out_indexes)
+#             y1s.append(pos)
+#             y2s.append(neg_scope)
 
-        preds1 = torch.Tensor(np.array(preds1)[:,1:].T).reshape(-1,1).to(torch.device('cuda'))
-        y1s = torch.cat(y1s, dim=1)[1:,:].view(-1).to(torch.device('cuda'))
-        preds2 = torch.Tensor(np.array(preds2)[:,1:].T).reshape(-1,1).to(torch.device('cuda'))
-        y2s = torch.cat(y2s, dim=1)[1:,:].view(-1).to(torch.device('cuda'))
-        acc_pos = categorical_accuracy(preds1, y1s, tag_pad_idx,listed =True).item()
-        acc_neg = f1(preds2, y2s, tag_pad_idx, tag_neg_idx,listed =True)
+#         preds1 = torch.Tensor(np.array(preds1)[:,1:].T).reshape(-1,1).to(torch.device('cuda'))
+#         y1s = torch.cat(y1s, dim=1)[1:,:].view(-1).to(torch.device('cuda'))
+#         preds2 = torch.Tensor(np.array(preds2)[:,1:].T).reshape(-1,1).to(torch.device('cuda'))
+#         y2s = torch.cat(y2s, dim=1)[1:,:].view(-1).to(torch.device('cuda'))
+#         acc_pos = categorical_accuracy(preds1, y1s, tag_pad_idx,listed =True).item()
+#         acc_neg = f1(preds2, y2s, tag_pad_idx, tag_neg_idx,listed =True)
 
-    return acc_pos, acc_neg
+#     return acc_pos, acc_neg

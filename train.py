@@ -1,22 +1,22 @@
-from test import test_model, validate_model
+from test import test_model
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from model import MyModel_2, train_model, evaluate
-from torchtext import data
+from torchtext.legacy import data
 import numpy as np
 from utils import epoch_time
 import time
 import random
 import os
-SEED = 7
+SEED = 42
 from tqdm import tqdm
 random.seed(SEED)
 np.random.seed(SEED)
 torch.manual_seed(SEED)
 torch.backends.cudnn.deterministic = True
 
-root = './training/' + 'mtl2_up/'
+root = './training/' + 'mtl_st/'
 
 BOS_WORD = '<sos>'
 EOS_WORD = '<eos>'
@@ -55,8 +55,8 @@ model = MyModel_2(INPUT_DIM, EMBEDDING_DIM, HIDDEN_DIM, OUTPUT_DIM1, \
                 OUTPUT_DIM2, N_LAYERS, BIDIRECTIONAL, DROPOUT, INPUT_DIMA, INPUT_DIMB,\
                     TEXT_PAD_IDX, TAG_PAD_IDX, NEG_PAD_IDX)
 model = model.to(device)
-model.load_state_dict(torch.load('./training/' + 'mtl2/' + 'ep-100.pt'))
-optimizer = optim.Adam(model.parameters(),lr=5e-5)
+# model.load_state_dict(torch.load('./training/' + 'mtl2/' + 'ep-100.pt'))
+optimizer = optim.Adam(model.parameters(),lr=1e-4)
 scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer)
 criterion = nn.CrossEntropyLoss(ignore_index = TAG_PAD_IDX)
 
@@ -68,10 +68,6 @@ train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
     batch_size = BATCH_SIZE,
     device = device,sort=False)
 
-# bat = next(iter(train_iterator))
-# from torchviz import make_dot
-# out1, out2 = model(bat.Sentence,bat.POS,bat.Neg_Scope)
-# make_dot(out1) 
 N_EPOCHS = 200
 best_valid_loss = float('inf')
 

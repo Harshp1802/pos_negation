@@ -1,2 +1,2 @@
 #!/bin/bash
-python train.py >> mtl2_up.txt
+python train.py > mtl_st.txt

@@ -8,7 +8,8 @@ import math
 random.seed(SEED)
 np.random.seed(SEED)
 torch.manual_seed(SEED)
-torch.backends.cudnn.deterministic = True
+# torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.enabled = False
 from tqdm import tqdm
 
 from utils import categorical_accuracy
@@ -46,7 +47,7 @@ def train_model(model, iterator, optimizer, criterion):
         predictions1, predictions2 = model(text, pos[:-1,:], neg_scope[:-1,:])
         loss1 = -model.crf1(predictions1,pos,mask = model.crf_mask(pos,model.pos_pad))
         loss2 = -model.crf2(predictions2,neg_scope,mask = model.crf_mask(neg_scope,model.neg_pad))
-
+        
         predictions1 = torch.Tensor(np.array(model.crf1.decode(predictions1)).T).reshape(-1,1).to(torch.device('cuda'))
         predictions2 = torch.Tensor(np.array(model.crf2.decode(predictions2)).T).reshape(-1,1).to(torch.device('cuda'))
         # predictions1 = predictions1.view(-1, predictions1.shape[-1])
@@ -57,7 +58,7 @@ def train_model(model, iterator, optimizer, criterion):
         # loss2 = criterion(predictions2, neg_scope)
         
         loss = loss1+loss2
-                
+        
         acc_pos = categorical_accuracy(predictions1, pos, model.pos_pad,listed =True)
         acc_neg = categorical_accuracy(predictions2, neg_scope, model.neg_pad,listed =True)
         
@@ -153,9 +154,9 @@ class MyModel_2(nn.Module):
         self.crf2 = CRF(output_dim2)
         self.dropout = nn.Dropout(dropout)
     def make_len_mask(self, inp,pad):
-        return (inp != pad).transpose(0, 1) #inverse here for star transformer
+        return ~(inp.eq(pad)).transpose(0, 1).contiguous() #inverse here for star transformer
     def crf_mask(self, inp,pad):
-        return (inp != pad)
+        return ~(inp.eq(pad)).contiguous()
 
     def forward(self, text, y1, y2):
         src_pad_mask = self.make_len_mask(text,self.text_pad)
@@ -168,13 +169,13 @@ class MyModel_2(nn.Module):
         # src_mask = self.T1.generate_square_subsequent_mask(len(shared_output)).to(shared_output.device)
         # trg_mask1 = self.T1.generate_square_subsequent_mask(len(embedded_y1)).to(embedded_y1.device)
         # trg_mask2 = self.T2.generate_square_subsequent_mask(len(embedded_y2)).to(embedded_y2.device)
-        shared_output = self.pos_encoding(shared_output)
+        shared_output = self.pos_encoding(shared_output).permute(1,0,2).contiguous()
         # embedded_y1 = self.pos_encoding_trg1(embedded_y1)
         # embedded_y2 = self.pos_encoding_trg2(embedded_y2)
         # out1 = self.T1(shared_output, embedded_y1, tgt_mask=trg_mask1,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask1, memory_key_padding_mask=src_pad_mask)#,src_mask=src_mask
         # out2 = self.T2(shared_output, embedded_y2, tgt_mask=trg_mask2,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask2, memory_key_padding_mask=src_pad_mask)#,src_mask=src_mask
-        out1 = self.T1(shared_output.permute(1,0,2),mask=src_pad_mask)[0]
-        out2 = self.T1(shared_output.permute(1,0,2),src_pad_mask)[0]
-        predictions_1 = self.fc1(self.dropout(out1.permute(1,0,2)))
-        predictions_2 = self.fc2(self.dropout(out2.permute(1,0,2)))
+        out1 = self.T1(shared_output,mask=src_pad_mask)[0].permute(1,0,2).contiguous()
+        out2 = self.T2(shared_output,mask=src_pad_mask)[0].permute(1,0,2).contiguous()
+        predictions_1 = self.fc1(self.dropout(out1))
+        predictions_2 = self.fc2(self.dropout(out2))
         return predictions_1, predictions_2

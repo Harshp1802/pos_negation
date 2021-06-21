@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from model import MyModel_2, train_model, evaluate
-from torchtext.legacy import data
+from torchtext import data
 import numpy as np
 from utils import epoch_time
 import time
@@ -14,8 +14,8 @@ from tqdm import tqdm
 random.seed(SEED)
 np.random.seed(SEED)
 torch.manual_seed(SEED)
-torch.backends.cudnn.deterministic = True
-
+# torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.enabled = False
 root = './training/' + 'mtl_st/'
 
 BOS_WORD = '<sos>'
@@ -61,14 +61,14 @@ scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer)
 criterion = nn.CrossEntropyLoss(ignore_index = TAG_PAD_IDX)
 
 
-BATCH_SIZE = 64
+BATCH_SIZE = 128
 
 train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
     (train, val, test), 
     batch_size = BATCH_SIZE,
     device = device,sort=False)
 
-N_EPOCHS = 200
+N_EPOCHS = 250
 best_valid_loss = float('inf')
 
 for epoch in tqdm(range(N_EPOCHS)):

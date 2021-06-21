@@ -8,7 +8,8 @@ SEED = 42
 random.seed(SEED)
 np.random.seed(SEED)
 torch.manual_seed(SEED)
-torch.backends.cudnn.deterministic = True
+# torch.backends.cudnn.deterministic = True
+torch.backends.cudnn.enabled = False
 from tqdm import tqdm
 
 def test_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):

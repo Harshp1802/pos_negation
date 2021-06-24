@@ -8,3 +8,4 @@ vscode/
 *.out
 *.txt
 trial*
+out_files/

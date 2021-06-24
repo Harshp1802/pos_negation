@@ -18,7 +18,7 @@ from fastNLP.modules.encoder.star_transformer import StarTransformer
 
 # Source: https://pytorch.org/tutorials/beginner/transformer_tutorial.html
 class PositionalEncoding(nn.Module):
-    def __init__(self, d_model, dropout=0.2, max_len=85):
+    def __init__(self, d_model, dropout=0.25, max_len=85):
         super(PositionalEncoding, self).__init__()
         self.dropout = nn.Dropout(p=dropout)
 
@@ -145,9 +145,9 @@ class MyModel_2(nn.Module):
         # self.T1 = torch.nn.Transformer(d_model=hidden_dim * 2 if bidirectional else hidden_dim,num_encoder_layers=3, num_decoder_layers=3)
         # self.T2 = torch.nn.Transformer(d_model=hidden_dim * 2 if bidirectional else hidden_dim,num_encoder_layers=3, num_decoder_layers=3)
         self.T1 = StarTransformer(hidden_size = hidden_dim * 2 if bidirectional else hidden_dim,\
-                                num_head=10,head_dim=50,num_layers=3)
+                                num_head=10,head_dim=50,num_layers=4)
         self.T2 = StarTransformer(hidden_size = hidden_dim * 2 if bidirectional else hidden_dim,\
-                                num_head=10,head_dim=50,num_layers=3)
+                                num_head=10,head_dim=50,num_layers=4)
         self.fc1 = nn.Linear(hidden_dim * 2 if bidirectional else hidden_dim, output_dim1)
         self.fc2 = nn.Linear(hidden_dim * 2 if bidirectional else hidden_dim, output_dim2)
         self.crf1 = CRF(output_dim1)

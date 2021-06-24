@@ -45,7 +45,7 @@ OUTPUT_DIM1 = len(POS.vocab)
 OUTPUT_DIM2 = len(NEG_SCOPE.vocab)
 N_LAYERS = 3
 BIDIRECTIONAL = True
-DROPOUT = 0.25
+DROPOUT = 0.5
 TEXT_PAD_IDX = TEXT.vocab.stoi[TEXT.pad_token]
 TAG_PAD_IDX = POS.vocab.stoi[POS.pad_token]
 NEG_PAD_IDX = NEG_SCOPE.vocab.stoi[NEG_SCOPE.pad_token]
@@ -55,8 +55,8 @@ model = MyModel_2(INPUT_DIM, EMBEDDING_DIM, HIDDEN_DIM, OUTPUT_DIM1, \
                 OUTPUT_DIM2, N_LAYERS, BIDIRECTIONAL, DROPOUT, INPUT_DIMA, INPUT_DIMB,\
                     TEXT_PAD_IDX, TAG_PAD_IDX, NEG_PAD_IDX)
 model = model.to(device)
-# model.load_state_dict(torch.load('./training/' + 'mtl2/' + 'ep-100.pt'))
-optimizer = optim.Adam(model.parameters(),lr=1e-4)
+model.load_state_dict(torch.load(root  + 'ep-35I1.pt'))
+optimizer = optim.Adam(model.parameters())#,lr=1e-6
 scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer)
 criterion = nn.CrossEntropyLoss(ignore_index = TAG_PAD_IDX)
 
@@ -100,9 +100,10 @@ torch.save(model.state_dict(), root + f'ep-{epoch}.pt')
 #     batch_size = BATCH_SIZE,
 #     device = device,sort=False)
 
-# model.load_state_dict(torch.load(root + 'ep-199.pt'))
+# model.load_state_dict(torch.load(root + 'ep-100.pt'))
 # model = model.to(device)
 # TAG_NEG_IDX  = NEG_SCOPE.vocab.stoi['1']
+# print(NEG_SCOPE.vocab.itos)
 # test_loss, test_acc_pos, test_acc_neg = test_model(model, test_iterator, criterion, TAG_PAD_IDX, TAG_NEG_IDX)
 # print(f'\t Test. Loss: {test_loss:.3f} |  Test. Acc POS: {test_acc_pos*100:.2f}% | Test. Acc NEG: {test_acc_neg*100:.2f}%',flush=True)
 

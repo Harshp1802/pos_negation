@@ -1,6 +1,7 @@
-from sklearn.metrics import f1_score
+from sklearn.metrics import f1_score,confusion_matrix
 import torch
-
+import numpy as np
+import pandas as pd
 # def create_vocab(training_sentences, training_POS):
 #     words, tags = set([]), set([]) 
 #     for s in training_sentences:
@@ -90,6 +91,7 @@ def f1(preds, y, tag_pad_idx, cls,listed=False):
         P = 0.001
         print("P",P)
         pass
+    print("P",P)
     counter = dict(zip(*torch.unique(y_real,return_counts=True)))
     for k,v in list(counter.items()):
         counter[k.item()]=v.item()
@@ -101,5 +103,16 @@ def f1(preds, y, tag_pad_idx, cls,listed=False):
         R = 0.001
         print("R",R)
         pass
-    
+    print("R",R)
+    unique_label = np.unique([y_real.cpu().numpy(), y_hat.cpu().numpy()])
+    cmtx = pd.DataFrame(
+        confusion_matrix(y_real.cpu().numpy(), y_hat.cpu().numpy(), labels=unique_label), 
+        index=['true:{:}'.format(x) for x in unique_label], 
+        columns=['pred:{:}'.format(x) for x in unique_label]
+    )
+    print(cmtx)
+    # print("tn:",tn)
+    # print("fp:",fp)
+    # print("fn:",fn)
+    # print("tp:",tp)
     return 2*P*R/(P+R)

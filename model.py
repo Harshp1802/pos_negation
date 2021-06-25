@@ -15,7 +15,7 @@ from tqdm import tqdm
 from utils import categorical_accuracy
 from torchcrf import CRF
 from fastNLP.modules.encoder.star_transformer import StarTransformer
-
+from ntn_layer import NeuralTensorLayer
 # Source: https://pytorch.org/tutorials/beginner/transformer_tutorial.html
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model, dropout=0.25, max_len=85):
@@ -148,6 +148,7 @@ class MyModel_2(nn.Module):
                                 num_head=10,head_dim=50,num_layers=4)
         self.T2 = StarTransformer(hidden_size = hidden_dim * 2 if bidirectional else hidden_dim,\
                                 num_head=10,head_dim=50,num_layers=4)
+        self.ntn = NeuralTensorLayer( hidden_dim * 2 if bidirectional else hidden_dim,  hidden_dim * 2 if bidirectional else hidden_dim)
         self.fc1 = nn.Linear(hidden_dim * 2 if bidirectional else hidden_dim, output_dim1)
         self.fc2 = nn.Linear(hidden_dim * 2 if bidirectional else hidden_dim, output_dim2)
         self.crf1 = CRF(output_dim1)
@@ -174,8 +175,9 @@ class MyModel_2(nn.Module):
         # embedded_y2 = self.pos_encoding_trg2(embedded_y2)
         # out1 = self.T1(shared_output, embedded_y1, tgt_mask=trg_mask1,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask1, memory_key_padding_mask=src_pad_mask)#,src_mask=src_mask
         # out2 = self.T2(shared_output, embedded_y2, tgt_mask=trg_mask2,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask2, memory_key_padding_mask=src_pad_mask)#,src_mask=src_mask
-        out1 = self.T1(shared_output,mask=src_pad_mask)[0].permute(1,0,2).contiguous()
-        out2 = self.T2(shared_output,mask=src_pad_mask)[0].permute(1,0,2).contiguous()
-        predictions_1 = self.fc1(self.dropout(out1))
-        predictions_2 = self.fc2(self.dropout(out2))
+        out1 = self.T1(shared_output,mask=src_pad_mask)[0]
+        out2 = self.T2(shared_output,mask=src_pad_mask)[0]
+        OUT = self.ntn([out1,out2]).permute(1,0,2).contiguous()
+        predictions_1 = self.fc1(self.dropout(OUT))
+        predictions_2 = self.fc2(self.dropout(OUT))
         return predictions_1, predictions_2

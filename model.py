@@ -142,19 +142,22 @@ class MyModel_2(nn.Module):
         self.pos_encoding = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
         self.pos_encoding_trg1 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
         self.pos_encoding_trg2 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
-        # self.T1 = torch.nn.Transformer(d_model=hidden_dim * 2 if bidirectional else hidden_dim,num_encoder_layers=3, num_decoder_layers=3)
-        # self.T2 = torch.nn.Transformer(d_model=hidden_dim * 2 if bidirectional else hidden_dim,num_encoder_layers=3, num_decoder_layers=3)
-        self.T1 = StarTransformer(hidden_size = hidden_dim * 2 if bidirectional else hidden_dim,\
-                                num_head=10,head_dim=50,num_layers=4)
-        self.T2 = StarTransformer(hidden_size = hidden_dim * 2 if bidirectional else hidden_dim,\
-                                num_head=10,head_dim=50,num_layers=4)
+
+        encoder_layer1 = nn.TransformerEncoderLayer(d_model=hidden_dim * 2 if bidirectional else hidden_dim, nhead=8)
+        encoder_layer2 = nn.TransformerEncoderLayer(d_model=hidden_dim * 2 if bidirectional else hidden_dim, nhead=8)
+        self.T1 = torch.nn.TransformerEncoder(encoder_layer1, num_layers=3)
+        self.T2 = torch.nn.TransformerEncoder(encoder_layer2, num_layers=3)
+        # self.T1 = StarTransformer(hidden_size = hidden_dim * 2 if bidirectional else hidden_dim,\
+                                # num_head=10,head_dim=50,num_layers=4)
+        # self.T2 = StarTransformer(hidden_size = hidden_dim * 2 if bidirectional else hidden_dim,\
+                                # num_head=10,head_dim=50,num_layers=4)
         self.fc1 = nn.Linear(hidden_dim * 2 if bidirectional else hidden_dim, output_dim1)
         self.fc2 = nn.Linear(hidden_dim * 2 if bidirectional else hidden_dim, output_dim2)
         self.crf1 = CRF(output_dim1)
         self.crf2 = CRF(output_dim2)
         self.dropout = nn.Dropout(dropout)
     def make_len_mask(self, inp,pad):
-        return ~(inp.eq(pad)).transpose(0, 1).contiguous() #inverse here for star transformer
+        return (inp.eq(pad)).transpose(0, 1).contiguous() # transformer
     def crf_mask(self, inp,pad):
         return ~(inp.eq(pad)).contiguous()
 
@@ -169,13 +172,13 @@ class MyModel_2(nn.Module):
         # src_mask = self.T1.generate_square_subsequent_mask(len(shared_output)).to(shared_output.device)
         # trg_mask1 = self.T1.generate_square_subsequent_mask(len(embedded_y1)).to(embedded_y1.device)
         # trg_mask2 = self.T2.generate_square_subsequent_mask(len(embedded_y2)).to(embedded_y2.device)
-        shared_output = self.pos_encoding(shared_output).permute(1,0,2).contiguous()
+        shared_output = self.pos_encoding(shared_output)
         # embedded_y1 = self.pos_encoding_trg1(embedded_y1)
         # embedded_y2 = self.pos_encoding_trg2(embedded_y2)
         # out1 = self.T1(shared_output, embedded_y1, tgt_mask=trg_mask1,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask1, memory_key_padding_mask=src_pad_mask)#,src_mask=src_mask
         # out2 = self.T2(shared_output, embedded_y2, tgt_mask=trg_mask2,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask2, memory_key_padding_mask=src_pad_mask)#,src_mask=src_mask
-        out1 = self.T1(shared_output,mask=src_pad_mask)[0].permute(1,0,2).contiguous()
-        out2 = self.T2(shared_output,mask=src_pad_mask)[0].permute(1,0,2).contiguous()
+        out1 = self.T1(shared_output,src_key_padding_mask=src_pad_mask)
+        out2 = self.T2(shared_output,src_key_padding_mask=src_pad_mask)
         predictions_1 = self.fc1(self.dropout(out1))
         predictions_2 = self.fc2(self.dropout(out2))
         return predictions_1, predictions_2

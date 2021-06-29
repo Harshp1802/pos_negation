@@ -46,6 +46,20 @@ def test_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
 
     return loss / len(iterator), acc_pos / len(iterator), acc_neg / len(iterator)
 
+def test_pos_model(model, iterator):
+    model.eval()
+    assert len(iterator)==1
+    with torch.no_grad():
+        for batch in iterator:
+            text = batch.Sentence
+            pos = batch.POS
+            predictions1 = model(text)
+            loss = -model.crf1(predictions1,pos,mask = model.crf_mask(pos,model.pos_pad))
+            predictions1 = torch.Tensor(np.array(model.crf1.decode(predictions1)).T).reshape(-1,1).to(torch.device('cuda'))
+            pos = pos.view(-1)
+            acc_pos = categorical_accuracy(predictions1, pos, model.pos_pad,listed =True).item()
+    return loss / len(iterator), acc_pos / len(iterator)
+
 # def validate_model(model, iterator, criterion, tag_pad_idx, tag_neg_idx):
 #     model.eval()
 #     with torch.no_grad():

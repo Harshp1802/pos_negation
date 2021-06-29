@@ -130,8 +130,8 @@ class MyModel_2(nn.Module):
         self.pos_pad = pos_pad
         self.neg_pad = neg_pad
         self.embedding = nn.Embedding(input_dim, embedding_dim, padding_idx = text_pad)
-        self.embeddingA = nn.Embedding(input_dimA, embedding_dim, padding_idx = pos_pad)
-        self.embeddingB = nn.Embedding(input_dimB, embedding_dim, padding_idx = neg_pad)
+        # self.embeddingA = nn.Embedding(input_dimA, embedding_dim, padding_idx = pos_pad)
+        # self.embeddingB = nn.Embedding(input_dimB, embedding_dim, padding_idx = neg_pad)
         
         self.lstm = nn.LSTM(embedding_dim, 
                             hidden_dim, 
@@ -140,8 +140,8 @@ class MyModel_2(nn.Module):
                             dropout = dropout if n_layers > 1 else 0)
 
         self.pos_encoding = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
-        self.pos_encoding_trg1 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
-        self.pos_encoding_trg2 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
+        # self.pos_encoding_trg1 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
+        # self.pos_encoding_trg2 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
         # self.T1 = torch.nn.Transformer(d_model=hidden_dim * 2 if bidirectional else hidden_dim,num_encoder_layers=3, num_decoder_layers=3)
         # self.T2 = torch.nn.Transformer(d_model=hidden_dim * 2 if bidirectional else hidden_dim,num_encoder_layers=3, num_decoder_layers=3)
         self.T1 = StarTransformer(hidden_size = hidden_dim * 2 if bidirectional else hidden_dim,\
@@ -181,3 +181,75 @@ class MyModel_2(nn.Module):
         predictions_1 = self.fc1(self.dropout(OUT))
         predictions_2 = self.fc2(self.dropout(OUT))
         return predictions_1, predictions_2
+
+def train_pos_model(model, iterator, optimizer, criterion):
+    epoch_loss = 0
+    epoch_acc_pos = 0
+    model.train()
+    for batch in iterator:
+        text = batch.text
+        pos = batch.ptbtags
+        optimizer.zero_grad()
+        predictions1 = model(text)
+        loss = -model.crf1(predictions1,pos,mask = model.crf_mask(pos,model.pos_pad))
+        predictions1 = torch.Tensor(np.array(model.crf1.decode(predictions1)).T).reshape(-1,1).to(torch.device('cuda'))
+        pos = pos.view(-1)        
+        acc_pos = categorical_accuracy(predictions1, pos, model.pos_pad,listed =True)        
+        loss.backward()
+        optimizer.step()
+        
+        epoch_loss += loss.item()
+        epoch_acc_pos += acc_pos.item()        
+    return epoch_loss / len(iterator), epoch_acc_pos / len(iterator)
+
+def evaluate_pos_model(model, iterator, criterion):
+    
+    epoch_loss = 0
+    epoch_acc_pos = 0    
+    model.eval()
+    
+    with torch.no_grad():
+    
+        for batch in iterator:
+
+            text = batch.text
+            pos = batch.ptbtags
+            predictions1 = model(text)
+            loss = -model.crf1(predictions1,pos,mask = model.crf_mask(pos,model.pos_pad))
+            predictions1 = torch.Tensor(np.array(model.crf1.decode(predictions1)).T).reshape(-1,1).to(torch.device('cuda'))
+            pos = pos.view(-1)            
+            acc_pos = categorical_accuracy(predictions1, pos, model.pos_pad,listed =True)
+            epoch_loss += loss.item()
+            epoch_acc_pos += acc_pos.item()
+        
+    return epoch_loss / len(iterator), epoch_acc_pos / len(iterator)
+
+class POS_Model(nn.Module):
+    def __init__(self, model):
+        
+        super().__init__()
+        
+        self.embedding = model.embedding
+        self.pos_pad = model.pos_pad
+        self.text_pad = model.text_pad
+        self.lstm = model.lstm
+
+        self.pos_encoding = model.pos_encoding
+        self.pos_t = model.T1
+        self.fc1 = model.fc1
+        self.crf1 = model.crf1
+        self.dropout = model.dropout
+        
+    def make_len_mask(self, inp,pad):
+        return ~(inp.eq(pad)).transpose(0, 1).contiguous() #inverse here for star transformer
+    def crf_mask(self, inp,pad):
+        return ~(inp.eq(pad)).contiguous()
+
+    def forward(self, text):
+        src_pad_mask = self.make_len_mask(text,self.text_pad)
+        embedded_X = self.dropout(self.embedding(text))
+        shared_output, (hidden, cell) = self.lstm(embedded_X)
+        shared_output = self.pos_encoding(shared_output).permute(1,0,2).contiguous()
+        out1 = self.pos_t(shared_output,mask=src_pad_mask)[0].permute(1,0,2).contiguous()
+        predictions_1 = self.fc1(self.dropout(out1))
+        return predictions_1

@@ -1,10 +1,10 @@
-from torchtext.legacy.datasets import UDPOS
+from torchtext.datasets import UDPOS
 from test import test_model, test_pos_model
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from model import MyModel_2, evaluate_pos_model, train_model, evaluate, POS_Model, train_pos_model
-from torchtext.legacy import data
+from torchtext import data
 import numpy as np
 from utils import epoch_time
 import time

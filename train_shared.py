@@ -10,7 +10,7 @@ from utils import epoch_time
 import time
 import random
 import os
-SEED = 42
+SEED = 7
 from tqdm import tqdm
 random.seed(SEED)
 np.random.seed(SEED)
@@ -30,7 +30,7 @@ NEG_SCOPE = data.Field(unk_token = None, pad_token= BLANK_WORD,fix_length=MAX_LE
 fields = (("Sentence", TEXT), ("POS", POS), ("Neg_Scope", NEG_SCOPE))
 
 train, val, test = data.TabularDataset.splits(path='./', train='data/train.csv',\
-                                            validation='data/val.csv', test= 'data/test_circle.csv',\
+                                            validation='data/val.csv', test= 'data/test_combined.csv',\
                                             format='csv', fields=fields, skip_header=True)
 fields_pos = (("text", TEXT), (None, None), ("ptbtags", POS))
 train_pos, val_pos, test_pos = UDPOS.splits(fields_pos)
@@ -60,15 +60,16 @@ model = model.to(device)
 pos_model = POS_Model(model)
 pos_model = pos_model.to(device)
 
-TRAIN_POS = True
+TRAIN_POS = False
 TRAIN_MAIN = False
 TEST_POS = False
-TEST_MAIN = False
+TEST_MAIN = True
 
-pos_model.load_state_dict(torch.load(root  + 'ep-0-pos.pt'))
-# model.load_state_dict(torch.load(root  + 'ep-5I.pt'))
+# pos_model.load_state_dict(torch.load(root  + 'ep-45-pos.pt'))
+model.load_state_dict(torch.load(root  + 'ep-33-mainI2.pt'))
+print('ep-33-mainI2.pt')
 
-optimizer = optim.Adam(model.parameters())#,lr=1e-2
+optimizer = optim.Adam(model.parameters(),lr=1e-9)#,lr=1e-2
 scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer)
 criterion = nn.CrossEntropyLoss(ignore_index = TAG_PAD_IDX)
 
@@ -84,7 +85,7 @@ if(TRAIN_POS):
         batch_size = BATCH_SIZE,
         device = device,sort=False)
 
-    N_EPOCHS = 30
+    N_EPOCHS = 50
     best_valid_loss = float('inf')
 
     for epoch in tqdm(range(N_EPOCHS)):
@@ -99,18 +100,18 @@ if(TRAIN_POS):
         print(f'Epoch: {epoch+1:02} | Epoch Time: {epoch_mins}m {epoch_secs}s',flush=True)
         print(f'\tTrain Loss: {train_loss:.3f} | Train Acc POS: {train_acc_pos*100:.2f}% ' ,flush=True)
         print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc POS: {valid_acc_pos*100:.2f}% ',flush=True)
-    # torch.save(pos_model.state_dict(), root + f'ep-{epoch}-pos.pt')
+    torch.save(pos_model.state_dict(), root + f'ep-{epoch}-pos.pt')
 
 if(TRAIN_MAIN):
 
-    BATCH_SIZE = 128
+    BATCH_SIZE = 75
 
     train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
         (train, val, test), 
         batch_size = BATCH_SIZE,
         device = device,sort=False)
 
-    N_EPOCHS = 180
+    N_EPOCHS = 40
     best_valid_loss = float('inf')
 
     for epoch in tqdm(range(N_EPOCHS)):
@@ -119,18 +120,18 @@ if(TRAIN_MAIN):
         valid_loss, valid_acc_pos, valid_acc_neg = evaluate(model, valid_iterator, criterion)
         end_time = time.time()
         epoch_mins, epoch_secs = epoch_time(start_time, end_time)
-        if(epoch%5==0):
-            torch.save(model.state_dict(), root + f'ep-{epoch}-main.pt')
+        if(epoch%3==0):
+            torch.save(model.state_dict(), root + f'ep-{epoch}-mainI2.pt')
         scheduler.step(train_loss)
         print(f'Epoch: {epoch+1:02} | Epoch Time: {epoch_mins}m {epoch_secs}s',flush=True)
         print(f'\tTrain Loss: {train_loss:.3f} | Train Acc POS: {train_acc_pos*100:.2f}% | Train Acc NEG: {train_acc_neg*100:.2f}%' ,flush=True)
         print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc POS: {valid_acc_pos*100:.2f}% | Val. Acc NEG: {valid_acc_neg*100:.2f}%',flush=True)
-    torch.save(model.state_dict(), root + f'ep-{epoch}-main.pt')
+    torch.save(model.state_dict(), root + f'ep-{epoch}-mainI2.pt')
 
 # TESTING
 
 if(TEST_POS):
-    BATCH_SIZE = len(test)
+    BATCH_SIZE = len(test_pos)
 
     train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
         (train_pos, val_pos, test_pos), 

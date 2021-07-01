@@ -57,7 +57,7 @@ def train_model(model, iterator, optimizer, criterion):
         # loss1 = criterion(predictions1, pos) 
         # loss2 = criterion(predictions2, neg_scope)
         
-        loss = loss1+4*loss2
+        loss = 0.1*loss1+0.9*loss2
         
         acc_pos = categorical_accuracy(predictions1, pos, model.pos_pad,listed =True)
         acc_neg = categorical_accuracy(predictions2, neg_scope, model.neg_pad,listed =True)
@@ -102,7 +102,7 @@ def evaluate(model, iterator, criterion):
             # loss1 = criterion(predictions1, pos) 
             # loss2 = criterion(predictions2, neg_scope)
 
-            loss = loss1+4*loss2
+            loss = 0.1*loss1+0.9*loss2
 
             acc_pos = categorical_accuracy(predictions1, pos, model.pos_pad,listed =True)
             acc_neg = categorical_accuracy(predictions2, neg_scope, model.neg_pad,listed =True)

@@ -166,11 +166,13 @@ class MyModel_2(nn.Module):
         embedded_X = self.dropout(self.embedding(text))
         # embedded_y1 = self.dropout(self.embeddingA(y1))
         # embedded_y2 = self.dropout(self.embeddingB(y2))
-        shared_output, (hidden, cell) = self.lstm(embedded_X)
+
+        # shared_output, (hidden, cell) = self.lstm(embedded_X)
+        
         # src_mask = self.T1.generate_square_subsequent_mask(len(shared_output)).to(shared_output.device)
         # trg_mask1 = self.T1.generate_square_subsequent_mask(len(embedded_y1)).to(embedded_y1.device)
         # trg_mask2 = self.T2.generate_square_subsequent_mask(len(embedded_y2)).to(embedded_y2.device)
-        shared_output = self.pos_encoding(shared_output).permute(1,0,2).contiguous()
+        shared_output = self.pos_encoding(embedded_X).permute(1,0,2).contiguous()
         # embedded_y1 = self.pos_encoding_trg1(embedded_y1)
         # embedded_y2 = self.pos_encoding_trg2(embedded_y2)
         # out1 = self.T1(shared_output, embedded_y1, tgt_mask=trg_mask1,src_key_padding_mask=src_pad_mask, tgt_key_padding_mask=trg_pad_mask1, memory_key_padding_mask=src_pad_mask)#,src_mask=src_mask

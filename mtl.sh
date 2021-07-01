@@ -1,2 +1,2 @@
 #!/bin/bash
-python train_shared.py >> out_files/mtl_shared1_test_main.txt
+python train.py >> out_files/mtl_ablation1_test.txt

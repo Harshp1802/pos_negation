@@ -16,7 +16,7 @@ np.random.seed(SEED)
 torch.manual_seed(SEED)
 # torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.enabled = False
-root = './training/' + 'mtl_ntn2/'
+root = './training/' + 'mtl_ablation1/'
 
 BOS_WORD = '<sos>'
 EOS_WORD = '<eos>'
@@ -45,7 +45,7 @@ OUTPUT_DIM1 = len(POS.vocab)
 OUTPUT_DIM2 = len(NEG_SCOPE.vocab)
 N_LAYERS = 3
 BIDIRECTIONAL = True
-DROPOUT = 0.30
+DROPOUT = 0.15
 TEXT_PAD_IDX = TEXT.vocab.stoi[TEXT.pad_token]
 TAG_PAD_IDX = POS.vocab.stoi[POS.pad_token]
 NEG_PAD_IDX = NEG_SCOPE.vocab.stoi[NEG_SCOPE.pad_token]
@@ -55,58 +55,58 @@ model = MyModel_2(INPUT_DIM, EMBEDDING_DIM, HIDDEN_DIM, OUTPUT_DIM1, \
                 OUTPUT_DIM2, N_LAYERS, BIDIRECTIONAL, DROPOUT, INPUT_DIMA, INPUT_DIMB,\
                     TEXT_PAD_IDX, TAG_PAD_IDX, NEG_PAD_IDX)
 model = model.to(device)
-# model.load_state_dict(torch.load(root  + 'ep-5I.pt'))
-# print('ep-5I.pt')
-optimizer = optim.Adam(model.parameters())#,lr=1e-2
-scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer)
+model.load_state_dict(torch.load(root  + 'ep-33I1.pt'))
+print('ep-33I1.pt')
+optimizer = optim.Adam(model.parameters(),lr=2e-4)#,lr=1e-2
+scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer,verbose=True)
 criterion = nn.CrossEntropyLoss(ignore_index = TAG_PAD_IDX)
 
 
-BATCH_SIZE = 128
-
-train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
-    (train, val, test), 
-    batch_size = BATCH_SIZE,
-    device = device,sort=False)
-
-N_EPOCHS = 180
-best_valid_loss = float('inf')
-
-for epoch in tqdm(range(N_EPOCHS)):
-
-    start_time = time.time()
-    
-    train_loss, train_acc_pos, train_acc_neg = train_model(model, train_iterator, optimizer, criterion)
-    valid_loss, valid_acc_pos, valid_acc_neg = evaluate(model, valid_iterator, criterion)
-    
-    end_time = time.time()
-
-    epoch_mins, epoch_secs = epoch_time(start_time, end_time)
-    
-    # if valid_loss < best_valid_loss:
-    #     best_valid_loss = valid_loss
-    #     torch.save(model.state_dict(), root + f'ep-{epoch}-best.pt')
-    if(epoch%5==0):
-        torch.save(model.state_dict(), root + f'ep-{epoch}.pt')
-    scheduler.step(train_loss)
-    print(f'Epoch: {epoch+1:02} | Epoch Time: {epoch_mins}m {epoch_secs}s',flush=True)
-    print(f'\tTrain Loss: {train_loss:.3f} | Train Acc POS: {train_acc_pos*100:.2f}% | Train Acc NEG: {train_acc_neg*100:.2f}%' ,flush=True)
-    print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc POS: {valid_acc_pos*100:.2f}% | Val. Acc NEG: {valid_acc_neg*100:.2f}%',flush=True)
-torch.save(model.state_dict(), root + f'ep-{epoch}.pt')
-# TESTING
-
-# BATCH_SIZE = len(test)
+# BATCH_SIZE = 100
 
 # train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
 #     (train, val, test), 
 #     batch_size = BATCH_SIZE,
 #     device = device,sort=False)
 
-# model = model.to(device)
-# TAG_NEG_IDX  = NEG_SCOPE.vocab.stoi['1']
-# print(NEG_SCOPE.vocab.itos)
-# test_loss, test_acc_pos, test_acc_neg = test_model(model, test_iterator, criterion, TAG_PAD_IDX, TAG_NEG_IDX)
-# print(f'\t Test. Loss: {test_loss:.3f} |  Test. Acc POS: {test_acc_pos*100:.2f}% | Test. Acc NEG: {test_acc_neg*100:.2f}%',flush=True)
+# N_EPOCHS = 150
+# best_valid_loss = float('inf')
+
+# for epoch in tqdm(range(N_EPOCHS)):
+
+#     start_time = time.time()
+    
+#     train_loss, train_acc_pos, train_acc_neg = train_model(model, train_iterator, optimizer, criterion)
+#     valid_loss, valid_acc_pos, valid_acc_neg = evaluate(model, valid_iterator, criterion)
+    
+#     end_time = time.time()
+
+#     epoch_mins, epoch_secs = epoch_time(start_time, end_time)
+    
+#     # if valid_loss < best_valid_loss:
+#     #     best_valid_loss = valid_loss
+#     #     torch.save(model.state_dict(), root + f'ep-{epoch}-best.pt')
+#     if(epoch%3==0):
+#         torch.save(model.state_dict(), root + f'ep-{epoch}I1.pt')
+#     scheduler.step(train_loss)
+#     print(f'Epoch: {epoch+1:02} | Epoch Time: {epoch_mins}m {epoch_secs}s',flush=True)
+#     print(f'\tTrain Loss: {train_loss:.3f} | Train Acc POS: {train_acc_pos*100:.2f}% | Train Acc NEG: {train_acc_neg*100:.2f}%' ,flush=True)
+#     print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc POS: {valid_acc_pos*100:.2f}% | Val. Acc NEG: {valid_acc_neg*100:.2f}%',flush=True)
+# torch.save(model.state_dict(), root + f'ep-{epoch}I1.pt')
+# TESTING
+
+BATCH_SIZE = len(test)
+
+train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
+    (train, val, test), 
+    batch_size = BATCH_SIZE,
+    device = device,sort=False)
+
+model = model.to(device)
+TAG_NEG_IDX  = NEG_SCOPE.vocab.stoi['1']
+print(NEG_SCOPE.vocab.itos)
+test_loss, test_acc_pos, test_acc_neg = test_model(model, test_iterator, criterion, TAG_PAD_IDX, TAG_NEG_IDX)
+print(f'\t Test. Loss: {test_loss:.3f} |  Test. Acc POS: {test_acc_pos*100:.2f}% | Test. Acc NEG: {test_acc_neg*100:.2f}%',flush=True)
 
 # BATCH_SIZE = 1
 

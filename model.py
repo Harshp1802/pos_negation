@@ -130,8 +130,8 @@ class MyModel_2(nn.Module):
         self.pos_pad = pos_pad
         self.neg_pad = neg_pad
         self.embedding = nn.Embedding(input_dim, embedding_dim, padding_idx = text_pad)
-        # self.embeddingA = nn.Embedding(input_dimA, embedding_dim, padding_idx = pos_pad)
-        # self.embeddingB = nn.Embedding(input_dimB, embedding_dim, padding_idx = neg_pad)
+        self.embeddingA = nn.Embedding(input_dimA, embedding_dim, padding_idx = pos_pad)
+        self.embeddingB = nn.Embedding(input_dimB, embedding_dim, padding_idx = neg_pad)
         
         self.lstm = nn.LSTM(embedding_dim, 
                             hidden_dim, 
@@ -140,8 +140,8 @@ class MyModel_2(nn.Module):
                             dropout = dropout if n_layers > 1 else 0)
 
         self.pos_encoding = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
-        # self.pos_encoding_trg1 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
-        # self.pos_encoding_trg2 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
+        self.pos_encoding_trg1 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
+        self.pos_encoding_trg2 = PositionalEncoding(hidden_dim * 2 if bidirectional else hidden_dim, dropout)
         # self.T1 = torch.nn.Transformer(d_model=hidden_dim * 2 if bidirectional else hidden_dim,num_encoder_layers=3, num_decoder_layers=3)
         # self.T2 = torch.nn.Transformer(d_model=hidden_dim * 2 if bidirectional else hidden_dim,num_encoder_layers=3, num_decoder_layers=3)
         self.T1 = StarTransformer(hidden_size = hidden_dim * 2 if bidirectional else hidden_dim,\

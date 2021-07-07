@@ -10,14 +10,14 @@ from utils import epoch_time
 import time
 import random
 import os
-SEED = 7
+SEED = 42
 from tqdm import tqdm
 random.seed(SEED)
 np.random.seed(SEED)
 torch.manual_seed(SEED)
 # torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.enabled = False
-root = './training/' + 'mtl_shared1/'
+root = './training/' + 'mtl_shared2/'
 
 BOS_WORD = '<sos>'
 EOS_WORD = '<eos>'
@@ -47,7 +47,7 @@ OUTPUT_DIM1 = len(POS.vocab)
 OUTPUT_DIM2 = len(NEG_SCOPE.vocab)
 N_LAYERS = 3
 BIDIRECTIONAL = True
-DROPOUT = 0.30
+DROPOUT = 0.2
 TEXT_PAD_IDX = TEXT.vocab.stoi[TEXT.pad_token]
 TAG_PAD_IDX = POS.vocab.stoi[POS.pad_token]
 NEG_PAD_IDX = NEG_SCOPE.vocab.stoi[NEG_SCOPE.pad_token]
@@ -61,15 +61,15 @@ pos_model = POS_Model(model)
 pos_model = pos_model.to(device)
 
 TRAIN_POS = False
-TRAIN_MAIN = False
+TRAIN_MAIN = True
 TEST_POS = False
-TEST_MAIN = True
+TEST_MAIN = False
 
-# pos_model.load_state_dict(torch.load(root  + 'ep-45-pos.pt'))
-model.load_state_dict(torch.load(root  + 'ep-33-mainI2.pt'))
-print('ep-33-mainI2.pt')
+# pos_model.load_state_dict(torch.load(root  + 'ep-10-pos.pt'))
+model.load_state_dict(torch.load(root  + 'ep-45-mainI2.pt'))
+# print('ep-33-mainI2.pt')
 
-optimizer = optim.Adam(model.parameters(),lr=1e-9)#,lr=1e-2
+optimizer = optim.Adam(model.parameters())#,lr=1e-2
 scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer)
 criterion = nn.CrossEntropyLoss(ignore_index = TAG_PAD_IDX)
 
@@ -104,14 +104,14 @@ if(TRAIN_POS):
 
 if(TRAIN_MAIN):
 
-    BATCH_SIZE = 75
+    BATCH_SIZE = 96
 
     train_iterator, valid_iterator, test_iterator = data.BucketIterator.splits(
         (train, val, test), 
         batch_size = BATCH_SIZE,
         device = device,sort=False)
 
-    N_EPOCHS = 40
+    N_EPOCHS = 60
     best_valid_loss = float('inf')
 
     for epoch in tqdm(range(N_EPOCHS)):
@@ -120,13 +120,13 @@ if(TRAIN_MAIN):
         valid_loss, valid_acc_pos, valid_acc_neg = evaluate(model, valid_iterator, criterion)
         end_time = time.time()
         epoch_mins, epoch_secs = epoch_time(start_time, end_time)
-        if(epoch%3==0):
-            torch.save(model.state_dict(), root + f'ep-{epoch}-mainI2.pt')
+        if(epoch%5==0):
+            torch.save(model.state_dict(), root + f'ep-{epoch}-mainI3.pt')
         scheduler.step(train_loss)
         print(f'Epoch: {epoch+1:02} | Epoch Time: {epoch_mins}m {epoch_secs}s',flush=True)
         print(f'\tTrain Loss: {train_loss:.3f} | Train Acc POS: {train_acc_pos*100:.2f}% | Train Acc NEG: {train_acc_neg*100:.2f}%' ,flush=True)
         print(f'\t Val. Loss: {valid_loss:.3f} |  Val. Acc POS: {valid_acc_pos*100:.2f}% | Val. Acc NEG: {valid_acc_neg*100:.2f}%',flush=True)
-    torch.save(model.state_dict(), root + f'ep-{epoch}-mainI2.pt')
+    torch.save(model.state_dict(), root + f'ep-{epoch}-mainI3.pt')
 
 # TESTING
 

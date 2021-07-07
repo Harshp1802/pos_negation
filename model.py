@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import numpy as np
 import random
-SEED = 42
+SEED = 7
 import math
 
 random.seed(SEED)
@@ -18,7 +18,7 @@ from fastNLP.modules.encoder.star_transformer import StarTransformer
 from ntn_layer import NeuralTensorLayer
 # Source: https://pytorch.org/tutorials/beginner/transformer_tutorial.html
 class PositionalEncoding(nn.Module):
-    def __init__(self, d_model, dropout=0.25, max_len=85):
+    def __init__(self, d_model, dropout=0.2, max_len=85):
         super(PositionalEncoding, self).__init__()
         self.dropout = nn.Dropout(p=dropout)
 

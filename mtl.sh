@@ -1,2 +1,2 @@
 #!/bin/bash
-python train.py >> out_files/mtl_ntn2_test.txt
+python train_shared.py >> out_files/mtl_shared2_main.txt
